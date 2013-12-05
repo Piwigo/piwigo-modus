@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+ 
+.pwg-icon-favorite-add:before { content: '\2661'; } /* '♡' */
+.pwg-icon-home:before { content: '\2302'; } /* '⌂' */
+.pwg-icon-category-view-flat:before { content: '\268f'; } /* '⚏' */
+.pwg-icon-category-edit:before { content: '🔧'; } /* '\1f527' */
+.pwg-icon-camera-calendar:before { content: '\f133'; } /* '' */
+.pwg-icon-arrow-w:before { content: '\2190'; } /* '←' */
+.pwg-icon-arrow-e:before { content: '\2192'; } /* '→' */
+.pwg-icon-arrow-n:before { content: '\2191'; } /* '↑' */
+.pwg-icon-play:before { content: '\25b6'; } /* '▶' */
+.pwg-icon-pause:before { content: '\e800'; } /* '' */
+.pwg-icon-representative:before { content: '🏉'; } /* '\1f3c9' */
+.pwg-icon-map:before { content: '🌎'; } /* '\1f30e' */
+.pwg-icon-ellipsis:before { content: '\2026'; } /* '…' */
+.pwg-icon-camera-info:before { content: '\e70f'; } /* '' */
+.pwg-icon-sort:before { content: '\f15d'; } /* '' */
+.pwg-icon-category-view-normal:before { content: '\f0e8'; } /* '' */
+.pwg-icon-minus:before { content: '\e801'; } /* '' */
+.pwg-icon-help:before { content: '\2753'; } /* '❓' */
+.pwg-icon-edit:before { content: '\270e'; } /* '✎' */
+.pwg-icon-menu:before { content: '\e0fe'; } /* '' */
+.pwg-icon-caddie-add:before { content: '\e0d2'; } /* '' */
+.pwg-icon-sizes:before { content: '\e012'; } /* '' */
+.pwg-icon-globe:before { content: '\e079'; } /* '' */
+.pwg-icon-cloud:before { content: '\e11f'; } /* '' */
+.pwg-icon-letters:before { content: '\e0eb'; } /* '' */
+.pwg-icon-save:before { content: '💾'; } /* '\1f4be' */
