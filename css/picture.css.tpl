@@ -43,13 +43,13 @@
 
 #linkPrev {
 	float: left;
-	margin: 5px 10px 0 5px;
+	margin: 0 10px 0 5px;
 }
 
 #linkNext {
 	float: right;
-	margin: 5px 5px 0 10px;
-  text-align: right;
+	margin: 0 5px 0 10px;
+	text-align: right;
 }
 
 DIV.thumbHover { /* first & last holders only*/
@@ -168,7 +168,7 @@ DIV.thumbHover { /* first & last holders only*/
 .wide .imageInfoTable {
 	display: block;
 	padding: 0 5px 0 10px;
-	margin: 0; /*need this for ie7 override in fix-ie7*/
+	margin: 0;
 }
 
 .wide .imageInfo DT {
@@ -255,6 +255,10 @@ DIV.thumbHover { /* first & last holders only*/
 		margin-left: 5px;
 		text-transform: capitalize;
 	}
-}
 
+	.imageInfoTable {
+		padding-top: 5px;
+		clear: both;
+	}
+}
 
