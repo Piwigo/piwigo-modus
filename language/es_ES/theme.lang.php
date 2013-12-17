@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 $lang['modus_theme'] = 'modus_theme';
 $lang['Explore'] = 'Explorar';
