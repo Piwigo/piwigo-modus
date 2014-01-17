@@ -20,8 +20,6 @@ function modus_get_default_config()
 	'album_thumb_size' => 0,
   'index_photo_deriv'=>'',
   'index_photo_deriv_hdpi'=>'',
-  'resize_threshold' => 1,
-  'resize_factor' => 0,
 );
 }
 ?>

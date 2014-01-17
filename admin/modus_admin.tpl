@@ -30,12 +30,7 @@ Use square thumbs of <input type="text" size="4" name="album_thumb_size" value="
 
 <fieldset><legend>Full row thumbnail layout</legend>
 Automatically applied for selected derivatives if max_width > max_height*1.5
-<br>
 
-<fieldset><legend>Horizontal crop or resize ?</legend>
-If row overflow is > <input name="resize_threshold" value="{$RESIZE_THRESHOLD}" type=number min=1 step=any size=2> (range [1;Inf]) then 
-use a factor of the overflow <input name="resize_factor" value="{$RESIZE_FACTOR}"type=number min=0 max=1 step=any size=2> (range [0;1]) for resizing.
-</fieldset>
 </fieldset>
 
 <p>

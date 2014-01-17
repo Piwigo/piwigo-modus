@@ -168,7 +168,7 @@ DIV.thumbHover { /* first & last holders only*/
 .wide .imageInfoTable {
 	display: block;
 	padding: 0 5px 0 10px;
-	margin: 0;
+	margin: 0; /*need this for ie7 override in fix-ie7*/
 }
 
 .wide .imageInfo DT {

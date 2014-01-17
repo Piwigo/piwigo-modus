@@ -255,7 +255,7 @@ function modus_thumbs()
 	$template->block_html_style(null,
 '#thumbnails{text-align:justify;overflow:hidden;margin-left:'.($container_margin-$horizontal_margin).'px;margin-right:'.$container_margin.'px}
 #thumbnails>li{float:left;overflow:hidden;position:relative;margin-bottom:'.$vertical_margin.'px;margin-left:'.$horizontal_margin.'px}#thumbnails>li>a{position:absolute;border:0}');
-	$template->block_footer_script(null, 'rvgtProcessor=new RVGThumbs({hMargin:'.$horizontal_margin.',rowHeight:'.$row_height.',resizeThreshold:'.$conf['modus_theme']['resize_threshold'].',resizeFactor:'.$conf['modus_theme']['resize_factor'].'});');
+	$template->block_footer_script(null, 'rvgtProcessor=new RVGThumbs({hMargin:'.$horizontal_margin.',rowHeight:'.$row_height.'});');
 
 	$my_base_name = basename(dirname(__FILE__));
   // not async to avoid visible flickering reflow

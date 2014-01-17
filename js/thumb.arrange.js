@@ -63,6 +63,10 @@ function RVGThumbs(options) {
 		this.opts.extraRowHeight = 6; /*loose sharpness but only for small screens when we could "almost" fit with full sharpness*/
 		this.opts.rowHeight = Math.round(this.opts.rowHeight / dpr ) + this.opts.extraRowHeight;
 	}
+	else {
+		this.opts.resizeThreshold = 1.1; /*if row is less than 10% larger than available width, distribute extra width through cropping*/
+		this.opts.resizeFactor = 0.8;/* when row is more than 10% larger than available width, distribute extra width 80% through resizing and 20% through cropping*/
+	}
 	this.process();
 
 	var that = this;
@@ -73,6 +77,13 @@ function RVGThumbs(options) {
 		.on('RVTS_loaded', function(evt, down) {
 			that.process( down && that.$thumbs.width() == that.prevContainerWidth ? that.prevLastLineFirstThumbIndex : 0);
 		} );
+
+	if (!$.isReady) {
+		$(document).ready( function() {
+			if ( that.$thumbs.width() < that.prevContainerWidth )
+				that.process();
+			} );
+	}
 }
 
 RVGThumbs.prototype = {

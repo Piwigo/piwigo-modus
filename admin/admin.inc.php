@@ -15,7 +15,7 @@ elseif (!is_array($my_conf))
 	$my_conf = array_merge($default_conf, $my_conf);
 }
 
-$text_values = array('skin', 'album_thumb_size', 'index_photo_deriv','index_photo_deriv_hdpi', 'resize_threshold', 'resize_factor');
+$text_values = array('skin', 'album_thumb_size', 'index_photo_deriv','index_photo_deriv_hdpi');
 $bool_values = array();
 
 // *************** POST management ********************
@@ -27,8 +27,6 @@ if (isset($_POST[$text_values[0]]))
 		$my_conf[$k] = isset($_POST[$k]) ? true:false;
 	// int/double
 	$my_conf['album_thumb_size'] = max(0, $my_conf['album_thumb_size']);
-  $my_conf['resize_threshold'] = max(1, $my_conf['resize_threshold']);
-  $my_conf['resize_factor'] = max(0, min(1, $my_conf['resize_factor']) );
   $my_conf = array_intersect_key($my_conf, $default_conf);
   conf_update_param('modus_theme', addslashes(serialize($my_conf)) );
 
