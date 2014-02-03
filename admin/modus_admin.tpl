@@ -38,6 +38,3 @@ Automatically applied for selected derivatives if max_width > max_height*1.5
 </p>
 </form>
 
-<div style="text-align:left;line-height:1em">
-{$THEMECONF_SRC}
-</div>

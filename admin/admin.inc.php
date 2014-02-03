@@ -59,7 +59,6 @@ foreach( glob($skin_dir.'*'.$skin_suffix) as $file)
 $template->assign( array(
 	'available_derivatives' => $available_derivatives,
 	'available_skins' => $available_skins,
-  'THEMECONF_SRC' => highlight_file( dirname(dirname(__FILE__)).'/themeconf.inc.php', true )
 	) );
 
 $template->set_filename( 'modus_content', dirname(__FILE__).'/modus_admin.tpl' );

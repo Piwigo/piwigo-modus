@@ -1,8 +1,11 @@
 <?php
 /*
 Theme Name: modus
-Version: 201312
-Description: Dark background, grayscale.
+Version: 2.6.a
+Description: Responsive, horizontal menu, retina aware, no lost space.
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=728
+Author: rvelices
+Author URI: http://www.modusoptimus.com
 */
 $themeconf = array(
 	'name'  => 'modus',
@@ -44,9 +47,6 @@ $this->smarty->registerFilter('pre', 'rv_menubar');
 function rv_menubar($source)
 {
 	global $lang, $conf;
-
-  //$source = str_replace('{if isset($MENUBAR)} contentWithMenu{/if}', '', $source );
-	//$source = str_replace('{if isset($MENUBAR)} class="contentWithMenu"{/if}', '', $source );
 
 	$source = str_replace('<div id="imageHeaderBar">', '<div class=titrePage id=imageHeaderBar>', $source );
 	$source = str_replace('<div id=imageHeaderBar>',   '<div class=titrePage id=imageHeaderBar>', $source );
@@ -97,7 +97,6 @@ if (!defined('IN_ADMIN') && defined('RVCDN') )
 {
 	$this->smarty->registerFilter('pre', 'rv_cdn_prefilter' );
 	add_event_handler('combined_script', 'rv_cdn_combined_script', EVENT_HANDLER_PRIORITY_NEUTRAL, 2);
-	//add_event_handler('combined_css_postfilter', 'rv_cdn_combined_css_postfilter');
 }
 
 function rv_cdn_prefilter($source, &$smarty)
@@ -111,10 +110,6 @@ function rv_cdn_combined_script($url, $script)
 	if (!$script->is_remote() /*&& strpos($script->path,'thumb.arrange')===false*/)
 		$url = RVCDN_ROOT_URL.$script->path;
 	return $url;
-}
-function rv_cdn_combined_css_postfilter($css)
-{
-	return str_replace('url(/', 'url('.RVCDN.'/', $css);
 }
 
 if (defined('RVPT_JQUERY_SRC'))
