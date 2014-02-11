@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.6.a
+Version: 2.6.b
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -173,13 +173,13 @@ function modus_css_resolution($params)
 }
 
 $this->smarty->registerPlugin('function', 'modus_thumbs', 'modus_thumbs');
-function modus_thumbs()
+function modus_thumbs($x, $smarty)
 {
 	global $template, $page, $conf;
 	if (!isset($_GET['rvts'])) echo '<div id=pop style=display:none;z-index:2;border:0;position:absolute></div>
 ';
 
-	$default_params = $template->get_template_vars('derivative_params');
+	$default_params = $smarty->getTemplateVars('derivative_params');
 	$row_height = $default_params->max_height();
 	$device = get_device();
 	$container_margin = 5;
@@ -210,7 +210,7 @@ function modus_thumbs()
 
 	$new_icon = " <span class=albSymbol title=\"".l10n('posted on %s')."\">".MODUS_STR_RECENT.'</span>';
 
-	foreach($template->get_template_vars('thumbnails') as $item)
+	foreach($smarty->getTemplateVars('thumbnails') as $item)
 	{
 		$src_image = $item['src_image'];
 		$new = !empty($item['icon_ts']) ? sprintf($new_icon, format_date($item['date_available'])) : '';
