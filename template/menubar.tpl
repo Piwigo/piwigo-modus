@@ -1,9 +1,6 @@
-{$COOKIE_PATH = cookie_path()}
-{$MENUBAR_VISIBLE = !isset($smarty.cookies.rvmb) || $smarty.cookies.rvmb|@intval > 0}
-
 {* basically a copy of menubar.tpl with manual inclusion of menubar_xxx.tpl *}
 {if !empty($blocks)}
-<aside id=menubar{if !$MENUBAR_VISIBLE} style="display:none"{/if}>
+<aside id=menubar>
 	{foreach from=$blocks key=id item=block}{if ($id!="mbIdentification" && $id!="mbMenu")}
 	<dl id={$id}>
 		{if $id=="mbLinks"}
