@@ -14,9 +14,16 @@ RVGTLine.prototype = {
 	add: function($elt, absIndex) {
 		if (this.elements.length === 0)
 			this.firstThumbIndex = absIndex;
-		if (!$elt.data("w"))
-		{
-			var w=$elt.width(), h=$elt.height();
+		var w,h;
+
+		if (! (w=$elt.data("w")) ) {
+			if ( (w=$elt[0].getAttribute("width")) && (w=parseInt(w)) ) {
+				h=parseInt($elt[0].getAttribute("height"));
+			}
+			else {
+				w=$elt.width();
+				h=$elt.height();
+			}
 			if (h > this.rowHeight) {
 				w = Math.round(w * this.rowHeight/h);
 				h = this.rowHeight;
@@ -24,11 +31,14 @@ RVGTLine.prototype = {
 			$elt.data("w", w)
 				.data("h", h);
 		}
+		else
+			h=$elt.data("h");
+		
 
 		var eltObj = {
 			$elt: $elt,
-			w: $elt.data("w"),
-			h: $elt.data("h")
+			w: w,
+			h: h
 		};
 		this.elements.push(eltObj);
 
@@ -165,18 +175,19 @@ RVGThumbs.prototype = {
 	},
 
 	reposition: function($img, imgW, imgH, liW, liH) {
-		$img.attr("width", imgW)
-			.attr("height", imgH);
+		/* JQuery .attr and .css functions add too much overhead ...*/
+		var elt = $img[0];
+		elt.setAttribute("width", imgW+"");
+		elt.setAttribute("height", imgH+"");
 
-		$img.closest("li").css( {
-			width: liW+"px",
-			height: liH+"px"
-		});
+		elt = elt.parentNode;//a
+		elt.style.left = Math.round((liW-imgW)/2)+"px";
+		elt.style.top = Math.round((liH-imgH)/2)+"px";
 
-		$img.parent("a").css( {
-			left: Math.round((liW-imgW)/2)+"px",
-			top: Math.round((liH-imgH)/2)+"px"
-		});
+		elt = elt.parentNode;//li
+		elt.style.width = liW+"px";
+		elt.style.height = liH+"px";
+
 	}
 
 }

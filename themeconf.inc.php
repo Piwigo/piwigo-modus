@@ -68,7 +68,7 @@ function rv_menubar($source)
 	}
 
 	if ( ($pos=strpos($source, '<ul class="categoryActions">'))!==false || ($pos=strpos($source, '<ul class=categoryActions>'))!==false){
-		if ( ($pos2=strpos($source, '</ul>', $pos))!==false 
+		if ( ($pos2=strpos($source, '</ul>', $pos))!==false
 			&& (substr_count($source, '<li>', $pos, $pos2-$pos) > 2) )
 			$source = substr_replace($source, '<a id=albumActionsSwitcher class=pwg-button><span class="pwg-icon pwg-icon-ellipsis"></span></a>{combine_script version=1 id=\'modus.async\' path="themes/`$themeconf.id`/js/modus.async.js" load=\'async\'}', $pos, 0);
 	}
@@ -145,31 +145,31 @@ function modus_combinable_preparse($template)
 $this->smarty->registerPlugin('function', 'cssResolution', 'modus_css_resolution');
 function modus_css_resolution($params)
 {
-  $base = @$params['base'];
-  $min = @$params['min'];
-  $max = @$params['max'];
-  
-  $rules = array();
-  if (!empty($base))
-    $rules[] = $base;
-  foreach(array('min','max') as $type)
-  {
-    if (!empty($$type))
-      $rules[] = '(-webkit-'.$type.'-device-pixel-ratio:'.$$type.')';
-  }
-  $res = implode(' and ', $rules);
+	$base = @$params['base'];
+	$min = @$params['min'];
+	$max = @$params['max'];
 
-  $rules = array();
-  if (!empty($base))
-    $rules[] = $base;
-  foreach(array('min','max') as $type)
-  {
-    if (!empty($$type))
-      $rules[] = '('.$type.'-resolution:'.round(96*$$type,1).'dpi)';
-  }
-  $res .= ','.implode(' and ', $rules);
+	$rules = array();
+	if (!empty($base))
+		$rules[] = $base;
+	foreach(array('min','max') as $type)
+	{
+		if (!empty($$type))
+			$rules[] = '(-webkit-'.$type.'-device-pixel-ratio:'.$$type.')';
+	}
+	$res = implode(' and ', $rules);
 
-  return $res;
+	$rules = array();
+	if (!empty($base))
+		$rules[] = $base;
+	foreach(array('min','max') as $type)
+	{
+		if (!empty($$type))
+			$rules[] = '('.$type.'-resolution:'.round(96*$$type,1).'dpi)';
+	}
+	$res .= ','.implode(' and ', $rules);
+
+	return $res;
 }
 
 $this->smarty->registerPlugin('function', 'modus_thumbs', 'modus_thumbs');
@@ -183,7 +183,7 @@ function modus_thumbs($x, $smarty)
 	$row_height = $default_params->max_height();
 	$device = get_device();
 	$container_margin = 5;
-	
+
 	if ('mobile'==$device)
 	{
 		$horizontal_margin = floor(0.01*$row_height);
@@ -223,7 +223,7 @@ function modus_thumbs($x, $smarty)
 			$idx++;
 		}
 		while($csize[1]<$row_height-2 && $idx<count($candidates));
-		
+
 		if ($do_pop && $idx<count($candidates))
 		{
 			$pop = new DerivativeImage($candidates[$idx], $src_image);
@@ -253,8 +253,8 @@ function modus_thumbs($x, $smarty)
 	$template->block_footer_script(null, 'rvgtProcessor=new RVGThumbs({hMargin:'.$horizontal_margin.',rowHeight:'.$row_height.'});');
 
 	$my_base_name = basename(dirname(__FILE__));
-  // not async to avoid visible flickering reflow
-  $template->scriptLoader->add('modus.arange', 1, array('jquery'), 'themes/'.$my_base_name."/js/thumb.arrange.min.js", 0);
+	// not async to avoid visible flickering reflow
+	$template->scriptLoader->add('modus.arange', 1, array('jquery'), 'themes/'.$my_base_name."/js/thumb.arrange.min.js", 0);
 	if ($do_pop)
 		$template->scriptLoader->add('modus.pop', 2, array('jquery'), 'themes/'.$my_base_name."/js/thumb.pop.js", 0);
 }
