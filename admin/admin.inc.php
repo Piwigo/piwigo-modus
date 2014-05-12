@@ -25,13 +25,19 @@ if (isset($_POST[$text_values[0]]))
 		$my_conf[$k] = stripslashes($_POST[$k]);
 	foreach ($bool_values as $k )
 		$my_conf[$k] = isset($_POST[$k]) ? true:false;
+  
+  if (!isset($_POST['use_album_square_thumbs']))
+  {
+    $my_conf['album_thumb_size'] = 0;
+  }
+  
 	// int/double
 	$my_conf['album_thumb_size'] = max(0, $my_conf['album_thumb_size']);
   $my_conf = array_intersect_key($my_conf, $default_conf);
   conf_update_param('modus_theme', addslashes(serialize($my_conf)) );
 
 	global $page;
-	$page['infos'][] = 'options saved !';
+  $page['infos'][] = l10n('Information data registered in database');
 }
 
 
@@ -42,6 +48,14 @@ foreach ($text_values as $k )
   $template->assign( strtoupper($k), $my_conf[$k] );
 foreach ($bool_values as $k )
   $template->assign( strtoupper($k), $my_conf[$k] );
+
+// we don't use square thumbs if the thumb size is 0
+$template->assign('use_album_square_thumbs', 0 != $my_conf['album_thumb_size']);
+
+if (0 == $my_conf['album_thumb_size'])
+{
+  $template->assign('ALBUM_THUMB_SIZE', 250);
+}
 
 $available_derivatives = array( ''=> 'Default');
 foreach(array_keys(ImageStdParams::get_defined_type_map()) as $type)
