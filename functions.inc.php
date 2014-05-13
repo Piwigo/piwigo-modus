@@ -18,8 +18,8 @@ function modus_get_default_config()
   return array(
 	'skin' => 'dark',
 	'album_thumb_size' => 250,
-  'index_photo_deriv'=>'',
-  'index_photo_deriv_hdpi'=>'',
+  'index_photo_deriv'=>'2small',
+  'index_photo_deriv_hdpi'=>'xsmall',
 );
 }
 ?>

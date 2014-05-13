@@ -6,6 +6,8 @@ global $template;
 include_once( dirname(dirname(__FILE__)).'/functions.inc.php');
 $default_conf = modus_get_default_config();
 
+load_language('theme.lang', dirname(__FILE__).'/../');
+
 $my_conf = @$conf['modus_theme'];
 if (!isset($my_conf))
   $my_conf = $default_conf;
@@ -57,7 +59,7 @@ if (0 == $my_conf['album_thumb_size'])
   $template->assign('ALBUM_THUMB_SIZE', 250);
 }
 
-$available_derivatives = array( ''=> 'Default');
+$available_derivatives = array();
 foreach(array_keys(ImageStdParams::get_defined_type_map()) as $type)
 	$available_derivatives[$type] = l10n($type);
 

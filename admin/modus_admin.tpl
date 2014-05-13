@@ -50,18 +50,18 @@ jQuery(document).ready(function() {
 });
 {/footer_script}
 
-<h2>Modus theme config</h2>
+<h2>{'Modus theme config'|translate}</h2>
 
 <form method="post" action="" id="modus-config">
 
 
-<fieldset><legend>Skin</legend>
+<fieldset><legend>{'Skin'|translate}</legend>
 <select name="skin">
 		{html_options options=$available_skins selected=$SKIN}
 </select>
 </fieldset>
 
-<fieldset><legend>Album thumbs size</legend>
+<fieldset><legend>{'Album thumbnails'|translate}</legend>
   <label>
     <span class="graphicalCheckbox icon-check{if not $use_album_square_thumbs}-empty{/if}"></span>
     <input type="checkbox" name="use_album_square_thumbs"{if $use_album_square_thumbs} checked="checked"{/if}>
@@ -76,25 +76,26 @@ jQuery(document).ready(function() {
 
 </fieldset>
 
-<fieldset><legend>Default photo sizes</legend>
+<fieldset><legend>{'Default sizes'|translate}</legend>
 
-<label>Index Photos : 
+<label>{'Default size for thumbnails'|translate}
 	<select name="index_photo_deriv">
 		{html_options options=$available_derivatives selected=$INDEX_PHOTO_DERIV}
 	</select>
 </label>
 <br>
-<label>Index Photos large high density screens : 
+<label>{'Default size for thumbnails on high density display (retina)'|translate}
 	<select name="index_photo_deriv_hdpi">
 		{html_options options=$available_derivatives selected=$INDEX_PHOTO_DERIV_HDPI}
 	</select>
 </label>
 </fieldset>
 
+{*
 <fieldset><legend>Full row thumbnail layout</legend>
 Automatically applied for selected derivatives if max_width > max_height*1.5
-
 </fieldset>
+*}
 
 <p class="formButtons">
 <input type="submit" value="{'Save Settings'|translate}" />
