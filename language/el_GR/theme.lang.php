@@ -24,4 +24,9 @@ $lang['modus_theme'] = 'modus_theme';
 $lang['%d album'] = '%d λεύκωμα';
 $lang['%d albums'] = '%d λευκώματα';
 $lang['Explore'] = 'Εξερεύνηση';
-?>
+$lang['Modus theme config'] = 'Διαμόρφωση θέμαtow Modus';
+$lang['Default sizes'] = 'Προεπιλεγμένα μεγέθη';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Προεπιλεγμένο μέγεθος για τις μικρογραφίες για την οθόνη υψηλής πυκνότητας (retina)';
+$lang['Default size for thumbnails'] = 'Προεπιλεγμένο μέγεθος για τις μικρογραφίες';
+$lang['Album thumbnails'] = 'Μικρογραφίες Λευκωμάτων ';
+$lang['%d pixels'] = '%d pixels';
