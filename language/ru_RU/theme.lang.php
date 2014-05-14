@@ -24,4 +24,11 @@ $lang['Explore'] = 'Исследовать';
 $lang['%d album'] = '%d альбом';
 $lang['%d albums'] = '%d альбомы';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['%d pixels'] = '%d пикселей';
+$lang['Album thumbnails'] = 'Альбом миниатюр';
+$lang['Default size for thumbnails'] = 'Размеры миниатюр по умолчанию';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Размеры миниатюр по умолчанию для экранов с высоким разрешением (retina)';
+$lang['Default sizes'] = 'Размеры по умолчанию';
+$lang['Modus theme config'] = 'Настройка темы Modus';
+$lang['Skin'] = 'Скины ';
+$lang['Use square thumbs'] = 'Использовать квадратные миниатюры';
