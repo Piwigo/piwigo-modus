@@ -24,4 +24,11 @@ $lang['Explore'] = 'izpētīt';
 $lang['modus_theme'] = 'modus_tēma';
 $lang['%d albums'] = '%d albūmi';
 $lang['%d album'] = '%d albūms';
-?>
+$lang['Default size for thumbnails on high density display (retina)'] = 'Sīkbilšu izmērs pēc noklusējuma augstas izšīrtspējas attēlā (retina)';
+$lang['Use square thumbs'] = 'Lietot kvadrātiskas sīkbildes';
+$lang['Modus theme config'] = 'Modus tēmas konfigurācija';
+$lang['Skin'] = 'Izskats';
+$lang['Default sizes'] = 'Izmērs pēc noklusējuma';
+$lang['Default size for thumbnails'] = 'Sīkbilžu izmērs pēc noklusējuma';
+$lang['Album thumbnails'] = 'Albūma sīkbildes';
+$lang['%d pixels'] = '%d pikseļi';
