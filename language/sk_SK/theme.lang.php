@@ -24,4 +24,11 @@ $lang['Explore'] = 'Preskúmať';
 $lang['modus_theme'] = 'modus_theme';
 $lang['%d albums'] = '%d albumy';
 $lang['%d album'] = '%d album';
-?>
+$lang['Modus theme config'] = 'Spôsob konfigurácie témy';
+$lang['Skin'] = 'Vzhľad';
+$lang['Use square thumbs'] = 'Použiť štvorcové náhľady';
+$lang['Default sizes'] = 'Predvolené veľkosti';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Predvolená veľkosť náhľadov pre vysokorozlíšiteľné monitory (retina)';
+$lang['Default size for thumbnails'] = 'Predvolená veľkosť náhľadov';
+$lang['Album thumbnails'] = 'Náhľady albumu';
+$lang['%d pixels'] = '%d bodov';
