@@ -24,4 +24,11 @@ $lang['Explore'] = 'Onderzoek';
 $lang['modus_theme'] = 'modus_thema';
 $lang['%d album'] = '%d album';
 $lang['%d albums'] = '%d albums';
-?>
+$lang['%d pixels'] = '%d pixels';
+$lang['Album thumbnails'] = 'Album klikplaatjes';
+$lang['Default size for thumbnails'] = 'Standaard klikplaatjes-formaat';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Standaard klikplaatjes-formaat op scherm met hoge dichtheid (retina)';
+$lang['Default sizes'] = 'Standaard formaten';
+$lang['Modus theme config'] = 'Modus thema configuratie';
+$lang['Skin'] = 'Uiterlijk';
+$lang['Use square thumbs'] = 'Gebruik vierkante klikplaatjes';
