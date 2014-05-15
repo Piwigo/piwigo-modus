@@ -30,3 +30,5 @@ $lang['Default size for thumbnails on high density display (retina)'] = 'Προ�
 $lang['Default size for thumbnails'] = 'Προεπιλεγμένο μέγεθος για τις μικρογραφίες';
 $lang['Album thumbnails'] = 'Μικρογραφίες Λευκωμάτων ';
 $lang['%d pixels'] = '%d pixels';
+$lang['Use square thumbs'] = 'Χρήση τετράγωνων μικρογραφιών ';
+$lang['Skin'] = 'Skin';
