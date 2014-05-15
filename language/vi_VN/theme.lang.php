@@ -24,4 +24,11 @@ $lang['%d album'] = '%d bộ ảnh';
 $lang['%d albums'] = '%d bộ ảnh';
 $lang['Explore'] = 'Mở ra';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['%d pixels'] = '%d điểm ảnh';
+$lang['Album thumbnails'] = 'Ảnh thu nhỏ album';
+$lang['Default size for thumbnails'] = 'Kích thước mặc định của ảnh thu nhỏ';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Kích thước mặc định của ảnh thu nhỏ khi hiển thị trên màn hình phân giải cao (retina)';
+$lang['Default sizes'] = 'Các kích thước mặc định';
+$lang['Modus theme config'] = 'Cấu hình chủ đề Modus';
+$lang['Skin'] = 'Giao diện';
+$lang['Use square thumbs'] = 'Dùng ảnh thu nhỏ hình vuông';
