@@ -24,4 +24,5 @@ $lang['%d album'] = '%d album';
 $lang['%d albums'] = '%d album';
 $lang['Explore'] = 'Utforska';
 $lang['modus_theme'] = 'modus_tema';
-?>
+$lang['%d pixels'] = '%d pixlar';
+$lang['Use square thumbs'] = 'Använd kvadradiska tumnaglar';
