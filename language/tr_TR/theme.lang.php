@@ -24,4 +24,11 @@ $lang['Explore'] = 'Keşfet';
 $lang['%d album'] = '%d albüm';
 $lang['%d albums'] = '%d albüm';
 $lang['modus_theme'] = 'modus_teması';
-?>
+$lang['Use square thumbs'] = 'Kare pulresmi kullan';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Yüksek çözünürlüklü ekranlarda (retina) varsayılan pul resmi boyutu';
+$lang['Skin'] = 'Kaplama';
+$lang['Modus theme config'] = 'Modus tema yapılandırma';
+$lang['Default sizes'] = 'Varsayılan boyutlar';
+$lang['%d pixels'] = '%d piksel';
+$lang['Album thumbnails'] = 'Albüm pul resmi';
+$lang['Default size for thumbnails'] = 'Pul resimleri için varsayılan boyut';
