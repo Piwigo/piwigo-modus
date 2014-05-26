@@ -22,4 +22,11 @@
 // +-----------------------------------------------------------------------+
 $lang['%d album'] = '%d album';
 $lang['%d albums'] = '%d albumy';
-?>
+$lang['%d pixels'] = '%d piksele';
+$lang['Default size for thumbnails'] = 'Domyślny rozmiar miniatur';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Domyślny rozmiar miniatur na ekranach o wysokiej gęstości (retina)';
+$lang['Default sizes'] = 'Domyślne rozmiary';
+$lang['Skin'] = 'Skórka';
+$lang['Use square thumbs'] = 'Użyj kwadratowych miniatur';
+$lang['modus_theme'] = 'modus_theme';
+$lang['Album thumbnails'] = 'Miniatury albumu';
