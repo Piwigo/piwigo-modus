@@ -24,4 +24,11 @@ $lang['%d album'] = '%d rummad';
 $lang['%d albums'] = '%d rummad';
 $lang['Explore'] = 'Furchal';
 $lang['modus_theme'] = 'tem_modus';
-?>
+$lang['Skin'] = 'Tem';
+$lang['%d pixels'] = '%d piksel';
+$lang['Album thumbnails'] = 'Skeudennoùigoù ar rummad';
+$lang['Default size for thumbnails'] = 'Ment dre ziouer evit ar skeudennoùigoù';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Ment dre ziouer evit ar skeudennoùigoù gant skrammoù uhel o diarunusted (retina)';
+$lang['Default sizes'] = 'Mentoù dre ziouer';
+$lang['Modus theme config'] = 'Kefluniadur tem modus';
+$lang['Use square thumbs'] = 'Ober gant skeudennigoù karrez';
