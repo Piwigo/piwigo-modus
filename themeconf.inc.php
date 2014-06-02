@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.6.c
+Version: 2.6.d
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -411,7 +411,7 @@ function modus_picture_content($content, $element_info)
 	$selected_derivative = null;
 	if (isset($_COOKIE['phavsz']))
 		$available_size = explode('x', $_COOKIE['phavsz']);
-	elseif ( $caps=pwg_get_session_var('caps') && $caps[0]>1 )
+	elseif ( ($caps=pwg_get_session_var('caps')) && $caps[0]>1 )
 		$available_size = array($caps[0]*$caps[1], $caps[0]*($caps[2]-100), $caps[0]);
 
 	if (isset($available_size))
