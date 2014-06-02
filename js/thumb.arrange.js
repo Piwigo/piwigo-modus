@@ -74,8 +74,8 @@ function RVGThumbs(options) {
 		this.opts.rowHeight = Math.round(this.opts.rowHeight / dpr ) + this.opts.extraRowHeight;
 	}
 	else {
-		this.opts.resizeThreshold = 1.1; /*if row is less than 10% larger than available width, distribute extra width through cropping*/
-		this.opts.resizeFactor = 0.8;/* when row is more than 10% larger than available width, distribute extra width 80% through resizing and 20% through cropping*/
+		this.opts.resizeThreshold = 1.12; /*if row is less than 12% larger than available width, distribute extra width through cropping*/
+		this.opts.resizeFactor = 0.8;/* when row is more than 12% larger than available width, distribute extra width 80% through resizing and 20% through cropping*/
 	}
 	this.process();
 
