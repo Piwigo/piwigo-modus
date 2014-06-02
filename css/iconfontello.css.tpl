@@ -5,7 +5,10 @@ A:hover .pwg-icon:before{
 }
 
 .pwg-icon {
-	font-size: 24px;
+{if isset($loaded_plugins['language_switch']) || isset($loaded_plugins['BatchDownloader'])}
+	display: inline-block;
+{/if}
+	font-size: 24px
 }
 
 
@@ -27,3 +30,9 @@ A:hover .pwg-icon:before{
 
 .pwg-icon-slideshow:before { content: '\25b6';}
 .pwg-icon-favorite-del:before { content: '\2661\2d'; letter-spacing: -2px}
+
+{if  isset($loaded_plugins['BatchDownloader'])}
+.batch-downloader-icon {
+	width: 26px
+}
+{/if}

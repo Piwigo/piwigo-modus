@@ -8,7 +8,7 @@ Author: rvelices
 Author URI: http://www.modusoptimus.com
 */
 $themeconf = array(
-	'name'  => 'modus',
+	'name' => 'modus',
 	'parent' => 'default',
 );
 
@@ -107,7 +107,7 @@ function rv_cdn_prefilter($source, &$smarty)
 }
 function rv_cdn_combined_script($url, $script)
 {
-	if (!$script->is_remote() /*&& strpos($script->path,'thumb.arrange')===false*/)
+	if (!$script->is_remote())
 		$url = RVCDN_ROOT_URL.$script->path;
 	return $url;
 }
@@ -119,18 +119,17 @@ function modus_loc_begin_page_header()
 	global $template;
 	$all = $template->scriptLoader->get_all();
 	if ( ($jq = @$all['jquery']) )
-	{
 		$jq->set_path(RVPT_JQUERY_SRC);
-	}
 }
 
 add_event_handler('combinable_preparse', 'modus_combinable_preparse');
 function modus_combinable_preparse($template)
 {
 	global $conf;
-	include_once(dirname(__FILE__).'/functions.inc.php');
-  $template->smarty->unregisterPlugin('modifier', 'cssGradient');
-	$template->smarty->registerPlugin('modifier', 'cssGradient', 'modus_css_gradient');
+	if (!is_callable('modus_css_gradient')) {
+		include_once(dirname(__FILE__).'/functions.inc.php');
+		$template->smarty->registerPlugin('modifier', 'cssGradient', 'modus_css_gradient');
+	}
 
 	include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
 
@@ -138,6 +137,7 @@ function modus_combinable_preparse($template)
 		'skin' => $skin,
 		'MODUS_ALBUM_THUMB_SIZE' => intval(@$conf['modus_theme']['album_thumb_size']),
 		'SQUARE_WIDTH' => ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
+		'loaded_plugins' => $GLOBALS['pwg_loaded_plugins']
 		));
 }
 
@@ -239,9 +239,7 @@ function modus_thumbs($x, $smarty)
 		if ($csize[1] < $row_height)
 			$a_style=' style="top:'.floor(($row_height-$csize[1])/2).'px"';
 		elseif ($csize[1] > $row_height)
-		{
 			$csize = $c->get_scaled_size(9999, $row_height);
-		}
 ?>
 <li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>" data-pop='{"w":<?=$popsize[0]?>,"h":<?=$popsize[1]?>,"url":"<?=$pop->get_url()?>"}'></a><b class=popDesc><b><?=$item['NAME']?></b><?=$new?><br><?=$item['DESCRIPTION']?></b></li>
 <?php
@@ -279,10 +277,7 @@ function modus_on_end_index()
 		}
 	}
 	if($req!=null)
-	{
-		$my_base_name = basename(dirname(__FILE__));
-    $template->scriptLoader->add('modus.pop', 2, array($req), 'themes/'.$my_base_name."/js/thumb.pop.js", 0);
-	}
+		$template->scriptLoader->add('modus.pop', 2, array($req), 'themes/'.basename(dirname(__FILE__))."/js/thumb.pop.js", 0);
 }
 
 add_event_handler('get_index_derivative_params', 'modus_get_index_photo_derivative_params', EVENT_HANDLER_PRIORITY_NEUTRAL+1 );
@@ -356,10 +351,8 @@ function modus_index_category_thumbnails($items)
 
 			$styles = array();
 		if ($l<-1 || $l>1)
-		{
-			//$styles[] = 'left:'.$l.'px';
 			$styles[] = 'left:'.(100*$l/$wh).'%';
-		}
+
 		if ($t<-1 || $t>1)
 			$styles[] = 'top:'.$t.'px';
 		if (count($styles))
@@ -387,21 +380,13 @@ function modus_loc_begin_picture()
 	$template->append('head_elements', '<script>if(document.documentElement.offsetWidth>1270)document.documentElement.className=\'wide\'</script>');
 }
 
-add_event_handler('loc_end_picture', 'modus_loc_end_picture');
-function modus_loc_end_picture()
-{
-	global $template, $picture;
-}
-
 add_event_handler('render_element_content', 'modus_picture_content', EVENT_HANDLER_PRIORITY_NEUTRAL-1, 2 );
 function modus_picture_content($content, $element_info)
 {
 	global $conf, $picture, $template;
 
-	if ( !empty($content) )
-	{// someone hooked us - so we skip;
+	if ( !empty($content) ) // someone hooked us - so we skip;
 		return $content;
-	}
 
 	$unique_derivatives = array();
 	$show_original = isset($element_info['element_url']);
@@ -425,11 +410,12 @@ function modus_picture_content($content, $element_info)
 
 	$selected_derivative = null;
 	if (isset($_COOKIE['phavsz']))
-	{
 		$available_size = explode('x', $_COOKIE['phavsz']);
-		if (empty($available_size[2]))
-			$available_size[2] = 1;
+	elseif ( $caps=pwg_get_session_var('caps') && $caps[0]>1 )
+		$available_size = array($caps[0]*$caps[1], $caps[0]*($caps[2]-100), $caps[0]);
 
+	if (isset($available_size))
+	{
 		foreach($unique_derivatives as $derivative)
 		{
 			$size = $derivative->get_size();
@@ -437,9 +423,7 @@ function modus_picture_content($content, $element_info)
 				break;
 
 			if ($size[0] <= $available_size[0] and $size[1] <= $available_size[1])
-			{
 				$selected_derivative = $derivative;
-			}
 			else
 			{
 				if ($available_size[2]>1 || !$selected_derivative)
@@ -489,7 +473,6 @@ function modus_picture_content($content, $element_info)
 			if (isset($next_best))
 				$template->assign('U_PREFETCH', $derivative->get_url() );
 		}
-
 	}
 
 	$as_pending = false;
@@ -500,11 +483,8 @@ function modus_picture_content($content, $element_info)
 	}
 
 
-
 	if ($show_original)
-	{
 		$template->assign( 'U_ORIGINAL', $element_info['element_url'] );
-	}
 
 	$template->append('current', array(
 			'selected_derivative' => $selected_derivative,

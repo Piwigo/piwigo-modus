@@ -21,7 +21,7 @@
 }
 */
  
- [class^="pwg-icon-"]:before, [class*=" pwg-icon-"]:before {
+ .pwg-icon:before {
   font-family: "modus";
   font-style: normal;
   font-weight: normal;
