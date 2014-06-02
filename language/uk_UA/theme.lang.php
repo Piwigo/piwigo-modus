@@ -24,4 +24,11 @@ $lang['%d albums'] = '%d альбоми';
 $lang['%d album'] = '%d альбом';
 $lang['Explore'] = 'Дослідити';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['Default size for thumbnails on high density display (retina)'] = 'Розмір ескізів за замовчуванням для екранів високої щільності (retina)';
+$lang['Modus theme config'] = 'Тема конфігурації Модус';
+$lang['%d pixels'] = '%d пікселів';
+$lang['Album thumbnails'] = 'Ескізи альбому';
+$lang['Default size for thumbnails'] = 'Розмір ескізів за замовчуванням';
+$lang['Default sizes'] = 'Розмір за замовчуванням';
+$lang['Skin'] = 'Шкірка';
+$lang['Use square thumbs'] = 'Використовуйте квадратні ескізи';
