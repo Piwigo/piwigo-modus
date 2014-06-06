@@ -24,4 +24,11 @@ $lang['%d album'] = '%d album';
 $lang['%d albums'] = '%d albumid';
 $lang['Explore'] = 'Uuri';
 $lang['modus_theme'] = 'modus_teema';
-?>
+$lang['%d pixels'] = '%d pikslit';
+$lang['Album thumbnails'] = 'Albumi pisipildid';
+$lang['Default size for thumbnails'] = 'Vaikesuurus pisipiltidele';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Vaikesuurus pisipiltidele retina(suure resolutsiooniga) ekraanil';
+$lang['Default sizes'] = 'Vaikimisi suurus';
+$lang['Modus theme config'] = 'Madus teema seadistus';
+$lang['Skin'] = 'Nahk';
+$lang['Use square thumbs'] = 'Kasuta ruudukujulisi pisipilte';
