@@ -22,6 +22,13 @@
 // +-----------------------------------------------------------------------+
 $lang['%d album'] = '%d آلبوم';
 $lang['%d albums'] = '%d آلبوم';
-$lang['Explore'] = 'بازدیکن';
-$lang['modus_theme'] = 'modus-تم';
-?>
+$lang['Explore'] = 'کاوش';
+$lang['modus_theme'] = 'modus_theme';
+$lang['Use square thumbs'] = 'مربعی کردنِ عکس‌های بندانگشتی';
+$lang['%d pixels'] = '%d پیکسل';
+$lang['Album thumbnails'] = 'عکس‌های بندانگشتیِ آلبوم';
+$lang['Default size for thumbnails'] = 'اندازه‌ی پیشفرضِ عکس‌های بندانگشتی';
+$lang['Default size for thumbnails on high density display (retina)'] = 'اندازه‌ی پیشفرضِ عکس‌های بندانگشتی در نمایشگرهای تراکم بالا (رتینا)';
+$lang['Default sizes'] = 'اندازه‌های پیشفرض';
+$lang['Modus theme config'] = 'پیکربندی قالبِ Modus';
+$lang['Skin'] = 'پوسته';
