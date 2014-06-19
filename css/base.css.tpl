@@ -131,7 +131,6 @@ INPUT[type="button"]:hover, INPUT[type="submit"]:hover, INPUT[type="reset"]:hove
 FIELDSET {
 	padding: 1em;
 	margin: 1em 0.5em;
-	overflow: hidden; /* <- makes Opera happy */
 	border: 1px solid gray;
 }
 
@@ -214,7 +213,7 @@ LEGEND {
 }
 
 /* category and tag results paragraphs on a quick search */
-.category_search_results, .tag_search_results {
+.search_results {
   font-size: 16px;
   margin: 10px 16px;
 }
@@ -323,11 +322,10 @@ A.wiki { cursor:help; }
  * Use a SPAN to group objects in line
  */
 
-.filter UL,
-.filter FIELDSET>LABEL {
+.filter UL {
 	display: block;
 	float: left;
-	margin-right: 1em;
+	margin: 0 1em 0 0;
 	padding: 0;
 }
 
@@ -336,13 +334,20 @@ A.wiki { cursor:help; }
 	margin-bottom: 0.5em;
 }
 
-/*IE6 needs override because of > selector*/
-.filter FIELDSET>LABEL>INPUT,
-.filter FIELDSET>LABEL>SELECT {
-	display: block;
-	margin: 0.5em 0;
+.filter P {
+	line-height: 2em;
+	margin-bottom: 0.1em;
 }
 
+.filter input[name="search_allwords"] {
+	width: 50%;
+	min-width: 240px;
+	max-width: 500px;
+}
+
+.filter>P {
+	margin-left: 2em;
+}
 
 .properties UL {
 	list-style: none;
@@ -366,22 +371,10 @@ A.wiki { cursor:help; }
 	padding: 0 0.5em 0 0;
 }
 
-.properties P, .filter P {
+.properties P {
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
-}
-
-.tagSelection {
-	margin: 1em 0 !important;
-}
-
-.tagSelection LI {
-	display: inline-block;
-	width: 150px;
-	max-width: 49%;
-	overflow: hidden;
-	white-space: nowrap;
 }
 
 
