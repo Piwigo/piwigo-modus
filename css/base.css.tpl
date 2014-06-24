@@ -346,7 +346,7 @@ A.wiki { cursor:help; }
 }
 
 .filter>P {
-	margin-left: 2em;
+	margin-left: 1.5em;
 }
 
 .properties UL {
