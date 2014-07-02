@@ -24,4 +24,11 @@ $lang['%d album'] = '%d fotaro';
 $lang['%d albums'] = '%d fotaroj';
 $lang['Explore'] = 'Esplori';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['%d pixels'] = '%d bilderoj';
+$lang['Album thumbnails'] = 'Fotaraj miniaturoj';
+$lang['Default size for thumbnails'] = 'Apriora grandeco por miniaturoj';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Apriora grandeco por miniaturoj sur alta-densa vidigilo (retino)';
+$lang['Default sizes'] = 'Aprioraj grandecoj';
+$lang['Modus theme config'] = 'Agordoj de la temo Modus';
+$lang['Skin'] = 'Etoso';
+$lang['Use square thumbs'] = 'Uzi kvadratajn miniaturojn';
