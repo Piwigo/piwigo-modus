@@ -12,6 +12,7 @@ $themeconf = array(
 	'parent' => 'default',
 );
 
+define('MODUS_POP',0);
 define('MODUS_STR_RECENT', "\xe2\x9c\xbd"); //HEAVY TEARDROP-SPOKED ASTERISK
 define('MODUS_STR_RECENT_CHILD', "\xe2\x9c\xbb"); //TEARDROP-SPOKED ASTERISK
 
@@ -27,6 +28,7 @@ $this->assign('MODUS_CSS_VERSION', crc32(implode(',', array(
 		'a'.@$conf['modus_theme']['skin'],
 		@$conf['modus_theme']['album_thumb_size'],
 		ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
+		MODUS_POP
 	))));
 
 if (isset($_COOKIE['caps']))
@@ -206,7 +208,8 @@ function modus_thumbs($x, $smarty)
 		}
 	}
 
-	$do_pop = 'desktop' == $device;
+	$do_pop = MODUS_POP && 'desktop' == $device;
+	$do_over = !MODUS_POP && 'desktop' == $device;
 
 	$new_icon = " <span class=albSymbol title=\"".l10n('posted on %s')."\">".MODUS_STR_RECENT.'</span>';
 
@@ -240,9 +243,16 @@ function modus_thumbs($x, $smarty)
 			$a_style=' style="top:'.floor(($row_height-$csize[1])/2).'px"';
 		elseif ($csize[1] > $row_height)
 			$csize = $c->get_scaled_size(9999, $row_height);
-?>
+		if ($do_pop) {?>
 <li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>" data-pop='{"w":<?=$popsize[0]?>,"h":<?=$popsize[1]?>,"url":"<?=$pop->get_url()?>"}'></a><b class=popDesc><b><?=$item['NAME']?></b><?=$new?><br><?=$item['DESCRIPTION']?></b></li>
 <?php
+		} elseif ($do_over) {?>
+<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
+<?php
+		} else {?>
+<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a></li>
+<?php
+		}
 	}
 
 	$template->block_html_style(null,
@@ -266,7 +276,7 @@ function modus_on_end_index()
 
 	$req = null;
 	$all = $template->scriptLoader->get_all();
-	if (isset($all['modus.thumb.pop']) || 'desktop' != get_device())
+	if (isset($all['modus.thumb.pop']) || !MODUS_POP || 'desktop' != get_device())
 		return;
 	foreach($all as $script)
 	{

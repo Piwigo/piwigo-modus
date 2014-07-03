@@ -34,6 +34,35 @@
 	height: 4em;    /* legend height (don't set auto to be Gecko friendly)*/
 }
 
+{if $smarty.const.MODUS_POP}
+.popDesc {
+	display: none
+}
+{else}
+.overDesc {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+
+	position: absolute;
+	height: 1.5em;
+	width: 100%;
+	left: 0; /* for IE7, all others use 0 by default*/
+	bottom: -100px;
+	overflow: hidden;
+	text-align: center;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+	line-height: 1.4;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	transition: all 200ms ease-out 0s;
+}
+
+LI:hover>.overDesc {
+	bottom: -1px; /* -1 for IE8 which has some rounding issues */
+}
+{/if}
+
 
 
 /* Category thumbnails on main page, CSS code inspired from MOD subcatify */
@@ -162,6 +191,15 @@
 	cursor: pointer;
 }
 
+{if $MODUS_ALBUM_THUMB_SIZE>222 && $MODUS_ALBUM_THUMB_SIZE<360}
+@media (max-width:320px), {cssResolution min=1.3}{
+	.albThumbs LI {
+		width: 156px;
+		height: 156px;
+		margin: 5px 1px;
+	}
+}
+{/if}
 
 
 /* begin chronology/calendar elements*/

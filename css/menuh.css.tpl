@@ -4,6 +4,13 @@
 	margin: 0; /*various default user agent css*/
 }
 
+{if !isset($loaded_plugins['rv_menutree'])}
+#mbCategories UL {
+	list-style-type: square;
+	padding-left: 8px;
+}
+{/if}
+
 #menubar LI.selected>A {
 	font-weight: bold;
 }
