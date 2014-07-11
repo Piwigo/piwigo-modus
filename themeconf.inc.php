@@ -118,8 +118,7 @@ if (defined('RVPT_JQUERY_SRC'))
 add_event_handler('loc_begin_page_header', 'modus_loc_begin_page_header');
 function modus_loc_begin_page_header()
 {
-	global $template;
-	$all = $template->scriptLoader->get_all();
+	$all = $GLOBALS['template']->scriptLoader->get_all();
 	if ( ($jq = @$all['jquery']) )
 		$jq->set_path(RVPT_JQUERY_SRC);
 }
@@ -178,8 +177,6 @@ $this->smarty->registerPlugin('function', 'modus_thumbs', 'modus_thumbs');
 function modus_thumbs($x, $smarty)
 {
 	global $template, $page, $conf;
-	if (!isset($_GET['rvts'])) echo '<div id=pop style=display:none;z-index:2;border:0;position:absolute></div>
-';
 
 	$default_params = $smarty->getTemplateVars('derivative_params');
 	$row_height = $default_params->max_height();
@@ -210,6 +207,9 @@ function modus_thumbs($x, $smarty)
 
 	$do_pop = MODUS_POP && 'desktop' == $device;
 	$do_over = !MODUS_POP && 'desktop' == $device;
+
+	if ($do_pop && !isset($_GET['rvts'])) echo '<div id=pop style=display:none;z-index:2;border:0;position:absolute></div>
+';
 
 	$new_icon = " <span class=albSymbol title=\"".l10n('posted on %s')."\">".MODUS_STR_RECENT.'</span>';
 
@@ -481,7 +481,7 @@ function modus_picture_content($content, $element_info)
 			}
 
 			if (isset($next_best))
-				$template->assign('U_PREFETCH', $derivative->get_url() );
+				$template->assign('U_PREFETCH', $next_best->get_url() );
 		}
 	}
 
