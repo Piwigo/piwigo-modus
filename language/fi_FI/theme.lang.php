@@ -24,4 +24,11 @@ $lang['%d album'] = '%d albumi';
 $lang['%d albums'] = '%d albumeja';
 $lang['Explore'] = 'Tutki';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['Skin'] = 'Ulkoasu';
+$lang['%d pixels'] = '%d pikseliä';
+$lang['Album thumbnails'] = 'Albumin pikkukuvat';
+$lang['Default size for thumbnails'] = 'Oletuskoko pikkukuville';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Oletuskoko pikkukuville korkean tarkkuuden näytöillä (mm. retina)';
+$lang['Default sizes'] = 'Oletuskoot';
+$lang['Modus theme config'] = 'Modus teeman asetukset';
+$lang['Use square thumbs'] = 'Käytä neliskulmaisia pikkukuvia';
