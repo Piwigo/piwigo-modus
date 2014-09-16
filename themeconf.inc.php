@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.7.a
+Version: 2.7.b
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -45,53 +45,11 @@ if ('mobile'==get_device())
 elseif ('tablet'==get_device())
 	$conf['tag_letters_column_number'] = min($conf['tag_letters_column_number'],3);
 
-$this->smarty->registerFilter('pre', 'rv_menubar');
-function rv_menubar($source)
+$this->smarty->registerFilter('pre', 'modus_smarty_prefilter_wrap');
+function modus_smarty_prefilter_wrap($source)
 {
-	global $lang, $conf;
-
-	$source = str_replace('<div id="imageHeaderBar">', '<div class=titrePage id=imageHeaderBar>', $source );
-	$source = str_replace('<div id=imageHeaderBar>',   '<div class=titrePage id=imageHeaderBar>', $source );
-
-	if (!isset($lang['modus_theme']))
-		load_language('theme.lang', dirname(__FILE__).'/');
-
-	// picture page actionButtons wrap for mobile
-	if (strpos($source, '<div id="imageToolBar">')!==false || strpos($source, '<div id=imageToolBar>')!==false){
-		if ( !($pos=strpos($source,'<div class="actionButtons">') ) )
-			$pos = strpos($source,'<div class=actionButtons>');
-		if ($pos !== false)
-		{
-			$source = substr_replace($source, '<div class=actionButtonsWrapper><a id=imageActionsSwitch class=pwg-button><span class="pwg-icon pwg-icon-ellipsis"></span></a>{combine_script version=1 id=\'modus.async\' path="themes/`$themeconf.id`/js/modus.async.js" load=\'async\'}', $pos, 0);
-			$pos = strpos($source,'caddie', $pos+1);
-			$pos = strpos($source,'</div>', $pos+1);
-			$source = substr_replace($source, '</div>', $pos, 0);
-		}
-	}
-
-	if ( ($pos=strpos($source, '<ul class="categoryActions">'))!==false || ($pos=strpos($source, '<ul class=categoryActions>'))!==false){
-		if ( ($pos2=strpos($source, '</ul>', $pos))!==false
-			&& (substr_count($source, '<li>', $pos, $pos2-$pos) > 2) )
-			$source = substr_replace($source, '<a id=albumActionsSwitcher class=pwg-button><span class="pwg-icon pwg-icon-ellipsis"></span></a>{combine_script version=1 id=\'modus.async\' path="themes/`$themeconf.id`/js/modus.async.js" load=\'async\'}', $pos, 0);
-	}
-
-	$re = preg_quote('<img title="{$cat.icon_ts.TITLE}" src="', '/')
-			.'[^>]+'
-			.preg_quote('/recent{if $cat.icon_ts.IS_CHILD_DATE}_by_child{/if}.png"', '/')
-			.'[^>]+'
-			.preg_quote('alt="(!)">', '/');
-	$source = preg_replace('/'.$re.'/',
-		'<span class=albSymbol title="{$cat.icon_ts.TITLE}">{if $cat.icon_ts.IS_CHILD_DATE}'.MODUS_STR_RECENT_CHILD.'{else}'.MODUS_STR_RECENT.'{/if}</span>',
-		$source);
-
-	$re = preg_quote('<img title="{$thumbnail.icon_ts.TITLE}" src="', '/')
-		.'[^>]+'
-		.preg_quote('/recent.png" alt="(!)">', '/');
-	$source = preg_replace('/'.$re.'/',
-		'<span class=albSymbol title="{$thumbnail.icon_ts.TITLE}">'.MODUS_STR_RECENT.'</span>',
-		$source);
-
-	return $source;
+	include_once(dirname(__FILE__).'/functions.inc.php');
+	return modus_smarty_prefilter($source);
 }
 
 
@@ -127,10 +85,11 @@ add_event_handler('combinable_preparse', 'modus_combinable_preparse');
 function modus_combinable_preparse($template)
 {
 	global $conf;
-	if (!is_callable('modus_css_gradient')) {
-		include_once(dirname(__FILE__).'/functions.inc.php');
+	include_once(dirname(__FILE__).'/functions.inc.php');
+
+	try {
 		$template->smarty->registerPlugin('modifier', 'cssGradient', 'modus_css_gradient');
-	}
+	} catch(SmartyException $exc) {}
 
 	include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
 
