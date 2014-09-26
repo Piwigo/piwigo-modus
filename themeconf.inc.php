@@ -3,7 +3,7 @@
 Theme Name: modus
 Version: 2.7.b
 Description: Responsive, horizontal menu, retina aware, no lost space.
-Plugin URI: http://piwigo.org/ext/extension_view.php?eid=728
+Theme URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
 Author URI: http://www.modusoptimus.com
 */
