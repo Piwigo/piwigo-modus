@@ -38,7 +38,7 @@
 	}
 }
 
-@media {cssResolution min=2.5 max=2.5}{
+@media {cssResolution min=2.5}{
 	.thumbnails SPAN,.thumbnails .wrap2 A{
 		width:{($derivative_params->max_width()/3+2)|intval}px
 	}
