@@ -161,8 +161,8 @@
 	}
 {/if}
 
-	.titrePage H2,
-	.browsePath {
+	.contentWithMenu .titrePage H2,
+	.contentWithMenu .browsePath {
 		text-indent: 25px; /*make space for menu switcher*/
 		letter-spacing: -0.5px;
 	}
