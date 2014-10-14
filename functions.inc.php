@@ -46,6 +46,14 @@ function modus_smarty_prefilter($source)
 		}
 	}
 
+	/* move imageNumber from imageToolBar to imageHeaderBar*/
+	if (preg_match('#<div[ a-zA-Z"=]+id="?imageHeaderBar"?>#', $source, $matches, PREG_OFFSET_CAPTURE)
+		&& preg_match('#<div class="?imageNumber"?>{\\$PHOTO}</div>#', $source, $matches2, PREG_OFFSET_CAPTURE, $matches[0][1]+20))
+	{
+		$source = substr_replace($source, '', $matches2[0][1], strlen($matches2[0][0]));
+		$source = substr_replace($source, $matches2[0][0], $matches[0][1]+strlen($matches[0][0]),0);
+	}
+
 	if ( ($pos=strpos($source, '<ul class="categoryActions">'))!==false || ($pos=strpos($source, '<ul class=categoryActions>'))!==false){
 		if ( ($pos2=strpos($source, '</ul>', $pos))!==false
 			&& (substr_count($source, '<li>', $pos, $pos2-$pos) > 2) )

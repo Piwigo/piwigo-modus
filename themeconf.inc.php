@@ -25,7 +25,7 @@ if (!empty($_GET['skin']) && !preg_match('/[^a-zA-Z0-9_-]/', $_GET['skin']))
 	$conf['modus_theme']['skin'] = $_GET['skin'];
 
 $this->assign('MODUS_CSS_VERSION', crc32(implode(',', array(
-		'a'.@$conf['modus_theme']['skin'],
+		'd'.@$conf['modus_theme']['skin'],
 		@$conf['modus_theme']['album_thumb_size'],
 		ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
 		MODUS_POP
@@ -401,6 +401,9 @@ function modus_picture_content($content, $element_info)
 			}
 		}
 
+		/*$debug[]= "avsize ".implode(',', $available_size);
+		$debug[]= "selsize ".implode(',', $selected_derivative->get_size());*/
+
 		if ($available_size[2]>1 && $selected_derivative)
 		{
 			$ratio_w = $size[0] / $available_size[0];
@@ -414,11 +417,17 @@ function modus_picture_content($content, $element_info)
 			}
 			else
 				$display_size = array( round($size[0]/$available_size[2]), round($size[1]/$available_size[2]) );
+
+			/*$debug[]= "dsize ".implode(',', $display_size);
+			$debug[]= "nsize ".implode(',', $size);*/
+
 			$template->assign( array(
 					'rvas_display_size' => $display_size,
 					'rvas_natural_size' => $size,
 				));
 		}
+		/*if (is_admin())
+		$template->append('footer_elements', implode("\n", $debug));*/
 
 		if (isset($picture['next'])
 			and $picture['next']['src_image']->is_original())

@@ -1,7 +1,6 @@
-
-#imageToolBar .imageNumber {
+#imageHeaderBar .imageNumber {
+/* moved by prefilter from imageToolBar*/
 	float: right;
-	margin:-28px 9px 0 0;
 }
 
 #imageHeaderBar H2 {
