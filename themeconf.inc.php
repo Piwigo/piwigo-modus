@@ -12,7 +12,6 @@ $themeconf = array(
 	'parent' => 'default',
 );
 
-define('MODUS_POP',0);
 define('MODUS_STR_RECENT', "\xe2\x9c\xbd"); //HEAVY TEARDROP-SPOKED ASTERISK
 define('MODUS_STR_RECENT_CHILD', "\xe2\x9c\xbb"); //TEARDROP-SPOKED ASTERISK
 
@@ -25,10 +24,11 @@ if (!empty($_GET['skin']) && !preg_match('/[^a-zA-Z0-9_-]/', $_GET['skin']))
 	$conf['modus_theme']['skin'] = $_GET['skin'];
 
 $this->assign('MODUS_CSS_VERSION', crc32(implode(',', array(
-		'd'.@$conf['modus_theme']['skin'],
+		'a'.@$conf['modus_theme']['skin'],
 		@$conf['modus_theme']['album_thumb_size'],
 		ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
-		MODUS_POP
+		$conf['index_created_date_icon'],
+		$conf['index_posted_date_icon'],
 	))));
 
 if (isset($_COOKIE['caps']))
@@ -94,6 +94,7 @@ function modus_combinable_preparse($template)
 	include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
 
 	$template->assign( array(
+		'conf' => $conf,
 		'skin' => $skin,
 		'MODUS_ALBUM_THUMB_SIZE' => intval(@$conf['modus_theme']['album_thumb_size']),
 		'SQUARE_WIDTH' => ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
@@ -164,11 +165,7 @@ function modus_thumbs($x, $smarty)
 		}
 	}
 
-	$do_pop = MODUS_POP && 'desktop' == $device;
-	$do_over = !MODUS_POP && 'desktop' == $device;
-
-	if ($do_pop && !isset($_GET['rvts'])) echo '<div id=pop style=display:none;z-index:2;border:0;position:absolute></div>
-';
+	$do_over = 'desktop' == $device;
 
 	$new_icon = " <span class=albSymbol title=\"".l10n('posted on %s')."\">".MODUS_STR_RECENT.'</span>';
 
@@ -186,26 +183,12 @@ function modus_thumbs($x, $smarty)
 		}
 		while($csize[1]<$row_height-2 && $idx<count($candidates));
 
-		if ($do_pop && $idx<count($candidates))
-		{
-			$pop = new DerivativeImage($candidates[$idx], $src_image);
-			$popsize = $pop->get_size();
-		}
-		else
-		{
-			$pop = $c;
-			$popsize = $csize;
-		}
-
 		$a_style = '';
 		if ($csize[1] < $row_height)
 			$a_style=' style="top:'.floor(($row_height-$csize[1])/2).'px"';
 		elseif ($csize[1] > $row_height)
 			$csize = $c->get_scaled_size(9999, $row_height);
-		if ($do_pop) {?>
-<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>" data-pop='{"w":<?=$popsize[0]?>,"h":<?=$popsize[1]?>,"url":"<?=$pop->get_url()?>"}'></a><b class=popDesc><b><?=$item['NAME']?></b><?=$new?><br><?=$item['DESCRIPTION']?></b></li>
-<?php
-		} elseif ($do_over) {?>
+		if ($do_over) {?>
 <li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
 <?php
 		} else {?>
@@ -222,8 +205,6 @@ function modus_thumbs($x, $smarty)
 	$my_base_name = basename(dirname(__FILE__));
 	// not async to avoid visible flickering reflow
 	$template->scriptLoader->add('modus.arange', 1, array('jquery'), 'themes/'.$my_base_name."/js/thumb.arrange.min.js", 0);
-	if ($do_pop)
-		$template->scriptLoader->add('modus.pop', 2, array('jquery'), 'themes/'.$my_base_name."/js/thumb.pop.js", 0);
 }
 
 add_event_handler('loc_end_index', 'modus_on_end_index');
@@ -233,20 +214,6 @@ function modus_on_end_index()
 	if (!pwg_get_session_var('caps'))
 		$template->block_footer_script(null, 'try{document.cookie="caps="+(window.devicePixelRatio?window.devicePixelRatio:1)+"x"+document.documentElement.clientWidth+"x"+document.documentElement.clientHeight+";path='.cookie_path().'"}catch(er){document.cookie="caps=1x1x1x"+err.message;}');
 
-	$req = null;
-	$all = $template->scriptLoader->get_all();
-	if (isset($all['modus.thumb.pop']) || !MODUS_POP || 'desktop' != get_device())
-		return;
-	foreach($all as $script)
-	{
-		if($script->load_mode==2 && !$script->is_remote() && count($script->precedents)==0)
-		{
-			$req = $script->id;
-			break;
-		}
-	}
-	if($req!=null)
-		$template->scriptLoader->add('modus.pop', 2, array($req), 'themes/'.basename(dirname(__FILE__))."/js/thumb.pop.js", 0);
 }
 
 add_event_handler('get_index_derivative_params', 'modus_get_index_photo_derivative_params', EVENT_HANDLER_PRIORITY_NEUTRAL+1 );
@@ -401,9 +368,6 @@ function modus_picture_content($content, $element_info)
 			}
 		}
 
-		/*$debug[]= "avsize ".implode(',', $available_size);
-		$debug[]= "selsize ".implode(',', $selected_derivative->get_size());*/
-
 		if ($available_size[2]>1 && $selected_derivative)
 		{
 			$ratio_w = $size[0] / $available_size[0];
@@ -418,16 +382,11 @@ function modus_picture_content($content, $element_info)
 			else
 				$display_size = array( round($size[0]/$available_size[2]), round($size[1]/$available_size[2]) );
 
-			/*$debug[]= "dsize ".implode(',', $display_size);
-			$debug[]= "nsize ".implode(',', $size);*/
-
 			$template->assign( array(
 					'rvas_display_size' => $display_size,
 					'rvas_natural_size' => $size,
 				));
 		}
-		/*if (is_admin())
-		$template->append('footer_elements', implode("\n", $debug));*/
 
 		if (isset($picture['next'])
 			and $picture['next']['src_image']->is_original())

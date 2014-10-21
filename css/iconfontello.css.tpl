@@ -25,11 +25,20 @@ A:hover .pwg-icon:before{
 .pwg-button {
 	display: inline-block;
 	vertical-align: top;
-  cursor:pointer;
+	cursor:pointer;
 }
 
 .pwg-icon-slideshow:before { content: '\25b6';}
 .pwg-icon-favorite-del:before { content: '\2661\2d'; letter-spacing: -2px}
+
+{if $conf.index_posted_date_icon}
+{if $conf.index_created_date_icon}
+.pwg-icon-calendar:before { content: '\f133'; }
+.pwg-icon-camera-calendar:before { content: '\e70f'; }
+{else}
+.pwg-icon-calendar:before { content: '\f133'; }
+{/if}
+{/if}
 
 {if  isset($loaded_plugins['BatchDownloader'])}
 .batch-downloader-icon {
