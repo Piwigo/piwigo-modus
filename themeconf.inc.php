@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.7.b
+Version: 2.7.c
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -23,15 +23,17 @@ if (isset($conf['modus_theme']) && !is_array($conf['modus_theme']))
 if (!empty($_GET['skin']) && !preg_match('/[^a-zA-Z0-9_-]/', $_GET['skin']))
 	$conf['modus_theme']['skin'] = $_GET['skin'];
 
-$this->assign('MODUS_CSS_VERSION', crc32(implode(',', array(
+$this->assign( array(
+	'MODUS_CSS_VERSION' => crc32(implode(',', array(
 		'a'.@$conf['modus_theme']['skin'],
 		@$conf['modus_theme']['album_thumb_size'],
 		ImageStdParams::get_by_type(IMG_SQUARE)->max_width(),
 		$conf['index_created_date_icon'],
 		$conf['index_posted_date_icon'],
-	))));
-
-$this->assign('MODUS_DISPLAY_PAGE_BANNER', @$conf['modus_theme']['display_page_banner']);
+	))),
+	'MODUS_DISPLAY_PAGE_BANNER' => @$conf['modus_theme']['display_page_banner']
+	)
+);
 
 if (isset($_COOKIE['caps']))
 {
