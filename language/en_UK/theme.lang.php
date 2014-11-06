@@ -13,4 +13,5 @@ $lang['%d pixels'] = '%d pixels';
 $lang['Default sizes'] = 'Default sizes';
 $lang['Default size for thumbnails'] = 'Default size for thumbnails';
 $lang['Default size for thumbnails on high density display (retina)'] = 'Default size for thumbnails on high density display (retina)';
+$lang['Display page banner'] = 'Display page banner';
 ?>

@@ -20,6 +20,7 @@ function modus_get_default_config()
 	'album_thumb_size' => 250,
   'index_photo_deriv'=>'2small',
   'index_photo_deriv_hdpi'=>'xsmall',
+  'display_page_banner' => false,
 );
 }
 

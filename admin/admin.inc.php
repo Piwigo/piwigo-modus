@@ -18,7 +18,7 @@ elseif (!is_array($my_conf))
 }
 
 $text_values = array('skin', 'album_thumb_size', 'index_photo_deriv','index_photo_deriv_hdpi');
-$bool_values = array();
+$bool_values = array('display_page_banner');
 
 // *************** POST management ********************
 if (isset($_POST[$text_values[0]]))
@@ -44,7 +44,6 @@ if (isset($_POST[$text_values[0]]))
 
 
 // *************** template init ********************
-
 
 foreach ($text_values as $k )
   $template->assign( strtoupper($k), $my_conf[$k] );

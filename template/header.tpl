@@ -40,4 +40,4 @@
 {/if}
 </div>
 {/if}
-{if !empty($PAGE_BANNER)}<div id="theHeader">{$PAGE_BANNER}</div>{/if}
+{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER}<div id="theHeader">{$PAGE_BANNER}</div>{/if}

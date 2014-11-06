@@ -31,6 +31,8 @@ $this->assign('MODUS_CSS_VERSION', crc32(implode(',', array(
 		$conf['index_posted_date_icon'],
 	))));
 
+$this->assign('MODUS_DISPLAY_PAGE_BANNER', @$conf['modus_theme']['display_page_banner']);
+
 if (isset($_COOKIE['caps']))
 {
 	setcookie('caps',false,0,cookie_path());

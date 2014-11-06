@@ -91,6 +91,15 @@ jQuery(document).ready(function() {
 </label>
 </fieldset>
 
+<fieldset><legend>{'Page banner'|translate}</legend>
+  <label>
+    <span class="graphicalCheckbox icon-check{if not $DISPLAY_PAGE_BANNER}-empty{/if}"></span>
+    <input type="checkbox" name="display_page_banner"{if $DISPLAY_PAGE_BANNER} checked="checked"{/if}>
+    <b>{'Display page banner'|translate}</b>
+  </label>
+</fieldset>
+
+
 {*
 <fieldset><legend>Full row thumbnail layout</legend>
 Automatically applied for selected derivatives if max_width > max_height*1.5
