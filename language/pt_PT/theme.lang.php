@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Tamanhos por defeito';
 $lang['Modus theme config'] = 'Configuração do tema Modus';
 $lang['Skin'] = 'Matriz';
 $lang['Use square thumbs'] = 'Utilizar miniaturas quadradas';
+$lang['Display page banner'] = 'Mostrar página bandeira.';
