@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Izmērs pēc noklusējuma';
 $lang['Default size for thumbnails'] = 'Sīkbilžu izmērs pēc noklusējuma';
 $lang['Album thumbnails'] = 'Albūma sīkbildes';
 $lang['%d pixels'] = '%d pikseļi';
+$lang['Display page banner'] = 'Parādīt lapas baneri';
