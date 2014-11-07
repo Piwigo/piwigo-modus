@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Standardstørrelser';
 $lang['Modus theme config'] = 'Opsæt af Modus-temaet';
 $lang['Skin'] = 'Skind';
 $lang['Use square thumbs'] = 'Anvend kvadratiske miniaturebilleder';
+$lang['Display page banner'] = 'Vis sidebanner';
