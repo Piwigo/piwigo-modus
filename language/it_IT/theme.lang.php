@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Dimensioni predefinite';
 $lang['Album thumbnails'] = 'Miniature album';
 $lang['Default size for thumbnails'] = 'Dimensione predefinita per le miniature';
 $lang['%d pixels'] = '%d pixels';
+$lang['Display page banner'] = 'Visualizza pagina banner';
