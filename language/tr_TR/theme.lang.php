@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Varsayılan boyutlar';
 $lang['%d pixels'] = '%d piksel';
 $lang['Album thumbnails'] = 'Albüm pul resmi';
 $lang['Default size for thumbnails'] = 'Pul resimleri için varsayılan boyut';
+$lang['Display page banner'] = 'Sayfa sloganını göster';
