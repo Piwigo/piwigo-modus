@@ -12,3 +12,4 @@ $lang['Default sizes'] = 'Standardgrößen';
 $lang['Modus theme config'] = 'Konfiguration Modusstil';
 $lang['Skin'] = 'Skin';
 $lang['Use square thumbs'] = 'Benutze quadratische Vorschaubilder';
+$lang['Display page banner'] = 'Zeige Seitenbanner';
