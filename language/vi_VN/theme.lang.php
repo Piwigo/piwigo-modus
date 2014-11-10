@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Các kích thước mặc định';
 $lang['Modus theme config'] = 'Cấu hình chủ đề Modus';
 $lang['Skin'] = 'Giao diện';
 $lang['Use square thumbs'] = 'Dùng ảnh thu nhỏ hình vuông';
+$lang['Display page banner'] = 'Hiện biểu ngữ trang';
