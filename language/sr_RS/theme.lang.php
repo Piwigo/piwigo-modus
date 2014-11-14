@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Подразумеване величине';
 $lang['Modus theme config'] = 'Подешавања Модус теме';
 $lang['Skin'] = 'Тема';
 $lang['Use square thumbs'] = 'Користи квадратне сличице';
+$lang['Display page banner'] = 'Прикажи банер странице';
