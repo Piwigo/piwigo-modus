@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Standaard formaten';
 $lang['Modus theme config'] = 'Modus thema configuratie';
 $lang['Skin'] = 'Uiterlijk';
 $lang['Use square thumbs'] = 'Gebruik vierkante klikplaatjes';
+$lang['Display page banner'] = 'Toon pagina bovenschrift';
