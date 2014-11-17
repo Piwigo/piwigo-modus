@@ -32,3 +32,4 @@ $lang['Default size for thumbnails on high density display (retina)'] = 'Раз�
 $lang['Default sizes'] = 'Размер по подразбиране';
 $lang['Modus theme config'] = 'Настройки на темата';
 $lang['Skin'] = 'Изглед';
+$lang['Display page banner'] = 'Показване на банер';
