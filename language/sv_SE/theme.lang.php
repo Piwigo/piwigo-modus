@@ -32,3 +32,4 @@ $lang['Default size for thumbnails on high density display (retina)'] = 'Standar
 $lang['Default sizes'] = 'Standardstorlekar';
 $lang['Modus theme config'] = 'Modus-temats inställningar';
 $lang['Skin'] = 'Skin';
+$lang['Display page banner'] = 'Visa sidans banner';
