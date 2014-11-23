@@ -32,3 +32,4 @@ $lang['Default size for thumbnails on high density display (retina)'] = 'Oletusk
 $lang['Default sizes'] = 'Oletuskoot';
 $lang['Modus theme config'] = 'Modus teeman asetukset';
 $lang['Use square thumbs'] = 'Käytä neliskulmaisia pikkukuvia';
+$lang['Display page banner'] = 'Näytä sivun banneri';
