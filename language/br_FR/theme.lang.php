@@ -32,3 +32,4 @@ $lang['Default size for thumbnails on high density display (retina)'] = 'Ment dr
 $lang['Default sizes'] = 'Mentoù dre ziouer';
 $lang['Modus theme config'] = 'Kefluniadur tem modus';
 $lang['Use square thumbs'] = 'Ober gant skeudennigoù karrez';
+$lang['Display page banner'] = 'Diskouez giton ar bajenn';
