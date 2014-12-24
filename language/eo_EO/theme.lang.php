@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Aprioraj grandecoj';
 $lang['Modus theme config'] = 'Agordoj de la temo Modus';
 $lang['Skin'] = 'Etoso';
 $lang['Use square thumbs'] = 'Uzi kvadratajn miniaturojn';
+$lang['Display page banner'] = 'Vidigi paĝorubandon';
