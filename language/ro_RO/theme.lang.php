@@ -13,3 +13,4 @@ $lang['Default sizes'] = 'Dimensiunile standard';
 $lang['Default size for thumbnails'] = 'Dimensiunea standard a pictogramelor';
 $lang['Album thumbnails'] = 'Pictogramele albumului';
 $lang['%d pixels'] = '%d pixeli';
+$lang['Display page banner'] = 'Afiseaza banner-ul paginii';
