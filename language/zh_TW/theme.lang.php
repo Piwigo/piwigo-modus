@@ -32,3 +32,4 @@ $lang['Default sizes'] = '默認尺寸';
 $lang['Modus theme config'] = '模組主題配置';
 $lang['Skin'] = '皮膚';
 $lang['Use square thumbs'] = '使用正方形縮圖';
+$lang['Display page banner'] = '顯示頁面的橫條';
