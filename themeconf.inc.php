@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.7.c
+Version: 2.7.d
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -34,6 +34,9 @@ $this->assign( array(
 	'MODUS_DISPLAY_PAGE_BANNER' => @$conf['modus_theme']['display_page_banner']
 	)
 );
+
+if (!$conf['compiled_template_cache_language'])
+	load_language('theme.lang', dirname(__FILE__).'/');
 
 if (isset($_COOKIE['caps']))
 {
