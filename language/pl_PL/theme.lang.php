@@ -30,3 +30,6 @@ $lang['Skin'] = 'Skórka';
 $lang['Use square thumbs'] = 'Użyj kwadratowych miniatur';
 $lang['modus_theme'] = 'modus_theme';
 $lang['Album thumbnails'] = 'Miniatury albumu';
+$lang['Display page banner'] = 'Wyświetl banner strony';
+$lang['Explore'] = 'Odkrywaj';
+$lang['Modus theme config'] = 'Konfig tematu Modus';
