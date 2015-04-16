@@ -24,4 +24,12 @@ $lang['%d album'] = '%d album';
 $lang['%d albums'] = '%d alba';
 $lang['Explore'] = 'Prozkoumat';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['%d pixels'] = '%d pixelů';
+$lang['Album thumbnails'] = 'Náhledy alba';
+$lang['Default size for thumbnails'] = 'Výchozí rozlišení pro náhledy';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Výchozí velikosti náhledů pro vysoká rozlišení (retina)';
+$lang['Default sizes'] = 'Výchozí velikosti';
+$lang['Display page banner'] = 'Zobraz banner stránky';
+$lang['Modus theme config'] = 'nastavení Modus šablony';
+$lang['Skin'] = 'Vzhled';
+$lang['Use square thumbs'] = 'Používat čtvercové náhledy';
