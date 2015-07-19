@@ -24,4 +24,12 @@ $lang['modus_theme'] = 'modus_theme';
 $lang['Explore'] = 'Tyrinėti';
 $lang['%d album'] = '%d albumas';
 $lang['%d albums'] = '%d albumai';
-?>
+$lang['%d pixels'] = '%d pikselių';
+$lang['Album thumbnails'] = 'Albumo miniatiūros';
+$lang['Default size for thumbnails'] = 'Numatytas miniatiūros dydis';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Miniatiūros dydis aukštos raiškos ekranams (retina)';
+$lang['Default sizes'] = 'Numatytieji dydžiai';
+$lang['Display page banner'] = 'Rodyti puslapio banerį';
+$lang['Modus theme config'] = 'Modus temos konfigūracija';
+$lang['Skin'] = 'Išvaizda';
+$lang['Use square thumbs'] = 'Naudoti kvadratines miniatiūras';
