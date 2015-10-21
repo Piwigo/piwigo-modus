@@ -32,3 +32,4 @@ $lang['Default sizes'] = 'Mida per defecte';
 $lang['Modus theme config'] = 'Configuració del tema Modus';
 $lang['Skin'] = 'Aparença';
 $lang['Use square thumbs'] = 'Utilitza miniatures quadrades';
+$lang['Display page banner'] = 'Mostra la pàgina del baner';
