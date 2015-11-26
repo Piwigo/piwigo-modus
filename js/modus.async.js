@@ -1,5 +1,5 @@
 $("#albumActionsSwitcher").click( function() {
-	var box = $(".categoryActions");
+	var box = $(this).siblings(".categoryActions");
 	if (box.is(":visible")) {
 		box.css("display", ""); // remove inline css in case browser resizes larger
 	}
