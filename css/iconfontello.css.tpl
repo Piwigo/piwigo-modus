@@ -45,3 +45,11 @@ A:hover .pwg-icon:before{
 	width: 26px
 }
 {/if}
+
+{if  isset($loaded_plugins['UserCollections'])}
+.user-collections-icon, .user-collections-share-icon, .user-collections-clear-icon, .user-collections-delete-icon, .user-collections-mail-icon {
+	display: inline-block;
+	height: 26px;
+	width: 26px;
+}
+{/if}
