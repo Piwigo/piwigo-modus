@@ -24,4 +24,12 @@ $lang['%d album'] = '%d個相簿';
 $lang['%d albums'] = '%d個相簿';
 $lang['Explore'] = '探索';
 $lang['modus_theme'] = 'modus_theme';
-?>
+$lang['%d pixels'] = '%d 像素';
+$lang['Album thumbnails'] = '相冊縮略圖';
+$lang['Default size for thumbnails'] = '預設縮略圖大小';
+$lang['Default size for thumbnails on high density display (retina)'] = '縮略圖預設大小為高密度顯示屏（retina）';
+$lang['Default sizes'] = '預設的大小';
+$lang['Display page banner'] = '顯示橫幅廣告';
+$lang['Modus theme config'] = 'Modus主題配置';
+$lang['Skin'] = '外觀';
+$lang['Use square thumbs'] = '使用正方形縮略圖';
