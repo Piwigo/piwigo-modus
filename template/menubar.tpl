@@ -76,10 +76,9 @@
 <dl><dt><a href="{$blocks.mbSpecials->data.recent_pics.URL}" title="{$blocks.mbSpecials->data.recent_pics.TITLE}">{$blocks.mbSpecials->data.recent_pics.NAME}</a></dt></dl>
 {/if}
 <dl style="float:none">
-	<form style="margin:0;display:inline" action="{$ROOT_URL}qsearch.php" method=get id=quicksearch onsubmit="return this.q.value!='' && this.q.value!=qsearch_prompt;">
-			<input type="text" name=q id=qsearchInput onfocus="if(value==qsearch_prompt)value='';" onblur="if(value=='')value=qsearch_prompt;"{if !empty($QUERY_SEARCH)} value="{$QUERY_SEARCH}"{/if}>
+	<form style="margin:0;display:inline" action="{$ROOT_URL}qsearch.php" method=get id=quicksearch onsubmit="return this.q.value!='';">
+		<input type="text" name=q id=qsearchInput placeholder="{'Search'|@translate|escape:'html'}..." {if !empty($QUERY_SEARCH)} value="{$QUERY_SEARCH}"{/if}>
 	</form>
-	<script type="text/javascript">var qsearch_prompt="{'Search'|@translate|@escape:'javascript'}...";{if empty($QUERY_SEARCH)}document.getElementById('qsearchInput').value=qsearch_prompt;{/if}</script>
 </dl>
 {if isset($U_LOGIN)}
 <dl style="float:right;margin-top:3px">
