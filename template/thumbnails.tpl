@@ -1,5 +1,5 @@
 {if !empty($thumbnails)}{strip}
-{if $derivative_params->max_width()/$derivative_params->max_height() > 1.5 || ($derivative_params->max_height()<400 && !$derivative_params->sizing->max_crop)}
+{if $derivative_params->max_width()/$derivative_params->max_height() > 1.5 || ($derivative_params->max_height()<480 && !$derivative_params->sizing->max_crop)}
 {modus_thumbs}
 {else}
 {if $smarty.const.IMG_SQUARE == $derivative_params->type}{assign var='SHOW_THUMBNAIL_CAPTION' value=false}{/if}
@@ -95,7 +95,7 @@
 		max-width:100%
 	}
 }
-{if $derivative_params->max_width() > 400}
+{if $derivative_params->max_width() > 480}
 .thumbLegend {ldelim}font-size: 110%}
 {else}
 .thumbLegend {ldelim}font-size: 90%}
