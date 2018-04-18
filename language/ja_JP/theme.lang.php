@@ -30,3 +30,6 @@ $lang['Default sizes'] = 'デフォルトサイズ';
 $lang['Display page banner'] = 'ページバナーを表示する';
 $lang['Skin'] = 'スキン';
 $lang['Use square thumbs'] = '正方形サムネールを使う';
+$lang['Explore'] = '探索';
+$lang['Modus theme config'] = 'Modusテーマ設定';
+$lang['modus_theme'] = 'modusテーマ';
