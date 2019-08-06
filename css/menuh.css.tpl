@@ -15,6 +15,22 @@
 	font-weight: bold;
 }
 
+#menubar .menuInfoCat {
+	padding:0px 5px;
+	font-size: 90%;
+	border-radius: 20px;
+	font-weight: bold;
+	background-color: {$skin.menubar.badgeBackgroundColor};
+	color: {$skin.menubar.badgeColor};
+}
+
+#menubar .menuInfoCat::before {
+  content:'[';
+}
+#menubar .menuInfoCat::after {
+  content:']';
+}
+
 #menubar .menuInfoCatByChild {
 	font-size: 80%;
 	font-style: italic;

@@ -4,6 +4,8 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 global $template;
 
 include_once( dirname(dirname(__FILE__)).'/functions.inc.php');
+include_once(PHPWG_ROOT_PATH.'admin/include/tabsheet.class.php');
+
 $default_conf = modus_get_default_config();
 
 load_language('theme.lang', dirname(__FILE__).'/../');
@@ -42,6 +44,40 @@ if (isset($_POST[$text_values[0]]))
   $page['infos'][] = l10n('Information data registered in database');
 }
 
+// *************** tabs ********************
+
+$tabs = array(
+  array(
+    'code' => 'config',
+    'label' => l10n('Configuration'),
+    ),
+  );
+
+$tab_codes = array_map(
+  function ($a) { return $a["code"]; },
+  $tabs
+  );
+
+if (isset($_GET['tab']) and in_array($_GET['tab'], $tab_codes))
+{
+  $page['tab'] = $_GET['tab'];
+}
+else
+{
+  $page['tab'] = $tabs[0]['code'];
+}
+
+$tabsheet = new tabsheet();
+foreach ($tabs as $tab)
+{
+  $tabsheet->add(
+    $tab['code'],
+    $tab['label'],
+    'admin.php?page=theme&amp;theme=modus'
+    );
+}
+$tabsheet->select($page['tab']);
+$tabsheet->assign();
 
 // *************** template init ********************
 

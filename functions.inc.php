@@ -16,7 +16,7 @@ function modus_css_gradient($gradient) {
 function modus_get_default_config()
 {
   return array(
-	'skin' => 'dark',
+	'skin' => 'newspaper',
 	'album_thumb_size' => 250,
   'index_photo_deriv'=>'2small',
   'index_photo_deriv_hdpi'=>'xsmall',

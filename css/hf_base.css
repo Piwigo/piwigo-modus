@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+#menubar .menuInfoCat::before {
+  content:'';
+}
+#menubar .menuInfoCat::after {
+  content:'';
+}
+#content {flex: 1 0 auto;}
+#copyright{flex-shrink: 0;}

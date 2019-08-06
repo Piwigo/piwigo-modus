@@ -194,6 +194,13 @@ LEGEND {
 }
 {/if}
 
+.titrePage H2 span.badge::before {
+	content:'[';
+}
+.titrePage H2 span.badge::after {
+	content:']';
+}
+
 .content .navigationBar, .content .additional_info, .content .calendarBar {
 	margin: 8px 4px;
 	text-align: center;

@@ -1,3 +1,4 @@
+{include file='include/colorbox.inc.tpl'}
 {combine_script id='common' load='footer' path='admin/themes/default/js/common.js'}
 {combine_script id='jquery.ui.slider' require='jquery.ui' load='footer' path='themes/default/js/ui/minified/jquery.ui.slider.min.js'}
 {combine_css path="themes/default/js/ui/theme/jquery.ui.slider.css"}
@@ -20,6 +21,26 @@
 
 #album_square_thumbs {
   margin-top:5px;
+}
+
+.themeShot {
+  margin:10px 0;
+}
+.themeShot img {
+  width: 280px;
+}
+.themeBox {
+  padding:5px 5px 10px 5px;
+  background-color: #e5e5e5;
+}
+.themeDefault {
+  background-color: #333;
+}
+.themeDefault .themeName {
+  color:#fff;
+}
+.themeDefault a {
+  color:#aaa;
 }
 {/html_style}
 
@@ -47,6 +68,12 @@ jQuery(document).ready(function() {
     }
   });
 
+  jQuery(".themeBoxes a").colorbox({ rel:'group1' });
+
+  jQuery("input[name='skin']").change(function() {
+    jQuery("input[name='skin']").parents(".themeBox").removeClass("themeDefault");
+    jQuery(this).parents(".themeBox").addClass("themeDefault");
+  });
 });
 {/footer_script}
 
@@ -56,9 +83,28 @@ jQuery(document).ready(function() {
 
 
 <fieldset><legend>{'Skin'|translate}</legend>
+        <div class="themeBoxes font-checkbox">
+        {foreach from=$available_skins item=skin_name key=skin_code}
+          <div class="themeBox {if $skin_code==$SKIN}themeDefault{/if}">
+            <label class="font-checkbox">
+              <div class="themeName">
+                <span class="icon-dot-circled"></span>
+                <input type="radio" name="skin" value="{$skin_code}" {if $skin_code==$SKIN}checked{/if}>
+                {$skin_name}
+              </div>
+              <div class="themeShot">
+                <img src="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg"/>
+              </div>
+            </label>
+            <a href="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg" class="icon-zoom-in" title="{$skin_name}">{'Preview'|translate}</a>
+          </div>
+        {/foreach}
+        </div>
+{*
 <select name="skin">
 		{html_options options=$available_skins selected=$SKIN}
 </select>
+*}
 </fieldset>
 
 <fieldset><legend>{'Album thumbnails'|translate}</legend>

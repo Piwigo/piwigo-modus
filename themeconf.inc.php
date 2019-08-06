@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: modus
-Version: 2.9.b
+Version: auto
 Description: Responsive, horizontal menu, retina aware, no lost space.
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=728
 Author: rvelices
@@ -34,6 +34,11 @@ $this->assign( array(
 	'MODUS_DISPLAY_PAGE_BANNER' => @$conf['modus_theme']['display_page_banner']
 	)
 );
+
+if (file_exists(dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.css' ))
+{
+	$this->assign('MODUS_CSS_SKIN', $conf['modus_theme']['skin']);
+}
 
 if (!$conf['compiled_template_cache_language'])
 	load_language('theme.lang', dirname(__FILE__).'/');
@@ -91,7 +96,7 @@ function modus_loc_begin_page_header()
 add_event_handler('combinable_preparse', 'modus_combinable_preparse');
 function modus_combinable_preparse($template)
 {
-	global $conf;
+	global $conf, $template;
 	include_once(dirname(__FILE__).'/functions.inc.php');
 
 	try {

@@ -3,6 +3,7 @@
 <head>
 <title>{if $PAGE_TITLE=='Home'|@translate}{$GALLERY_TITLE}{else}{$PAGE_TITLE}{/if}</title>
 <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
+<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/css/open-sans/open-sans.css"> {* cannot be loaded by combine_css because it contains relative urls *}
 {strip}{get_combined_css}
 {combine_css path="themes/`$themeconf.id`/css/base.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
 {combine_css path="themes/`$themeconf.id`/css/iconfontello.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
@@ -11,6 +12,11 @@
 {combine_css path="themes/`$themeconf.id`/css/picture.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
 {combine_css path="themes/`$themeconf.id`/css/tags.css" order=-10}
 {combine_css path="themes/`$themeconf.id`/css/print.css" order=-10}
+
+{if isset($MODUS_CSS_SKIN)}
+  {combine_css path="themes/`$themeconf.id`/css/hf_base.css" order=-10} {* load base CSS for skins designed by Hannah *}
+  {combine_css path="themes/`$themeconf.id`/skins/`$MODUS_CSS_SKIN`.css" order=-10}
+{/if}
 {/strip}
 {if isset($U_PREFETCH)}<link rel=prefetch href="{$U_PREFETCH}">{/if}
 {if isset($U_CANONICAL)}<link rel=canonical href="{$U_CANONICAL}">{/if}
@@ -26,7 +32,7 @@
 {/foreach}{/if}
 </head>
 
-<body id={$BODY_ID}>
+<body id={$BODY_ID}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} class="modus-withPageBanner"{/if}>
 {if not empty($header_msgs)}
 <div class="header_msgs">
 {if not empty($header_msgs)}
