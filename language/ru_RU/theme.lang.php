@@ -22,7 +22,7 @@
 // +-----------------------------------------------------------------------+
 $lang['Explore'] = 'Исследовать';
 $lang['%d album'] = '%d альбом';
-$lang['%d albums'] = '%d альбомы';
+$lang['%d albums'] = 'Альбомов: %d';
 $lang['modus_theme'] = 'modus_theme';
 $lang['%d pixels'] = '%d пикселей';
 $lang['Album thumbnails'] = 'Альбом миниатюр';
