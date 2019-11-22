@@ -8,12 +8,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   box-shadow:none;
-  border:0px!important;
+  border:0px;
 }
 
 #theHeader div.banner, #theHeader div.banner:hover{
   color:white;
-  text-shadow:none;  
+  text-shadow:none;
 }
 
 #copyright{
@@ -43,12 +43,12 @@ body {
 
 
 .errors{
-  border:none; 
+  border:none;
   background:#ffe1e1 url(/themes/default/icon/errors.png) no-repeat center right;
   font-family: 'Open Sans', sans-serif;
   margin:0;
   font-weight:normal;
-}  
+}
 h2{
   color:black;
   padding:2px 5px 0px 0px;
@@ -92,13 +92,13 @@ a:hover{
 
 #menubar dt A{
   font-weight:normal;
-}  
+}
 #menubar DT, #menubar DT A{
   padding-right:1.25em;
 }
 
 #menubar dl:last-child dd{
-  display:none;
+  display:none!important;
 }
 
 #comentAdd INPUT[type="text"], INPUT[type="password"], #comentAdd SELECT, #comentAdd TEXTAREA, #comments input[type="text"], #comments TEXTAREA{
@@ -120,9 +120,9 @@ INPUT:focus,TEXTAREA:focus{
 }
 
 #qsearchInput{
-  padding:5px !important;
+  padding:5px ;
   margin:0;
-  background-color:transparent !important;
+  background-color:transparent ;
   border:1px solid #fff;
   color:white;
   font-weight:normal;
@@ -133,7 +133,7 @@ INPUT:focus,TEXTAREA:focus{
 
 .filter input[name="search_allwords"]{
   margin-bottom:10px;
-  padding:10px !important;
+  padding:10px ;
 }
 
 .search_results a, .search_results a:hover{
@@ -141,8 +141,8 @@ INPUT:focus,TEXTAREA:focus{
 }
 
 .selectize-control.multi .selectize-input [data-value].active, .selectize-control.multi .selectize-input > div{
-  background-image:none !important;
-  background-color:#777 !important;
+  background-image:none ;
+  background-color:#777 ;
   color:#ddd;
   border:0;
   box-shadow:none;
@@ -305,7 +305,7 @@ fieldset h3, fieldset label {
   color:white;
   border:0px;
   box-shadow:none;
-  background-color:#2d2d2d!important;
+  background-color:#2d2d2d;
 }
 
 .properties input, .properties input:focus {
@@ -387,7 +387,7 @@ dt, dd{
 
 #thePicturePage #pictureCommentList{
   width: 49%;
-  float:right; 
+  float:right;
   padding-top:15px;
 }
 
@@ -407,7 +407,7 @@ dt, dd{
 
 #thePicturePage #derivativeSwitchBox A:last-child{
   padding:15px 10px;
-}  
+}
 #sortOrderBox{
   min-width:190px;
   padding:20px;
@@ -458,7 +458,7 @@ dt, dd{
 
 
 #thumbnails{
-  margin-left:0 !important; 
+  margin-left:0!important ;
 }
 
 #menubar dt a:first-child, #menubar dt a:last-child{
@@ -485,7 +485,7 @@ dt, dd{
 }
 
 .commentsList, .commentsList a {
-  color:black;  
+  color:black;
 }
 
 .commentElement{
@@ -515,7 +515,7 @@ dt, dd{
 hr{
   border: none;
   border-bottom: 2px solid #555;
-}  
+}
 #menuTagCloud a{
   display:list-item;
   list-style:none;
@@ -546,8 +546,8 @@ hr{
 }
 
 .filter input, .filter input:focus, .selectize-input > input,INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA{
-  background-color:#363636 !important;
-  border-radius:0 !important;
+  background-color:#363636 ;
+  border-radius:0 ;
   color:white;
   border:0;
 }
@@ -566,7 +566,7 @@ INPUT, SELECT{
 
 .date_today:hover{
   color:black;
-}  
+}
 #start_day, #start_month, #end_day, #end_month {
   background-color: #363636;
   padding: 10px;
@@ -581,7 +581,7 @@ INPUT, SELECT{
 INPUT[type="button"]:hover, INPUT[type="submit"]:hover, INPUT[type="reset"]:hover{
   box-shadow:none;
   border:0;
-}  
+}
 .filter select{
   background-color: #363636;
   padding: 10px;
@@ -620,18 +620,18 @@ INPUT[type="button"]:hover, INPUT[type="submit"]:hover, INPUT[type="reset"]:hove
 
 .properties fieldset ul li:nth-child(3) span,.properties fieldset ul li:nth-child(4) span,.properties fieldset ul li:nth-child(5) span{
   padding-top:5px;
-}  
+}
 .wide #theImage{
   margin-bottom:5px;
 }
 
 #theImage{
   padding-bottom:20px;
-}  
+}
 .wide .navThumb img, .wide .navThumb, .wide .thumbHover{
-  width:100px ; 
+  width:100px ;
   height:auto ;
-}  
+}
 .navThumb img{
   width:100px ;
   height:auto ;
@@ -666,15 +666,15 @@ h2 .calendarTitle{
   color:black;
   font-weight:bold;
   border:1px solid black;
-}  
+}
 .calItem:hover{
-  text-decoration:underline !important;
+  text-decoration:underline ;
 }
 
 .content .navigationBar, SPAN.calItem, TD.calDayCellEmpty, .content .navigationBar:hover, SPAN.calItem:hover, TD.calDayCellEmpty:hover{
   color:#777;
   padding:10px;
-  text-decoration:none !important;
+  text-decoration:none ;
   border:1px solid #777;
 }
 
@@ -683,7 +683,7 @@ h2 .calendarTitle{
 }
 
 .content .pageNumberSelected{
- font-style:normal; 
+ font-style:normal;
 }
 
 .albThumbs{
@@ -701,7 +701,7 @@ h2 .calendarTitle{
 
 DIV.thumbHover{
   color:white;
-  height:100px !important;
+  height:100px ;
   width:100px;
   font-weight:normal;
   border-radius:0px;
@@ -726,7 +726,7 @@ DIV.thumbHover{
 
 #fullTagCloud span a{
   margin-left:5px;
-  color:black; 
+  color:black;
 }
 
 #fullTagCloud span a:hover{
@@ -762,21 +762,21 @@ TABLE.tagLetterContent{
 }
 
 .tagLevel1{
-  font-size:75% !important;
+  font-size:75% ;
 }
 
 .tagLevel2{
-  font-size:100% !important;
+  font-size:100% ;
 }
 .tagLevel3{
-  font-size:125% !important;
+  font-size:125% ;
 }
 .tagLevel4{
-  font-size:150% !important;
+  font-size:150% ;
 }
 
 .tagLevel5{
-  font-size:175% !important;
+  font-size:175% ;
 }
 
 td .nbEntries{
@@ -843,13 +843,13 @@ td .nbEntries{
     opacity:0;
   }
    #thumbnails>li{
-    display:block !important;
+    display:block ;
   }
   #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
-    color:white !important;
+    color:white ;
   }
   .categoryActions a .pwg-icon{
-    color:white !important;
+    color:white ;
   }
   fieldset ul{
     display:block;
@@ -861,13 +861,13 @@ td .nbEntries{
   }
   #pictureComments #commentAdd{
     width:100%;
-  }  
+  }
   #menubar dl{
     padding:5px 0;
   }
   DIV.thumbHover{
     max-width:60px;
-    height :auto !important;
+    height :auto ;
     font-size:10px;
   }
   #profile{
@@ -890,7 +890,7 @@ td .nbEntries{
     padding:15px;
   }
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
-    color:black !important;
+    color:black ;
   }
   .pwg-icon{
     font-size:20px;
@@ -900,7 +900,7 @@ td .nbEntries{
   }
   .imageInfoTable{
     padding:5px;
-  }  
+  }
 }
 @media screen and (max-width: 1100px){
   #fullTagCloud{
@@ -911,7 +911,7 @@ td .nbEntries{
     left: 0;
     padding:15px;
   }
-} 
+}
 
 @media screen and (max-height: 490px){
    #fullTagCloud{
