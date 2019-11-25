@@ -1,5 +1,7 @@
 <?php
 /*gradients facebook '#3B5998','#2B4170' ; Google '#E64522','#C33219' ; Pinterest '#CB2027','#A0171C'*/
+$themeconf['colorscheme'] = 'clear';
+
 $skin = array(
 	'BODY' => array(
 			// REQUIRED

@@ -10,6 +10,7 @@ Author URI: http://www.modusoptimus.com
 $themeconf = array(
 	'name' => 'modus',
 	'parent' => 'default',
+	'colorscheme' => 'dark',
 );
 
 define('MODUS_STR_RECENT', "\xe2\x9c\xbd"); //HEAVY TEARDROP-SPOKED ASTERISK
@@ -22,6 +23,9 @@ if (isset($conf['modus_theme']) && !is_array($conf['modus_theme']))
 
 if (!empty($_GET['skin']) && !preg_match('/[^a-zA-Z0-9_-]/', $_GET['skin']))
 	$conf['modus_theme']['skin'] = $_GET['skin'];
+
+// we're mainly interested in an override of the colorscheme
+include( dirname(__FILE__).'/skins/'.$conf['modus_theme']['skin'].'.inc.php' );
 
 $this->assign( array(
 	'MODUS_CSS_VERSION' => crc32(implode(',', array(

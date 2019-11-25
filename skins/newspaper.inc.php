@@ -1,4 +1,6 @@
 <?php
+$themeconf['colorscheme'] = 'clear';
+
 $skin = array(
 	'BODY' => array(
 			// REQUIRED
