@@ -8,7 +8,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   box-shadow:none;
-  border:0px!important;
+  border:0px;
  }
 
 #theHeader div.banner, #theHeader div.banner:hover{
@@ -36,8 +36,10 @@ body{
 }
 
 .infos{
-  background:#096a09 url(/themes/default/icon/infos.png) no-repeat center right;
+  background:none;
+  background-color: #096a09;
   color:#eaeae9;
+  font-weight: bold;
   margin:0;
 }
 
@@ -52,10 +54,13 @@ body{
 
 .errors{
   border:none; 
-  background:#ffe1e1 url(/themes/default/icon/errors.png) no-repeat center right;
+  background: none;
   font-family: 'Open Sans', sans-serif;
   margin:0;
-  font-weight:normal;
+  font-weight:bold;
+  color: #ffc4bf;
+  background-color: #d31100;
+  border-left: 3px solid #ffc4bf;
 }
   
 h2{
@@ -141,8 +146,8 @@ a:hover{
 for[type="password"]
 
 input[type='button'],input[type='button']:hover,input[type='submit'], input[type='submit']:hover,input[type='reset'], input[type='reset']:hover{
-  background-color:#6BA1FF !important;
-  color:white!important;
+  background-color:#6BA1FF;
+  color:white;
   cursor:pointer;
 }
 
@@ -157,9 +162,9 @@ INPUT:focus,TEXTAREA:focus{
 }
 
 #qsearchInput{
-  padding:5px !important;
+  padding:5px;
   margin:0;
-  background-color:#616364 !important;
+  background-color:#616364;
   border:none;
   font-weight:normal;
   color:#eaeae9;
@@ -171,7 +176,7 @@ INPUT:focus,TEXTAREA:focus{
 
 .filter input[name="search_allwords"]{
   margin-bottom:10px;
-  padding:10px !important;
+  padding:10px;
   cursor:pointer;
 }
 
@@ -181,8 +186,8 @@ INPUT:focus,TEXTAREA:focus{
 }
 
 .selectize-control.multi .selectize-input [data-value].active, .selectize-control.multi .selectize-input > div{
-  background-image:none !important;
-  background-color:#777 !important;
+  background-image:none;
+  background-color:#777;
   /*color:#ddd;*/
   border:0;
   box-shadow:none;
@@ -697,8 +702,8 @@ hr{
 }
 
 /*.filter input, .filter input:focus,*/ .selectize-input > input,INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA{
-  background-color:#616364  !important;
-  border-radius:5px !important;
+  background-color:#616364;
+  border-radius:5px;
   color:#eaeae9;
   border:0;
   cursor:pointer;
@@ -730,7 +735,7 @@ INPUT, SELECT{
 }
   
 #start_day, #start_month, #end_day, #end_month {
-  background-color: #e8e8ea;
+  /* background-color: #e8e8ea; */
   padding: 10px;
   border-radius: 5px;
   color:#eaeae9;
@@ -742,7 +747,7 @@ INPUT, SELECT{
 
 
 .filter select{
-  background-color: #e8e8ea;
+  /* background-color: #e8e8ea; */
   padding: 10px;
   border-radius: 5px;
   color:#eaeae9;
@@ -848,14 +853,14 @@ h2 .calendarTitle{
 }
   
 .calItem:hover{
-  text-decoration:underline !important;
+  text-decoration:underline;
   font-weight:bold;
 }
 
 .content .navigationBar, SPAN.calItem, TD.calDayCellEmpty, .content .navigationBar:hover, SPAN.calItem:hover, TD.calDayCellEmpty:hover{
   color:#8d8b8b;
   padding:10px;
-  text-decoration:none !important;
+  text-decoration:none;
   border:none;
 }
 
@@ -879,7 +884,7 @@ h2 .calendarTitle{
 DIV.thumbHover, DIV.thumbHover:hover{
   color:#eaeae9;
   font-weight:normal;
-  height:100px !important;
+  height:100px;
   width:100px;
   border-radius: 5px;
 }
@@ -942,22 +947,22 @@ color:#6BA1FF;
 }
 
 .tagLevel1{
-  font-size:75% !important;
+  font-size:75%;
 }
 
 .tagLevel2{
-  font-size:100% !important;
+  font-size:100%;
 }
 .tagLevel3{
-  font-size:125% !important;
+  font-size:125%;
 }
 .tagLevel4{
-  font-size:150% !important;
+  font-size:150%;
 }
 
 .tagLevel5{
-  font-size:175% !important;
-  color:#6BA1FF !important;
+  font-size:175%;
+  color:#6BA1FF;
 }
 
 td .nbEntries{
@@ -1040,7 +1045,7 @@ form.properties a{
     display:block !important;
   }
   #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
-    color:#eaeae9; !important;
+    color:#eaeae9;
     box-shadow:none;
   }
   #albumActionsSwitcher + .categoryActions{

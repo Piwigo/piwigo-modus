@@ -669,8 +669,8 @@ hr{
 }
 
 /*.filter input, .filter input:focus,*/.selectize-input > input,INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA{
-  background-color:#e8e8ea!important;
-  border-radius:5px !important;
+  background-color:#e8e8ea;
+  border-radius:5px;
   color:black;
   border:0;
   padding:10px;
