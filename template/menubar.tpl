@@ -1,3 +1,14 @@
+{footer_script require='jquery'}
+		var h = jQuery("#theHeader div.banner").css("height");
+		var d = jQuery("#menuSwitcher").css("padding-top");
+
+		jQuery(document).ready(function(){
+			if( jQuery('#theHeader div.banner').is(':visible') ) {
+				jQuery("#menuSwitcher").css("padding-top",parseInt(h)+parseInt(d));
+			};
+		});
+{/footer_script}
+
 {* basically a copy of menubar.tpl with manual inclusion of menubar_xxx.tpl *}
 {if !empty($blocks)}
 <aside id=menubar>
