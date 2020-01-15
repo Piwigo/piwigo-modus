@@ -14,3 +14,7 @@ body {
 .stuffs_block.content{
   min-height:auto;
 }
+
+#rateForm INPUT[type="button"] {
+  padding:0;
+}
