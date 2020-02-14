@@ -467,6 +467,10 @@ div.token-input-dropdown{
 	color:black;
 }
 
+ul.token-input-list{
+	width:auto!important;
+}
+
 #albumActionsSwitcher {
 	display: none;
 }
