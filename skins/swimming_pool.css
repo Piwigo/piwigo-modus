@@ -1018,13 +1018,17 @@ td .nbEntries{
   text-decoration:white;
 }
 
-
 form.properties a{
   border:solid 1px ;
   border-radius:0px;
   padding:2px 5px 5px 2px;
   margin: 0 5px;
 }
+
+#t4u-update-tags .t4u-disabled{
+  color:#2e4756!important;
+}
+
 
 @media screen and (max-width: 640px){
   #menubar{

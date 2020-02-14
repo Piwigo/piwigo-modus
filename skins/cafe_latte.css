@@ -1000,6 +1000,13 @@ td .nbEntries{
   color:#C0B283;
 }
 
+#t4u-update-tags .t4u-disabled{
+  color:black!important;
+}
+
+ul.token-input-list li input{
+  background-color:transparent!important;
+}
 
 form.properties a{
   border:solid 1px ;
