@@ -596,8 +596,8 @@ dt, dd{
 }
 
 #comments input[type='text'], #comments textarea{
-  background-color:#f9f9f9;
-  color:#eaeae9;
+  background-color: #616364;
+  color: #eaeae9;
   border:none;
   padding:10px;
   cursor:pointer;
