@@ -446,7 +446,7 @@ A.wiki { cursor:help; }
 	width: 48%;
 }
 
-#pictureCommentList { 
+#pictureCommentList {
 	float: right;
 	width: 50%;
 }
@@ -463,6 +463,9 @@ A.wiki { cursor:help; }
 	}
 }
 
+div.token-input-dropdown{
+	color:black;
+}
 
 #albumActionsSwitcher {
 	display: none;
@@ -488,15 +491,15 @@ A.wiki { cursor:help; }
 		text-align: left;
 		min-width: 180px;
 	}
-	
+
 	#albumActionsSwitcher + .categoryActions LI{
 		display: block;
 	}
-	
+
 	#albumActionsSwitcher + .categoryActions .pwg-button{
 		display: block;
 	}
-	
+
 	#albumActionsSwitcher + .categoryActions .pwg-button-text{
 		display: inline;
 		margin-left: 5px;
