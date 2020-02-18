@@ -1,0 +1,461 @@
+body {
+  background-color:#e7ffe7;
+  color:#022601;
+}
+
+#theHeader div.banner,
+#theHeader div.banner:hover{
+  color:#ceffce;  
+}
+
+#copyright{
+  color:#010D00;
+  background-color:#74bf04;
+}
+
+#copyright A{
+  color:#010D00;
+}
+#copyright A:hover{
+  color:#ceffce;
+}
+
+.infos{
+  background:#096a09 url(/themes/default/icon/infos.png) no-repeat center right;
+  color:#ceffce;
+}
+ 
+h2{
+  color:#022601;
+}
+
+.albLegend{
+  color:#ceffce;
+  text-shadow:1px 1px 3px rgba(0,0,0,1);
+}
+
+.albThumbs LI{
+  border-radius:10px;
+}
+
+H3, label{
+  color:#034001;
+}
+
+A{
+  color:#000000;
+}
+
+a:hover{
+  color:#022601;
+}
+
+#menubar{
+  background-color:#65A603;
+}
+
+#comentAdd INPUT[type="text"],
+INPUT[type="password"],
+#comentAdd SELECT,
+#comentAdd TEXTAREA,
+#comments input[type="text"],
+#comments TEXTAREA{
+  background-color:#022601;
+  color:#ceffce;
+}
+
+::placeholder, #commentAdd ::placeholder {
+  color:#034001;
+}
+
+#qsearchInput{
+  border:1px solid #ceffce;
+  color:#ceffce;
+}
+
+#qsearchInput::placeholder{
+  color:#98D90D;
+}
+
+.selectize-control.multi .selectize-input [data-value].active, .selectize-control.multi .selectize-input > div{
+  background-color:#65A603  !important;
+  color:#ddd;
+}
+
+.selectize-control .plugin-remove_button [data-value] .remove{
+  border-left-color:#333333;
+}
+
+#menubar DT, #menubar DT A{
+  color:#ceffce;
+}
+
+#menubar DD{
+  background-color:#98D90D;
+  color:#467302;
+  border-radius: 10px;
+}
+
+#menubar DD A{
+  color:#022601;
+}
+
+INPUT[type="button"],
+INPUT[type="submit"],
+INPUT[type="reset"],
+#menubar INPUT{
+  color:#022601;
+}
+
+INPUT[type="submit"],
+INPUT[type="reset"],
+.filter INPUT[type="submit"],
+.filter INPUT[type="reset"]{
+  padding: 10px 20px !important;
+  color: #65A603 !important;
+  background-color:#022601 !important;
+}
+
+.wide #imageToolBar{
+  background-color:#e7ffe7;
+}
+
+.switchBox{
+  background-color:#98D90D;
+  box-shadow:none;
+}
+
+#mbCategories dd ul li span:nth-child(even){
+  background-color: #034001;
+  color:#65A603;
+  border-radius:10px !important;
+}
+
+.wide .imageInfoTable,
+.wide #imageInfos{
+  background-color:#98D90D;
+}
+
+.imageInfoTable h3{
+  color:#ceffce;
+}
+
+.imageInfoTable a, .imageInfoTable a:hover{
+  color:#034001;
+}
+
+.wide .imageInfoTable, .wide #imageInfos a, .wide #imageInfos h3{
+  color:#034001;
+}
+
+#imageInfos{
+  background-color:#98D90D;
+  color:#467302;
+}
+
+#imageHeaderBar .imageNumber{
+  color:#ceffce;
+}
+
+A{
+  color:#022601;
+}
+
+A .pwg-icon {
+  color:#65A603;
+}
+A .pwg-icon:hover {
+  color:#558C03;
+}
+
+fieldset h3, fieldset label {
+  color:#ceffce;
+}
+
+#quickconnect input:focus, #quickconnect input, .properties input, .properties input:focus {
+  border-color:transparent;
+  padding: 10px;
+  color:#ceffce;
+  border:0px;
+  box-shadow:none;
+  background-color:#062601!important;
+}
+
+.properties input, .properties input:focus {
+  background-color:#062601;
+  color:#ceffce;
+}
+
+fieldset legend{
+  color:#ceffce;
+}
+
+dt, dd{
+  color:#558C03;
+}
+
+.titrePage{
+  background-color:#e7ffe7;
+  color:#022601;
+}
+
+.titrePage H2 A, #imageHeaderBar H2{
+  color:#022601;
+  text-shadow:none;
+}
+
+.titrePage H2 span.badge{
+  background-color:#034001;
+  color:#65A603;
+  border-radius:10px;
+}
+
+.titrePage A, #calendarViewSwitchLink{
+  color:#022601;
+}
+
+.titrePage .switchBox A, .titrePage .switchBox{
+  color:#022601;
+  padding:10px;
+}
+
+.browsePath{
+  color:#022601;
+}
+
+#thePicturePage .titrePage{
+ background-color: #65A603;
+}
+
+#thePicturePage .titrePage h2,  #thePicturePage .titrePage A,  #thePicturePage .browsePath{
+  color:white;
+}
+
+#thePicturePage #comments{
+  margin:45px;
+  padding:0;
+
+}
+
+.overDesc{
+  text-shadow:none;
+  background-color:rgba(2,38,1,0.6);
+  padding:5px;
+  font-size:14.5px;
+  font-weight:normal;
+  color:#ffffff;
+ }
+
+#derivativeSwitchBox A{
+  color:#317302;
+  padding:5px;
+  display:inline-block;
+}
+
+#derivativeSwitchBox span{
+  display:inline-block;
+  padding:5px;
+  color:#317302;
+}
+
+.switchBoxTitle{
+  border-bottom: 2px solid #467302;
+  color:#467302;
+}
+
+.switchBox{
+  padding:20px;
+  border-radius:10px;
+}
+
+#menubar DD A:hover{
+  text-decoration:underline;
+}
+
+#profile, #profile fieldset h3, #profile fieldset label  {
+  color:#022601;
+}
+
+#comments input[type='text'], #comments textarea{
+  background-color:#062601;
+  color:#ceffce;
+  border:none;
+  padding:10px;
+}
+
+.properties fieldset span label{
+  color:#022601;
+}
+
+.imageInfo DT{
+  font-size:15px;
+}
+
+.commentsList, .commentsList a {
+  color:#022601;  
+}
+
+.commentElement{
+  border-radius:0;
+  margin:15px 0;
+  background-color:#e7e7e7;
+  clear:both;
+  padding:20px;
+  width:auto;
+}
+
+
+hr{
+  border: none;
+  border-bottom: 2px solid #467302;
+}  
+
+#theSearchPage fieldset legend{
+  color:#022601;
+}
+
+.filter fieldset label{
+  color:#022601;
+}
+
+.filter input, .filter input:focus, .selectize-input > input,INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA{
+  background-color:#65A603!important;
+  border-radius:10px !important;
+  color:#ceffce;
+}
+
+.selectize-input, .selectize-input.focus, .selectize-dropdown, .selectize-input input{
+  background-color:#034001;
+  border-radius:15px;
+}
+
+.selectize-control.multi .selectize-input.has-items{
+  background-color:#034001;
+  border-radius:15px;
+}
+
+.selectize-control.plugin-remove_button [data-value] .option active{
+  background-color:#022601;
+}
+
+.selectize-input, .selectize-control.single .selectize-input.input-active{
+  background-color: #65A603 !important;
+  border-radius: 10px !important;
+  border:0px;
+}
+
+.date_today:hover{
+  color:#022601;
+}  
+#start_day, #start_month, #end_day, #end_month {
+  background-color: #363636;
+  padding: 10px;
+  border-radius: 0;
+  color:#ceffce;
+}
+
+.filter select{
+  background-color: #363636;
+  padding: 10px;
+  border-radius: 0;
+  color:#ceffce;
+  border:0;
+}
+
+.contact input[type="text"], .contact textarea, .contact select{
+  border-radius:0;
+  padding:10px;
+  background-color:#383838;
+  color:#ceffce;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content .calendarBar a{
+  padding: 10px;
+  color: #65A603;
+  font-weight: bold;
+  border: 1px solid #65A603;
+  border-radius: 5px;
+}
+
+.calItem, .calItem:hover{
+  padding:10px;
+  color:#65A603;
+  font-weight:bold;
+  border:1px solid #65A603;
+  border-radius:5px;
+ }  
+
+.calItem:hover{
+  text-decoration:underline !important;
+}
+
+.content .navigationBar,
+SPAN.calItem,
+.content .navigationBar:hover,
+SPAN.calItem:hover{
+  color:#467302;
+  padding:10px;
+  text-decoration:none !important;
+  border:none;
+  border-radius:5px;
+}
+
+TD.calDayCellEmpty, 
+TD.calDayCellEmpty:hover{
+  border:1px solid #467302;
+}
+
+DIV.thumbHover{
+  color:#022601;;
+  border-radius:10px;
+  border: 1px solid #022601;
+}
+
+#fullTagCloud span a{
+  color:#fff; 
+  background-color:#84BF04;
+  padding:5px;
+}
+
+#fullTagCloud span a:hover{
+  text-decoration:underline;
+  color:#034001;
+}
+
+LEGEND.tagLetterLegend, FIELDSET.tagLetter{
+  border:none;
+  color:#022601;
+}
+
+td .nbEntries{
+  background-color:#98D90D;
+  border-radius:5px;
+  color:#022601;
+}
+
+.totalImages{
+  border-top:solid 2px #467302;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  border-left:solid 1px #333333;
+}
+
+.message{
+  background-color:#363636;
+}
+
+@media screen and (max-width: 640px){
+    #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
+    color:#ceffce;
+  }
+  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+    color:#84BF04 !important;
+  }
+  .categoryActions a .pwg-icon{
+    color:#84BF04 !important;
+  }
+  #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
+    color:#84BF04!important;
+  }
