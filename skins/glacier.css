@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #C1C7D9;
+  background-image: linear-gradient(#27498C,#C1C7D9,#EBEBF2,#ffffff);
+  color:#2A3E40;
+  background-size:cover;
+}
+
+#theHeader div.banner,
+#theHeader div.banner:hover{
+  color:white;  
+}
+
+#copyright{
+  color:#1E3259;
+  background-color:#EBEBF2;
+}
+
+#copyright A{
+  color:#1E3259;
+}
+
+.infos{
+  background:#096a09; 
+  color:white;
+}
+
+h2{
+  color:white;
+}
+
+.albLegend{
+  color:white;
+}
+
+H3, label{
+  color:#000000;
+}
+
+A{
+  color:#000000;
+}
+
+a:hover{
+  text-decoration:underline;
+  color:black;
+}
+
+#menubar{
+  background-color: #1E3259;
+  background-image: linear-gradient(#1E3259, #223D73, #27498C);
+}
+
+#comentAdd INPUT[type="text"],
+INPUT[type="password"],
+#comentAdd SELECT,
+#comentAdd TEXTAREA,
+#comments input[type="text"],
+#comments TEXTAREA{
+  background-color:#2D2D2D;
+  color:white;
+}
+
+::placeholder,
+#commentAdd ::placeholder {
+  color:#d6d6d6;
+}
+
+#qsearchInput{
+  border:1px solid #fff;
+  color:white;
+}
+
+.selectize-control.multi .selectize-input [data-value].active, .selectize-control.multi .selectize-input > div{
+  background-color:#1E3259!important;
+  color:#ddd;
+}
+
+.selectize-input{
+  background-color: #27498C !important;
+    color: white!important;
+    border-radius:0!important;
+}
+
+.selectize-control .plugin-remove_button [data-value] .remove{
+  border-left-color:#333333;
+}
+
+#menubar DT, #menubar DT A{
+  color:#EBEBF2;
+}
+
+#menubar DD{
+  background-image:linear-gradient(#1E3259,#27498C);;
+  color:white;
+  box-shadow: 5px 5px 10px black;
+}
+
+#menubar DD A{
+  color:white;
+}
+
+INPUT[type="button"],
+INPUT[type="submit"],
+INPUT[type="reset"],
+#menubar INPUT{
+  background-color: #1E3259;
+  background-image: linear-gradient(#1E3259, #223D73, #27498C);
+  color:white;
+}
+
+INPUT[type="submit"] {
+  background-color: #1E3259;
+  background-image: linear-gradient(#1E3259, #223D73, #27498C);
+  color: white;
+}
+
+INPUT[type="submit"]:hover{
+  color:white;
+}
+
+
+#imageToolBar, .wide #imageToolBar{
+  background-color:transparent;
+}
+
+.switchBox{
+  background-image: linear-gradient(#1E3259,#27498C);
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+
+#mbCategories dd ul li span:nth-child(even){
+  background-color: #7682A6;
+  color:black;
+}
+
+.wide .imageInfoTable,
+.wide #imageInfos{
+  background-color: transparent;
+}
+
+.imageInfoTable h3{
+  color:#EAEAEA;
+}
+
+.imageInfoTable a,
+.imageInfoTable a:hover{
+  color:white;
+}
+
+.wide .imageInfoTable,
+.wide #imageInfos a,
+.wide #imageInfos h3{
+  color:#D2D2D2;
+}
+
+
+#imageInfos{
+  background-color: #1E3259;
+  background-image: linear-gradient(#1E3259, #223D73, #27498C);
+  color:#D2D2D2;
+}
+
+#imageHeaderBar .imageNumber{
+  color:white;
+}
+
+A .pwg-icon {
+  color:white;
+}
+
+A .pwg-icon:hover{
+  color:#0E25A5;
+}
+
+.pwg-state-disabled .pwg-icon{
+  color:#1E3259;
+}
+
+fieldset h3, fieldset label {
+  color:white;
+}
+
+#quickconnect input:focus, #quickconnect input, .properties input, .properties input:focus {
+  color:white;
+  background-color:#27498C!important;
+}
+
+.properties input, .properties input:focus {
+  color:white;
+}
+
+fieldset legend{
+  color:white;
+}
+
+dt, dd{
+  color:#D2D2D2;
+}
+
+.titrePage{
+  color:#1E3259;
+}
+
+.titrePage H2 A, #imageHeaderBar H2{
+  color:white;
+}
+
+.titrePage H2 A:hover, #imageHeaderBar H2:hover{
+  text-decoration:underline;
+  color:white;
+}
+
+.titrePage H2 span.badge{
+  background-color:#C1C7D9;
+  color:black;
+}
+
+.titrePage A, #calendarViewSwitchLink{
+  color:black;
+}
+
+.titrePage .switchBox A, .titrePage .switchBox{
+  color:white;
+}
+
+.browsePath{
+  color:black;
+}
+
+#thePicturePage .titrePage{
+ background-color: #1E3259;
+ background-image: linear-gradient(#1E3259, #223D73, #27498C);
+}
+
+#thePicturePage .titrePage h2,  #thePicturePage .titrePage A,  #thePicturePage .browsePath{
+  color:white;
+}
+
+#derivativeSwitchBox A{
+  color:white;
+}
+
+#sortOrderBox{
+  background-image: linear-gradient(#1E3259,#27498C);
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+
+#derivativeSwitchBox span{
+  color:white;
+}
+
+.switchBoxTitle{
+  border-bottom: 2px solid #7682A6;
+  color:white;
+}
+
+#profile, #profile fieldset h3, #profile fieldset label  {
+  color:black;
+}
+
+#comments input[type='text'], #comments textarea{
+  background-color:#27498C;
+  color:white;
+}
+
+.overDesc{
+  background-color:rgba(30, 50, 89,0.8)
+}
+
+.properties fieldset span label{
+  color:black;
+}
+
+.commentsList, .commentsList a {
+  color:black;  
+}
+
+.commentElement{
+  background-color:#e7e7e7;  
+}
+
+hr{
+  border-bottom: 2px solid #7682A6;
+} 
+
+#theSearchPage fieldset legend{
+  color:black;
+}
+
+.filter fieldset label{
+  color:black;
+}
+
+.filter input, .filter input:focus, .selectize-input > input,INPUT[type="text"], INPUT[type="password"], SELECT, TEXTAREA{
+  background-color:#27498C!important;
+  color:white;
+}
+
+.selectize-input, .selectize-input.focus, .selectize-dropdown, .selectize-input input{
+  background-color:#27498C;
+}
+
+.date_today:hover{
+  color:black;
+}  
+#start_day, #start_month, #end_day, #end_month {
+  background-color: #27498C;
+  color:white;
+}
+
+.filter select{
+  color:white;
+}
+
+.contact input[type="text"], .contact textarea, .contact select{
+  background-color:#383838;
+  color:white;
+}
+
+.calItem, .calItem:hover{
+  color:black;
+  border: 1px solid #1E3259;
+}  
+
+.content .navigationBar,
+SPAN.calItem,
+.content .navigationBar:hover,
+SPAN.calItem:hover{
+  color:#1E3259;
+  border:none;
+}
+
+TD.calDayCellEmpty,
+TD.calDayCellEmpty:hover{
+  border:1px solid #1E3259;
+}
+
+DIV.thumbHover{
+  color:white;
+  border: 1px solid white;
+}
+
+#fullTagCloud span a{
+  color:#1E3259; 
+}
+
+#fullTagCloud span a:hover{
+  text-decoration:none;
+  background-color:#27498C;
+  color:#C1C7D9;
+}
+
+LEGEND.tagLetterLegend, FIELDSET.tagLetter{
+  border:none;
+  color:#1E3259;
+}
+
+td .nbEntries{
+  background-color:#fff;
+  color:#1E3259 ;
+  border-radius:5px;
+}
+
+.totalImages{
+  border-top:solid 2px #7682A6;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  border-left:solid 1px #333333;
+}
+
+.message{
+  background-color:#27498C;
+}
+
+#pictureComments h4{
+  color:#1E3259;
+}
+
+.navigationBar a{
+  color:#1E3259;
+}
+
+ul.token-input-list li input{
+  background-color:white !important;
+}
+
+#t4u-update-tags .t4u-disabled{
+  background-image:none !important;
+  background-color:white!important;
+  color:black !important;
+}
+
+@media screen and (max-width: 640px){
+  #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
+    color:white;
+  }
+   #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+    color:white;
+    background-color:transparent;
+  }
+  .categoryActions a .pwg-icon{
+    color:white;
+  }
+  #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
+    color:black;
+  }
+  #albumActionsSwitcher + .categoryActions{
+    background-image: linear-gradient(#1E3259,#27498C);
+    color: white;
+    box-shadow: 5px 5px 10px black;
+  }
+  
+}
+
