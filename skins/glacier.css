@@ -396,6 +396,10 @@ ul.token-input-list li input{
   color:black !important;
 }
 
+#collectionsDropdown a, a.addCollection{
+  color:white;
+}
+
 @media screen and (max-width: 640px){
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
     color:white;
