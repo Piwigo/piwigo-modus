@@ -709,6 +709,10 @@ td .nbEntries{
   margin:0 auto;
 }
 
+.user-collections-icon {
+  background: transparent url(/piwigo/plugins/UserCollections/template/resources/image_add.png) center center no-repeat !important;
+}
+
 @media screen and (max-width: 1100px){
   #fullTagCloud{
     transform: none;
