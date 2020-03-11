@@ -393,7 +393,9 @@ dt, dd{
 }
 
 .commentElement{
-  background-color:#e7e7e7;
+  background-color:#616364;
+  color: #eaeae9;
+  border-radius:5px;
 }
 
 hr{
