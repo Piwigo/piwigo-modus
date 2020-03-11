@@ -405,7 +405,8 @@ fieldset legend{
 }
 
 .commentElement{
-  background-color:#e7e7e7;
+  background-color: #5889ad;
+    color: white;
 }
 
 hr{

@@ -297,9 +297,10 @@ dt, dd{
 }
 
 .commentElement{
-  border-radius:0;
   margin:15px 0;
-  background-color:#e7e7e7;
+  background-color: #65A603 !important;
+  border-radius: 10px !important;
+  color: #ceffce;
   clear:both;
   padding:20px;
   width:auto;

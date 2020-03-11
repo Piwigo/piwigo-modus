@@ -346,11 +346,12 @@ dt, dd{
 }
 
 .commentsList, .commentsList a {
-  color:black;  
+  color:#BF0D08;  
 }
 
 .commentElement{
-  background-color:#e7e7e7;
+  background-color: #2D2D2D;
+  color: white;
 }
 
 hr{
