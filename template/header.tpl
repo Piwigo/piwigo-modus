@@ -30,6 +30,27 @@
 {*combine_script id='jquery' load='footer'*}
 {if not empty($head_elements)}{foreach from=$head_elements item=elt}{$elt}
 {/foreach}{/if}
+
+<meta charset="{$CONTENT_ENCODING}">
+<meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
+
+{if isset($meta_ref)}
+{if isset($INFO_AUTHOR)}
+<meta name="author" content="{$INFO_AUTHOR|strip_tags:false|replace:'"':' '}">
+{/if}
+{if isset($related_tags)}
+<meta name="keywords" content="{foreach from=$related_tags item=tag name=tag_loop}{if !$smarty.foreach.tag_loop.first}, {/if}{$tag.name}{/foreach}">
+{/if}
+{if isset($COMMENT_IMG)}
+<meta name="description" content="{$COMMENT_IMG|strip_tags:false|replace:'"':' '}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{else}
+<meta name="description" content="{$PAGE_TITLE}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{/if}
+{/if}
+
+{if not empty($page_refresh)}<meta http-equiv="refresh" content="{$page_refresh.TIME};url={$page_refresh.U_REFRESH}">{/if}
+
+
 </head>
 
 <body id={$BODY_ID}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} class="modus-withPageBanner"{/if}>
