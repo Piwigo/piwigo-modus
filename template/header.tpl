@@ -31,7 +31,6 @@
 {if not empty($head_elements)}{foreach from=$head_elements item=elt}{$elt}
 {/foreach}{/if}
 
-<meta charset="{$CONTENT_ENCODING}">
 <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
 
 {if isset($meta_ref)}
@@ -47,8 +46,6 @@
 <meta name="description" content="{$PAGE_TITLE}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
 {/if}
 {/if}
-
-{if not empty($page_refresh)}<meta http-equiv="refresh" content="{$page_refresh.TIME};url={$page_refresh.U_REFRESH}">{/if}
 
 
 </head>
