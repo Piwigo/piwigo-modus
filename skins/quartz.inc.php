@@ -1,4 +1,6 @@
 <?php
+$themeconf['colorscheme'] = 'dark';
+
 $skin = array(
 	'BODY' => array(
 			// REQUIRED

@@ -582,3 +582,37 @@ form.properties a{
     color:#6BA1FF;
   }
 }
+
+/* For community plugin*/ 
+
+#theCategoryPage #photosAddContent fieldset legend{ 
+  color:white;
+
+}
+
+#theCategoryPage #photosAddContent form.properties a{
+  border:none;
+}
+
+#theCategoryPage #batchManagerGlobal {
+  background-color:#565656;
+  margin:30px;
+  margin-bottom:60px;
+}
+
+
+#theCategoryPage #photosAddContent .edit-photos-filter,
+#theCategoryPage #photosAddContent .plupload_file_status span{
+  color:#e5e5e5;
+}
+
+#theCategoryPage #photosAddContent .plupload_scroll .plupload_filelist{
+  background-color:#565656;
+}
+
+#theCategoryPage #photosAddContent .plupload_filelist_header,
+#theCategoryPage #photosAddContent .plupload_filelist_footer{
+  background-color:#777;
+  color:#e5e5e5;
+  border:none;
+}

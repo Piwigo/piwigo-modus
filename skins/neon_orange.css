@@ -587,3 +587,19 @@ ul.token-input-list li input{
     color:#ff7700;
   }
 }
+
+/* For community plugin*/
+
+#theCategoryPage #photosAddContent fieldset legend{ 
+  color:black;
+}
+
+#theCategoryPage #batchManagerGlobal {
+  background-color:white;
+  margin:30px;
+  margin-bottom:60px;
+}
+
+#theCategoryPage #photosAddContent form.properties a{
+  border:none;
+}

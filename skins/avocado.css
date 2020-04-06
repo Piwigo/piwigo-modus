@@ -466,3 +466,16 @@ td .nbEntries{
     color:#84BF04!important;
   }
 }
+
+/* For community plugin*/
+
+#theCategoryPage #photosAddContent fieldset legend{ 
+  color:black;
+
+}
+
+#theCategoryPage #batchManagerGlobal {
+  background-color:white;
+  margin:30px;
+  margin-bottom:60px;
+}

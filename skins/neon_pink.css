@@ -236,7 +236,7 @@ fieldset h3, fieldset label {
 }
 
 #quickconnect input,
-.properties input,{
+.properties input{
   color:black;
 }
 
@@ -470,7 +470,7 @@ SELECT, TEXTAREA{
 .content .navigationBar,
 SPAN.calItem,
 .content .navigationBar:hover,
-SPAN.calItem:hover,{
+SPAN.calItem:hover{
   color:#8e8e93;
   border:none;
 }
@@ -578,4 +578,20 @@ ul.token-input-list li input{
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:#FF2F63;
   }
+}
+
+/* For community plugin*/
+
+#theCategoryPage #photosAddContent fieldset legend{ 
+  color:black;
+}
+
+#theCategoryPage #batchManagerGlobal {
+  background-color:white;
+  margin:30px;
+  margin-bottom:60px;
+}
+
+#theCategoryPage #photosAddContent form.properties a{
+  border:none;
 }
