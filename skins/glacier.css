@@ -420,24 +420,3 @@ ul.token-input-list li input{
     box-shadow: 5px 5px 10px black;
   }
   
-}
-
-/* For community plugin*/
-
-#theCategoryPage #photosAddContent fieldset legend{ 
-  color:black;
-}
-
-#theCategoryPage #batchManagerGlobal {
-  background-color:white;
-  margin:30px;
-  margin-bottom:60px;
-}
-
-#theCategoryPage #photosAddContent form.properties a{
-  border:none;
-}
-
-#theCategoryPage #photosAddContent form.properties a:hover{
-  color:black;
-}

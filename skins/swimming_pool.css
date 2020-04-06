@@ -622,19 +622,3 @@ form.properties a{
     color:#2e4756;
   }
 }
-
-/* For community plugin*/
-
-#theCategoryPage #photosAddContent fieldset legend{ 
-  color:black;
-}
-
-#theCategoryPage #batchManagerGlobal {
-  background-color:white;
-  margin:30px;
-  margin-bottom:60px;
-}
-
-#theCategoryPage #photosAddContent form.properties a{
-  border:none;
-}

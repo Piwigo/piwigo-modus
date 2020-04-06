@@ -349,15 +349,3 @@ td .nbEntries{
     color:black ;
   }
 }
-
-/* For community plugin*/
-
-#theCategoryPage #photosAddContent fieldset legend{ 
-  color:black;
-}
-
-#theCategoryPage #batchManagerGlobal {
-  background-color:white;
-  margin:30px;
-  margin-bottom:60px;
-}
