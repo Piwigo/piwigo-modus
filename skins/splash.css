@@ -534,6 +534,10 @@ form.properties a{
   color:black!important;
 }
 
+#lostPassword fieldset .message{
+  color:black;
+}
+
 @media screen and (max-width: 640px){
   #menubar{
     border-radius:5px;
