@@ -510,3 +510,11 @@ ul.token-input-list{
 		text-transform: capitalize;
 	}
 }
+
+#TagsGroupRemoveTag img{
+  display:none;
+}
+
+#TagsGroupRemoveTag span{
+  display:inline-block;
+}
