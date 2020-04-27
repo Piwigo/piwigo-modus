@@ -161,6 +161,12 @@
       "css": "home",
       "code": 8962,
       "src": "iconic"
+    },
+    {
+      "uid": "3327862df439988139b61814143b7a42",
+      "css": "close",
+      "code": 59394,
+      "src": "typicons"
     }
   ]
 }
