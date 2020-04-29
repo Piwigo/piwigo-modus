@@ -3,7 +3,7 @@
 <head>
 <title>{if $PAGE_TITLE=='Home'|@translate}{$GALLERY_TITLE}{else}{$PAGE_TITLE}{/if}</title>
 <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
-<link rel="stylesheet" type="text/css" href="themes/{$themeconf.id}/css/open-sans/open-sans.css"> {* cannot be loaded by combine_css because it contains relative urls *}
+<link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/{$themeconf.id}/css/open-sans/open-sans.css"> {* cannot be loaded by combine_css because it contains relative urls *}
 {strip}{get_combined_css}
 {combine_css path="themes/`$themeconf.id`/css/base.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
 {combine_css path="themes/`$themeconf.id`/css/iconfontello.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
