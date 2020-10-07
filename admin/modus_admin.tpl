@@ -28,7 +28,10 @@
 }
 .themeShot img {
   width: 280px;
+  border: 1px solid white;
+  margin: 0 15px;
 }
+
 .themeBox {
   padding:5px 5px 10px 5px;
   background-color: #e5e5e5;
@@ -42,6 +45,28 @@
 .themeDefault a {
   color:#aaa;
 }
+
+.themeBox.themeBoxModusConfig {
+  margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.themeNameModusConfig {
+  color: black;
+  margin: 5px 0;
+  position: relative;
+}
+
+.fieldsetModusConfig {
+  border-top: 2px solid #ddd;
+}
+
+.legendModusConfig {
+  padding: 0 10px;
+}
+
 {/html_style}
 
 
@@ -67,7 +92,6 @@ jQuery(document).ready(function() {
       jQuery("input[name=album_thumb_size]").val(ui.value);
     }
   });
-
   jQuery(".themeBoxes a").colorbox({ rel:'group1' });
 
   jQuery("input[name='skin']").change(function() {
@@ -82,12 +106,12 @@ jQuery(document).ready(function() {
 <form method="post" action="" id="modus-config">
 
 
-<fieldset><legend>{'Skin'|translate}</legend>
+<fieldset class="fieldsetModusConfig"><legend class="legendModusConfig">{'Skin'|translate}</legend>
         <div class="themeBoxes font-checkbox">
         {foreach from=$available_skins item=skin_name key=skin_code}
-          <div class="themeBox {if $skin_code==$SKIN}themeDefault{/if}">
+          <div class="themeBox {if $skin_code==$SKIN}themeDefault{/if} themeBoxModusConfig">
             <label class="font-checkbox">
-              <div class="themeName">
+              <div class="themeNameModusConfig">
                 <span class="icon-dot-circled"></span>
                 <input type="radio" name="skin" value="{$skin_code}" {if $skin_code==$SKIN}checked{/if}>
                 {$skin_name}
