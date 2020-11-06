@@ -35,6 +35,7 @@
 .themeBox {
   padding:5px 5px 10px 5px;
   background-color: #e5e5e5;
+  display: inline-table;
 }
 .themeDefault {
   background-color: #333;
@@ -46,11 +47,17 @@
   color:#aaa;
 }
 
-.themeBox.themeBoxModusConfig {
+.themeBoxModusConfig {
+  text-align: center;
   margin: 5px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: none;
+  padding: 5px 5px 10px 5px;
+  background-color: #e5e5e5;
+  display: inline-table;
+  position: relative;
+  height: 192px;
 }
 
 .themeNameModusConfig {
@@ -107,23 +114,23 @@ jQuery(document).ready(function() {
 
 
 <fieldset class="fieldsetModusConfig"><legend class="legendModusConfig">{'Skin'|translate}</legend>
-        <div class="themeBoxes font-checkbox">
-        {foreach from=$available_skins item=skin_name key=skin_code}
-          <div class="themeBox {if $skin_code==$SKIN}themeDefault{/if} themeBoxModusConfig">
-            <label class="font-checkbox">
-              <div class="themeNameModusConfig">
-                <span class="icon-dot-circled"></span>
-                <input type="radio" name="skin" value="{$skin_code}" {if $skin_code==$SKIN}checked{/if}>
-                {$skin_name}
-              </div>
-              <div class="themeShot">
-                <img src="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg"/>
-              </div>
-            </label>
-            <a href="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg" class="icon-zoom-in" title="{$skin_name}">{'Preview'|translate}</a>
-          </div>
-        {/foreach}
+  <div class="themeBoxes font-checkbox">
+  {foreach from=$available_skins item=skin_name key=skin_code}
+    <div class="{if $skin_code==$SKIN}themeDefault{/if} themeBoxModusConfig">
+      <label class="font-checkbox">
+        <div class="themeNameModusConfig">
+          <span class="icon-dot-circled"></span>
+          <input type="radio" name="skin" value="{$skin_code}" {if $skin_code==$SKIN}checked{/if}>
+          {$skin_name}
         </div>
+        <div class="themeShot">
+          <img src="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg"/>
+        </div>
+      </label>
+      <a href="{$ROOT_URL}themes/modus/skins/{$skin_code}-screenshot.jpg" class="icon-zoom-in" title="{$skin_name}">{'Preview'|translate}</a>
+    </div>
+  {/foreach}
+  </div>
 {*
 <select name="skin">
 		{html_options options=$available_skins selected=$SKIN}
