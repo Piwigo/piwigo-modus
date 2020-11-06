@@ -37,15 +37,6 @@
   background-color: #e5e5e5;
   display: inline-table;
 }
-.themeDefault {
-  background-color: #333;
-}
-.themeDefault .themeName {
-  color:#fff;
-}
-.themeDefault a {
-  color:#aaa;
-}
 
 .themeBoxModusConfig {
   text-align: center;
@@ -64,6 +55,16 @@
   color: black;
   margin: 5px 0;
   position: relative;
+}
+
+.themeDefault {
+  background-color: #333;
+}
+.themeDefault .themeName {
+  color:#fff;
+}
+.themeDefault a {
+  color:#aaa;
 }
 
 .fieldsetModusConfig {
@@ -102,8 +103,8 @@ jQuery(document).ready(function() {
   jQuery(".themeBoxes a").colorbox({ rel:'group1' });
 
   jQuery("input[name='skin']").change(function() {
-    jQuery("input[name='skin']").parents(".themeBox").removeClass("themeDefault");
-    jQuery(this).parents(".themeBox").addClass("themeDefault");
+    jQuery("input[name='skin']").parents(".themeBoxModusConfig").removeClass("themeDefault");
+    jQuery(this).parents(".themeBoxModusConfig").addClass("themeDefault");
   });
 });
 {/footer_script}
