@@ -60,7 +60,7 @@
 .themeDefault {
   background-color: #333;
 }
-.themeDefault .themeName {
+.themeDefault .themeNameModusConfig {
   color:#fff;
 }
 .themeDefault a {
