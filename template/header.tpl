@@ -51,7 +51,7 @@
 </head>
 
 <body id={$BODY_ID}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} class="modus-withPageBanner"{/if}>
-{if not empty($header_msgs)}
+{if not empty($header_msgs) or not empty($header_notes)}
 <div class="header_msgs">
 {if not empty($header_msgs)}
 	{foreach from=$header_msgs item=elt}
