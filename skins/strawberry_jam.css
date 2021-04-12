@@ -164,7 +164,7 @@ INPUT[type="submit"]:hover{
   background-color:white;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   font-weight:600;
   background-color: #BF0D08;
   color:white;

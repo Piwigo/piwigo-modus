@@ -278,9 +278,14 @@ dt, dd{
   color:#eaeae9;
 }
 
-.titrePage H2 span.badge {
-  background-color: #393a3d;
+.badge {
   border-radius: 20px;
+  background-color: #c7d3e1;
+  color:#2f3541;
+}
+
+.titrePage H2 span.badge{
+  background-color: #393a3d;
   color: #a4a4a4;
 }
 

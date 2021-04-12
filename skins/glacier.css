@@ -132,8 +132,9 @@ INPUT[type="submit"]:hover{
   box-shadow: 5px 5px 10px black;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   background-color: #7682A6;
+  border-radius:20px;
   color:black;
 }
 

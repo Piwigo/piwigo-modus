@@ -204,11 +204,13 @@ INPUT[type="submit"]{
   padding: 5px;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
+	font-size: 90%;
+	border-radius: 20px;
   margin-left: 5px;
-  padding: 2px 5px;
+  padding: 2px 5px!important;
   font-size: 12px;
-  font-weight:normal;
+  font-weight:normal!important;
 }
 
 #menubar li,

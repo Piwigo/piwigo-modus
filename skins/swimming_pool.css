@@ -288,9 +288,14 @@ fieldset legend{
   text-shadow:none;
 }
 
+.badge {
+  border-radius: 20px;
+  color: #9cb9cf;
+  background-color: #2c465a;
+}
+
 .titrePage H2 span.badge {
   background-color: #7ca2bc;
-  border-radius: 20px;
   color: #fff;
 }
 

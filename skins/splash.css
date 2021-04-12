@@ -160,7 +160,7 @@ INPUT[type="reset"]:hover{
   color:#0b6aff;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   background-color: #0b6aff;
   border-radius: 20px;
   color:#e8e8ea;

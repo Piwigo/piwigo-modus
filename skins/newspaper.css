@@ -133,9 +133,9 @@ INPUT[type="submit"] {
   background-color:white;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   background-color: #777;
-  border-radius:0px;
+  border-radius:0px!important;
   color:#ddd;
 }
 

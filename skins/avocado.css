@@ -126,10 +126,9 @@ INPUT[type="reset"],
   box-shadow:none;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   background-color: #034001;
   color:#65A603;
-  border-radius:10px !important;
 }
 
 .wide .imageInfoTable,

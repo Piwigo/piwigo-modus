@@ -172,7 +172,7 @@ li, #mbCategories UL{
   padding-left:0;
 }
 
-#mbCategories dd ul li span:nth-child(even){
+.badge{
   background-color: #FF2F63;
   border-radius: 20px;
   color: white;
