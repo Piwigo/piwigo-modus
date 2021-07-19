@@ -12,6 +12,7 @@
 {combine_css path="themes/`$themeconf.id`/css/picture.css.tpl" version=$MODUS_CSS_VERSION template=true order=-10}
 {combine_css path="themes/`$themeconf.id`/css/tags.css" order=-10}
 {combine_css path="themes/`$themeconf.id`/css/print.css" order=-10}
+{combine_css path="themes/`$themeconf.id`/css/plugin_compatibility.css" order=-10}
 
 {if isset($MODUS_CSS_SKIN)}
   {combine_css path="themes/`$themeconf.id`/css/hf_base.css" order=-10} {* load base CSS for skins designed by Hannah *}
