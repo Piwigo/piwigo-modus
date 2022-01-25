@@ -612,3 +612,7 @@ form.properties a{
     color:#373737;
   }
 }
+
+.thumbnailCategory {
+  background-color: rgb(220, 208, 192);
+}

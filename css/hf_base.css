@@ -621,6 +621,19 @@ DIV.thumbHover{
 
 .thumbnailCategory{
   border:none;
+  background-color:rgba(0,0,0,0.2);
+}
+
+/* Track */
+.thumbnailCategory .description::-webkit-scrollbar {
+  background: rgba(0,0,0, 0.2); 
+  border-radius:15px;
+}
+
+/* Handle */
+.thumbnailCategory .description::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0, 0.4); 
+  border-radius:15px;
 }
 
 #fullTagCloud{

@@ -86,12 +86,19 @@ LI:hover>.overDesc {
 	padding: 2px 0 0 2px;
 	margin: 5px;
 	border: 1px solid gray;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .thumbnailCategory .description {
 	font-size: 90%;
-	overflow: auto;
+	overflow-y: auto;
 	/*width: inherit;*/
+  max-height:85%;
+  /* max-width:70%; */
+  flex: 1 0;
+  width:70%;
+  margin-right:10px;
 }
 
 .thumbnailCategory .description H3 {
@@ -99,6 +106,37 @@ LI:hover>.overDesc {
 	margin: 0;
 	padding: 0.1em;
 	font-size: 120%;
+}
+
+.thumbnailCategory .illustration{
+  flex: 1 0;
+  max-width:30%;
+}
+
+/* width */
+.thumbnailCategory .description::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.thumbnailCategory .description::-webkit-scrollbar {
+  background: rgba(255,255,255, 0.2); 
+  border-radius:15px;
+}
+
+/* Handle */
+.thumbnailCategory .description::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255, 0.5); 
+  border-radius:15px;
+}
+
+/* Handle on hover */
+.thumbnailCategory .description::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.thumbnailCategory .illustration img{
+  object-fit: cover;
 }
 
 .illustration { /*also used by comment lists*/

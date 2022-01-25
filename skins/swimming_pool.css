@@ -627,3 +627,11 @@ form.properties a{
     color:#2e4756;
   }
 }
+
+.thumbnailCategory {
+  background-color:#afc6d6;
+}
+
+.thumbnailCategory .description H3 a{
+  color:#3f6379;
+}

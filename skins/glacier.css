@@ -421,3 +421,13 @@ ul.token-input-list li input{
     box-shadow: 5px 5px 10px black;
   }
 }
+
+.thumbnailCategory {
+  background-color: #EBEBF2;
+  color:#1E3259;
+}
+
+.thumbnailCategory h3 a{
+  color:#1E3259;
+}
+
