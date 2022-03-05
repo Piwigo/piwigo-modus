@@ -7,6 +7,7 @@ $lang['%d albums'] = '%d albums';
 
 $lang['Modus theme config'] = 'Configuration du thème Modus';
 $lang['Skin'] = 'Style';
+$lang['Admin'] = 'Admin';
 $lang['Album thumbnails'] = 'Miniatures d\'album';
 $lang['Use square thumbs'] = 'Utiliser des miniatures carrées';
 $lang['%d pixels'] = '%d pixels';

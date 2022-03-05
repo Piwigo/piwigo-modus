@@ -142,7 +142,7 @@
 	<a id="mbProfile" href="{$U_PROFILE}" title="{'customize the appareance of the gallery'|@translate}">{'Customize'|@translate}</a>
 	{/if}
 	{if isset($U_ADMIN)}
-	<a href="{$U_ADMIN}" title="{'available for administrators only'|@translate}">Admin</a>
+	<a href="{$U_ADMIN}" title="{'available for administrators only'|@translate}">{'Admin'|@translate}</a>
 	{/if}
 	</dt>
 </dl>
