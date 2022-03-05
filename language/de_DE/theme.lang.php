@@ -13,3 +13,4 @@ $lang['Modus theme config'] = 'Theme-Konfiguration';
 $lang['Skin'] = 'Skin';
 $lang['Use square thumbs'] = 'Quadratische Vorschaubilder benutzen';
 $lang['Display page banner'] = 'Seitenbanner anzeigen';
+$lang['Admin'] = 'Verwaltung';
