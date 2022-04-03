@@ -33,3 +33,4 @@ $lang['Default size for thumbnails'] = 'Predvolená veľkosť náhľadov';
 $lang['Album thumbnails'] = 'Náhľady albumu';
 $lang['%d pixels'] = '%d bodov';
 $lang['Display page banner'] = 'Zobraziť banner na stránku';
+$lang['Admin'] = 'Administrátor';
