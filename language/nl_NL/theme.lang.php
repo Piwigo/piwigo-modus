@@ -33,3 +33,4 @@ $lang['Modus theme config'] = 'Configuratie Modus thema ';
 $lang['Skin'] = 'Uiterlijk';
 $lang['Use square thumbs'] = 'Gebruik vierkante klikplaatjes';
 $lang['Display page banner'] = 'Toon pagina bovenschrift';
+$lang['Admin'] = 'Beheer';
