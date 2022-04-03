@@ -33,3 +33,4 @@ $lang['Modus theme config'] = 'Configuração do tema Modus';
 $lang['Skin'] = 'Pele';
 $lang['Use square thumbs'] = 'Usar miniaturas quadradas';
 $lang['Display page banner'] = 'Mostra página do banner';
+$lang['Admin'] = 'Admin';
