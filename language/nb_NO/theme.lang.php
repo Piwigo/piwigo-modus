@@ -33,3 +33,4 @@ $lang['Default size for thumbnails'] = 'Standard størrelse for miniatyrbilder';
 $lang['Album thumbnails'] = 'Albums miniatyrbilder';
 $lang['%d pixels'] = '%d piksler';
 $lang['Display page banner'] = 'Vis sidens banner';
+$lang['Admin'] = 'Admin';
