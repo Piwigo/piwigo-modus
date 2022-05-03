@@ -33,3 +33,4 @@ $lang['Modus theme config'] = 'Nastavitve teme Modus';
 $lang['Skin'] = 'Izgled';
 $lang['Use square thumbs'] = 'Uporabi pravokotne sličice';
 $lang['Display page banner'] = 'Prikaži pasico strani';
+$lang['Admin'] = 'Admin';
