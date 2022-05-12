@@ -21,7 +21,7 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['modus_theme'] = 'modus_theme';
-$lang['Explore'] = 'Explora';
+$lang['Explore'] = 'Esplora';
 $lang['%d albums'] = '%d albums';
 $lang['%d album'] = '%d album';
 $lang['Skin'] = 'Stile';
@@ -33,3 +33,4 @@ $lang['Album thumbnails'] = 'Miniature album';
 $lang['Default size for thumbnails'] = 'Dimensione predefinita per le miniature';
 $lang['%d pixels'] = '%d pixels';
 $lang['Display page banner'] = 'Visualizza pagina banner';
+$lang['Admin'] = 'Amm.';
