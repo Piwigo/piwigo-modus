@@ -274,6 +274,10 @@ function modus_index_category_thumbnails($items)
 
 	foreach($items as &$item)
 	{
+    $item['path_ext'] = strtolower(get_extension($item['representative']['path']));
+    $item['file_ext'] = strtolower(get_extension($item['representative']['file']));
+    // print_r($item);
+
 		$src_image = $item['representative']['src_image'];
 		$src_size = $src_image->get_size();
 
