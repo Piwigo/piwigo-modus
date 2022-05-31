@@ -608,6 +608,12 @@ SPAN.calItem:hover{
   max-height: 250px;
 }
 
+img.file-ext-svg,
+img.path-ext-svg {
+  min-width: 100px;
+  min-height: 100px;
+}
+
 #linkPrev,
 #linkNext{
   margin:5px;

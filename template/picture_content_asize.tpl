@@ -13,7 +13,7 @@ cp: '{$COOKIE_PATH|@escape:'javascript'}'
 {else}
 {footer_script}rvas_choose(1);{/footer_script}
 {/if}
-<img {if $current.is_svg} style="{if $current.width < 200}min-width: 200px; {else} max-width:{$current.width}px; {/if} {if $current.height < 200} min-height: 200px;{else} max-height: {$current.height}px{/if}"{/if} {if !$RVAS_PENDING} src="{$current.selected_derivative->get_url()}" {if isset($rvas_display_size)}width={$rvas_display_size[0]} height={$rvas_display_size[1]} data-natural-w={$rvas_natural_size[0]}{else}{$current.selected_derivative->get_size_htm()}{/if} itemprop=contentURL{/if} alt="{$ALT_IMG}" id="theMainImage"{if !isset($rvas_display_size)} usemap="#map{$current.selected_derivative->get_type()}"{/if} title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
+<img class="file-ext-{$current.file_ext} path-ext-{$current.path_ext}" {if {$current.path_ext} == 'svg'} src="{$current.selected_derivative->get_url()}" {/if} {if !$RVAS_PENDING} src="{$current.selected_derivative->get_url()}" {if isset($rvas_display_size)}width={$rvas_display_size[0]} height={$rvas_display_size[1]} data-natural-w={$rvas_natural_size[0]}{else}{$current.selected_derivative->get_size_htm()}{/if} itemprop=contentURL{/if} alt="{$ALT_IMG}" id="theMainImage"{if !isset($rvas_display_size)} usemap="#map{$current.selected_derivative->get_type()}"{/if} title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
 
 {foreach from=$current.unique_derivatives item=derivative key=derivative_type}{strip}
 <map name="map{$derivative->get_type()}">
