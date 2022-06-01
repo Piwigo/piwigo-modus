@@ -208,10 +208,10 @@ function modus_thumbs($x, $smarty)
 		elseif ($csize[1] > $row_height)
 			$csize = $c->get_scaled_size(9999, $row_height);
 		if ($do_over) {?>
-<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
+<li class="path-ext-<?=$item["path_ext"]?> file-ext-<?=$item["file_ext"]?>" style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
 <?php
 		} else {?>
-<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a></li>
+<li class="path-ext-<?=$item["path_ext"]?> file-ext-<?=$item["file_ext"]?>" style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a></li>
 <?php
 		}
 	}
