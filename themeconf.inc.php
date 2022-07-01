@@ -208,10 +208,10 @@ function modus_thumbs($x, $smarty)
 		elseif ($csize[1] > $row_height)
 			$csize = $c->get_scaled_size(9999, $row_height);
 		if ($do_over) {?>
-<li class="path-ext-<?=$item["path_ext"]?> file-ext-<?=$item["file_ext"]?>" style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
+<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a><div class=overDesc><?=$item['NAME']?><?=$new?></div></li>
 <?php
 		} else {?>
-<li class="path-ext-<?=$item["path_ext"]?> file-ext-<?=$item["file_ext"]?>" style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a></li>
+<li style=width:<?=$csize[0]?>px;height:<?=$row_height?>px><a href="<?=$item['URL']?>"<?=$a_style?>><img src="<?=$c->get_url()?>" width=<?=$csize[0]?> height=<?=$csize[1]?> alt="<?=$item['TN_ALT']?>"></a></li>
 <?php
 		}
 	}
@@ -274,10 +274,6 @@ function modus_index_category_thumbnails($items)
 
 	foreach($items as &$item)
 	{
-    $item['path_ext'] = strtolower(get_extension($item['representative']['path']));
-    $item['file_ext'] = strtolower(get_extension($item['representative']['file']));
-    // print_r($item);
-
 		$src_image = $item['representative']['src_image'];
 		$src_size = $src_image->get_size();
 

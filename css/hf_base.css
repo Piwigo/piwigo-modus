@@ -600,26 +600,6 @@ SPAN.calItem:hover{
    margin-top:0;
  }
  
-.albThumbs .path-ext-svg a img,
-.albThumbs .file-ext-svg a img {
-  left: 0 !important;
-  top: 0px !important;
-  max-width: 250px;
-  max-height: 250px;
-}
-
-img.file-ext-svg,
-img.path-ext-svg {
-  min-width: 100px;
-  min-height: 100px;
-}
-
-li.file-ext-svg a img,
-li.path-ext-svg a img {
-  min-width: 100px;
-  min-height: 100px;
-}
-
 #linkPrev,
 #linkNext{
   margin:5px;
