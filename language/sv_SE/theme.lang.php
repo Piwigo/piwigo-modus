@@ -33,3 +33,4 @@ $lang['Default sizes'] = 'Standardstorlekar';
 $lang['Modus theme config'] = 'Modus-temats inställningar';
 $lang['Skin'] = 'Skin';
 $lang['Display page banner'] = 'Visa sidans banner';
+$lang['Admin'] = 'Admin';
