@@ -62,7 +62,7 @@
 		{if isset($blocks.mbMenu)}
 		<hr>
 		{foreach from=$blocks.mbMenu->data item=link}{if is_array($link)}
-		<li><a href="{$link.URL}" title="{$link.TITLE}"{if isset($link.REL)} {$link.REL}{/if}>{$link.NAME}</a>{if isset($link.COUNTER)} ({$link.COUNTER}){/if}</li>
+		<li><a href="{$link.URL}" title="{if isset($link.TITLE)}{$link.TITLE}{/if}"{if isset($link.REL)} {$link.REL}{/if}>{$link.NAME}</a>{if isset($link.COUNTER)} ({$link.COUNTER}){/if}</li>
 		{/if}{/foreach}
 		{/if}
 	{/strip}</ul>
