@@ -2,7 +2,7 @@
 
 {footer_script}RVAS = {
 derivatives: [
-{foreach from=$current.unique_derivatives item=derivative name=derivative_loop}{assign var='size' value=$derivative->get_size()}
+{foreach from=$current.unique_derivatives item=derivative name=derivative_loop}{if 'svg' === $current.path_ext}{assign var='size' value=array($current.width, $current.height)}{else}{assign var='size' value=$derivative->get_size()}{/if}
 {ldelim}w:{$size[0]},h:{$size[1]},url:'{$derivative->get_url()|@escape:'javascript'}',type:'{$derivative->get_type()}'}{if !$smarty.foreach.derivative_loop.last},{/if}
 {/foreach}],
 cp: '{$COOKIE_PATH|@escape:'javascript'}'
