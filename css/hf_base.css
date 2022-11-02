@@ -572,6 +572,8 @@ h2 .calendarTitle{
   padding:10px;
   font-weight:bold;
   text-shadow:none;
+  display:inline-block;
+  margin: 2px 0;
 }
 
 .calItem:hover{
