@@ -51,8 +51,7 @@
 
 </head>
 
-<body id={$BODY_ID} class="{foreach from=$BODY_CLASSES item=class}{$class} {/foreach}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} modus-withPageBanner{/if}" data-infos={$BODY_DATA}
->
+<body id={$BODY_ID} class="{foreach from=$BODY_CLASSES item=class}{$class} {/foreach}{if !empty($PAGE_BANNER) && $MODUS_DISPLAY_PAGE_BANNER} modus-withPageBanner{/if}" data-infos='{$BODY_DATA}'>
 {if not empty($header_msgs) or not empty($header_notes)}
 <div class="header_msgs">
 {if not empty($header_msgs)}
