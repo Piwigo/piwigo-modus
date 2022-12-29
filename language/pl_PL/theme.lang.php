@@ -33,3 +33,4 @@ $lang['Album thumbnails'] = 'Miniatury albumu';
 $lang['Display page banner'] = 'Wyświetl banner strony';
 $lang['Explore'] = 'Odkrywaj';
 $lang['Modus theme config'] = 'Konfig tematu Modus';
+$lang['Admin'] = 'Administrator';
