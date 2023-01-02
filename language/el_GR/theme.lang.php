@@ -33,3 +33,4 @@ $lang['%d pixels'] = '%d pixels';
 $lang['Use square thumbs'] = 'Χρήση τετράγωνων μικρογραφιών ';
 $lang['Skin'] = 'Skin';
 $lang['Display page banner'] = 'Προβολή Banner Σελίδας ';
+$lang['Admin'] = 'Διαχειριστής';
