@@ -171,6 +171,8 @@ LI:hover>.overDesc {
 .albImg {
 	display: block;
 	position: relative
+  top: 0px;
+  left: 0px;
 }
 
 .albLegend {
