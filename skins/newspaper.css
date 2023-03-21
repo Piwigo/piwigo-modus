@@ -68,10 +68,10 @@ a:hover{
 }
 
 .selectize-input{
-  background-color: #363636!important;
-  color: white!important;
-  border:none!important;
-  border-radius:0!important;
+  background-color: #363636;
+  color: white;
+  border:none;
+  border-radius:0;
 }
 
 .selectize-control .plugin-remove_button [data-value] .remove{
@@ -348,4 +348,59 @@ td .nbEntries{
   #theTagsPage A:hover .pwg-icon{
     color:black ;
   }
+}
+
+/* Multi criteria search */
+
+.filter-tag-form .selectize-control {
+  margin-bottom: 10px;
+}
+
+.filter-tag-form .selectize-input {
+  background: #eee;
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.filter-tag-form .selectize-input input {
+  background: transparent;
+  color: #444;
+  height: 16px;
+  padding: 0;
+  height: 26px;
+}
+.filter-tag-form .selectize-input input::placeholder {
+  color: #444;
+}
+
+.filter-tag-form .selectize-control.multi .selectize-input > div,
+.filter-tag-form .selectize-control.multi .selectize-input [data-value].active {
+  background: #ffa835;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 5px;
+  width: fit-content;
+  gap: 5px;
+  height: fit-content;
+}
+.filter-tag-form .selectize-control.multi .selectize-input > div .remove {
+  text-decoration: none;
+  border: none;
+  margin: 0 0 0 10px;
+}
+
+.filter-tag-form .selectize-dropdown {
+  background: #eee;
+  padding: 0;
+}
+
+.filter-tag-form .selectize-dropdown .option.active{
+  background: #ccc;
+  border-radius: 5px;
 }
