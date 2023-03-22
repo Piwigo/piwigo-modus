@@ -398,8 +398,13 @@ td .nbEntries{
 .filter-tag-form .selectize-dropdown {
   background: #eee;
   padding: 0;
-}
+  max-height: 100px;
+  overflow-y: scroll;
 
+}
+.filter-tag-form .selectize-dropdown .option {
+  padding: 0 5px;
+}
 .filter-tag-form .selectize-dropdown .option.active{
   background: #ccc;
   border-radius: 5px;
