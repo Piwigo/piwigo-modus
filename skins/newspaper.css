@@ -352,6 +352,33 @@ td .nbEntries{
 
 /* Multi criteria search */
 
+.mcs-no-result {
+  margin: 30vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mcs-no-result .text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+  max-width: 350px;
+  text-align: center;
+}
+.mcs-no-result .text span:first-child{
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff7700;
+  margin: 0 0 15px 0;
+}
+.mcs-no-result .text span:last-child{
+  font-size: 15px;
+  font-weight: 500;
+  color: #6e6e6e;
+}
+
 .filter-tag-form .selectize-control {
   margin-bottom: 10px;
 }
