@@ -436,3 +436,13 @@ td .nbEntries{
   background: #ccc;
   border-radius: 5px;
 }
+
+.linkedAlbumPopInContainer {
+  background-color: white;
+}
+.breadcrumb-item {
+  background-color: #f4ab4f;
+}
+.breadcrumb-item .icon-cancel-circled:hover {
+  color: #ff7700;
+}
