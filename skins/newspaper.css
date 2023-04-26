@@ -379,11 +379,13 @@ td .nbEntries{
   color: #6e6e6e;
 }
 
-.filter-tag-form .selectize-control {
+.filter-tag-form .selectize-control,
+.filter-author-form .selectize-control {
   margin-bottom: 10px;
 }
 
-.filter-tag-form .selectize-input {
+.filter-tag-form .selectize-input,
+.filter-author-form .selectize-input {
   background: #eee;
   border-radius: 5px;
   padding: 5px;
@@ -395,19 +397,23 @@ td .nbEntries{
   gap: 5px;
 }
 
-.filter-tag-form .selectize-input input {
+.filter-tag-form .selectize-input input,
+.filter-author-form .selectize-input input {
   background: transparent;
   color: #444;
   height: 16px;
   padding: 0;
   height: 26px;
 }
-.filter-tag-form .selectize-input input::placeholder {
+.filter-tag-form .selectize-input input::placeholder,
+.filter-author-form .selectize-input input::placeholder {
   color: #444;
 }
 
 .filter-tag-form .selectize-control.multi .selectize-input > div,
-.filter-tag-form .selectize-control.multi .selectize-input [data-value].active {
+.filter-tag-form .selectize-control.multi .selectize-input [data-value].active,
+.filter-author-form .selectize-control.multi .selectize-input > div,
+.filter-author-form .selectize-control.multi .selectize-input [data-value].active {
   background: #ffa835;
   color: black;
   padding: 2px 4px;
@@ -416,23 +422,27 @@ td .nbEntries{
   gap: 5px;
   height: fit-content;
 }
-.filter-tag-form .selectize-control.multi .selectize-input > div .remove {
+.filter-tag-form .selectize-control.multi .selectize-input > div .remove,
+.filter-author-form .selectize-control.multi .selectize-input > div .remove {
   text-decoration: none;
   border: none;
   margin: 0 0 0 10px;
 }
 
-.filter-tag-form .selectize-dropdown {
+.filter-tag-form .selectize-dropdown,
+.filter-author-form .selectize-dropdown {
   background: #eee;
   padding: 0;
   max-height: 100px;
   overflow-y: scroll;
 
 }
-.filter-tag-form .selectize-dropdown .option {
+.filter-tag-form .selectize-dropdown .option,
+.filter-author-form .selectize-dropdown .option {
   padding: 0 5px;
 }
-.filter-tag-form .selectize-dropdown .option.active{
+.filter-tag-form .selectize-dropdown .option.active,
+.filter-author-form .selectize-dropdown .option.active {
   background: #ccc;
   border-radius: 5px;
 }
