@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
- 
 .pwg-icon-ellipsis:before { content: '\2026'; } /* '…' */
 .pwg-icon-arrow-w:before { content: '\2190'; } /* '←' */
 .pwg-icon-arrow-n:before { content: '\2191'; } /* '↑' */
@@ -19,11 +18,30 @@
 .pwg-icon-cloud:before { content: '\e11f'; } /* '' */
 .pwg-icon-camera-info:before { content: '\e70f'; } /* '' */
 .pwg-icon-pause:before { content: '\e800'; } /* '' */
+.pwg-icon-search:before { content: '\e800'; } /* '' */
 .pwg-icon-minus:before { content: '\e801'; } /* '' */
+.pwg-icon-tag:before { content: '\e801'; } /* '' */
 .pwg-icon-close:before { content: '\e802'; } /* '' */
+.pwg-icon-user-edit:before { content: '\e803'; } /* '' */
+.pwg-icon-album:before { content: '\e804'; } /* '' */
+.pwg-icon-user:before { content: '\e805'; } /* '' */
+.pwg-icon-calendar-plus:before { content: '\e806'; } /* '' */
+.pwg-icon-calendar:before { content: '\e807'; } /* '' */
+.pwg-icon-height:before { content: '\e808'; } /* '' */
+.pwg-icon-width:before { content: '\e809'; } /* '' */
+.pwg-icon-cancel:before { content: '\e822'; } /* '' */
+.pwg-icon-star:before { content: '\e847'; } /* '' */
+.pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
+.pwg-icon-pencil:before { content: '\e84f'; } /* '' */
+.pwg-icon-down-open:before { content: '\f004'; } /* '' */
+.pwg-icon-up-open:before { content: '\f005'; } /* '' */
+.pwg-icon-right-open:before { content: '\f006'; } /* '' */
+.pwg-icon-left-open:before { content: '\f007'; } /* '' */
+.pwg-icon-hdd:before { content: '\f0a0'; } /* '' */
 .pwg-icon-category-view-normal:before { content: '\f0e8'; } /* '' */
 .pwg-icon-camera-calendar:before { content: '\f133'; } /* '' */
 .pwg-icon-sort:before { content: '\f15d'; } /* '' */
+.pwg-icon-file-image:before { content: '\f1c5'; } /* '' */
 .pwg-icon-map:before { content: '🌎'; } /* '\1f30e' */
 .pwg-icon-representative:before { content: '🏉'; } /* '\1f3c9' */
 .pwg-icon-save:before { content: '💾'; } /* '\1f4be' */
