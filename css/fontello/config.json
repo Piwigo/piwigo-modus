@@ -329,6 +329,18 @@
       "css": "file-image",
       "code": 61893,
       "src": "fontawesome"
+    },
+    {
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "cog",
+      "code": 59474,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "de9a631a7d18106aea1c89ba51b1990a",
+      "css": "help-circled",
+      "code": 59418,
+      "src": "entypo"
     }
   ]
 }

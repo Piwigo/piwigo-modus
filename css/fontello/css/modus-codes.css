@@ -29,10 +29,12 @@
 .pwg-icon-calendar:before { content: '\e807'; } /* '' */
 .pwg-icon-height:before { content: '\e808'; } /* '' */
 .pwg-icon-width:before { content: '\e809'; } /* '' */
+.pwg-icon-help-circled:before { content: '\e81a'; } /* '' */
 .pwg-icon-cancel:before { content: '\e822'; } /* '' */
 .pwg-icon-star:before { content: '\e847'; } /* '' */
 .pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
 .pwg-icon-pencil:before { content: '\e84f'; } /* '' */
+.pwg-icon-cog:before { content: '\e852'; } /* '' */
 .pwg-icon-down-open:before { content: '\f004'; } /* '' */
 .pwg-icon-up-open:before { content: '\f005'; } /* '' */
 .pwg-icon-right-open:before { content: '\f006'; } /* '' */
