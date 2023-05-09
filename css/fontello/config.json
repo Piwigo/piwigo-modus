@@ -171,7 +171,7 @@
     {
       "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
       "css": "search",
-      "code": 59392,
+      "code": 59648,
       "src": "fontawesome"
     },
     {
@@ -207,7 +207,7 @@
     {
       "uid": "3db5347bd219f3bce6025780f5d9ef45",
       "css": "tag",
-      "code": 59393,
+      "code": 45,
       "src": "fontawesome"
     },
     {

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+.pwg-icon-tag:before { content: '\2d'; } /* '-' */
 .pwg-icon-ellipsis:before { content: '\2026'; } /* '…' */
 .pwg-icon-arrow-w:before { content: '\2190'; } /* '←' */
 .pwg-icon-arrow-n:before { content: '\2191'; } /* '↑' */
@@ -18,9 +19,7 @@
 .pwg-icon-cloud:before { content: '\e11f'; } /* '' */
 .pwg-icon-camera-info:before { content: '\e70f'; } /* '' */
 .pwg-icon-pause:before { content: '\e800'; } /* '' */
-.pwg-icon-search:before { content: '\e800'; } /* '' */
 .pwg-icon-minus:before { content: '\e801'; } /* '' */
-.pwg-icon-tag:before { content: '\e801'; } /* '' */
 .pwg-icon-close:before { content: '\e802'; } /* '' */
 .pwg-icon-user-edit:before { content: '\e803'; } /* '' */
 .pwg-icon-album:before { content: '\e804'; } /* '' */
@@ -35,6 +34,7 @@
 .pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
 .pwg-icon-pencil:before { content: '\e84f'; } /* '' */
 .pwg-icon-cog:before { content: '\e852'; } /* '' */
+.pwg-icon-search:before { content: '\e900'; } /* '' */
 .pwg-icon-down-open:before { content: '\f004'; } /* '' */
 .pwg-icon-up-open:before { content: '\f005'; } /* '' */
 .pwg-icon-right-open:before { content: '\f006'; } /* '' */
