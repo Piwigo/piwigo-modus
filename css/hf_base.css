@@ -855,6 +855,43 @@ li.path-ext-svg a img {
 
 /* Multi criteria search */
 
+.filter-manager-popin {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+
+.filter-manager-popin-container {
+  display:flex;
+  position:absolute;
+  left:50%;
+  top: 50%;
+  transform:translate(-50%, -48%);
+  text-align:left;
+  padding:20px;
+  flex-direction:column;
+  border-radius:15px;
+  align-items:center;
+  width: 400px;
+  height: 400px;
+  background: white;
+}
+
+.filter-manager-close {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 .mcs-container {
   display: flex;
   flex-direction: row;
