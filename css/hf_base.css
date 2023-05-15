@@ -879,7 +879,6 @@ li.path-ext-svg a img {
   border-radius:15px;
   align-items:center;
   width: 400px;
-  height: 400px;
   background: white;
 }
 
@@ -890,6 +889,54 @@ li.path-ext-svg a img {
   font-size: 30px;
   color: white;
   cursor: pointer;
+}
+
+.filter-manager-popin .mcs-popin-title {
+  width: 100%;
+  font-size: 19px;
+  color: #ff7700;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.filter-manager-popin .filter-manager-controller-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.filter-manager-popin .filter-manager-controller-container .mcs-icon::before {
+  display: inline-block;
+  width: 15px;
+}
+
+.filter-manager-popin label {
+  white-space: nowrap;
+  margin: 6px 0;
+}
+
+.filter-manager-popin label span {
+  border: 1px solid #777;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.filter-manager-popin :checked + span {
+  border: 1px solid #777;
+  background: #777;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.filter-manager-popin input[type='checkbox'] {
+  display: none;
+}
+
+.filter-manager-actions {
+  display: flex;
+  margin: 0 0 0 auto;
+  gap: 10px;
 }
 
 .mcs-container {
@@ -915,6 +962,19 @@ li.path-ext-svg a img {
   background: #ff7700;
 }
 
+.filter-cancel {
+  background: #e8e8ea;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #777;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+.filter-cancel:hover {
+  background: #dadada;
+}
 .filter-manager {
   margin-left: 15px;
 }
