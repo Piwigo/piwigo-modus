@@ -983,21 +983,29 @@ li.path-ext-svg a img {
   margin-right: 5px;
 }
 
-.filter {
+.mcs-container .filter {
   font-size: 15px;
   position: relative;
   border-radius: 20px;
   padding: 3px 6px;
   border: 1px solid #888;
   cursor: pointer;
+  display: none;
 }
 .filter span {
   margin: 0 3px;
 }
 
-.filter.show-filter-dropdown {
+.filter .filter-arrow::before {
+  transition: 0.3s;
+}
+.filter.show-filter-dropdown .filter-arrow::before {
+  transform: rotate(180deg);
+}
+
+.filter-filled {
   background: #ffeacf;
-  border: 1px solid #ff7700;
+  border: 1px solid #ff7700 !important;
   color: #ff7700;
 }
 
@@ -1048,6 +1056,25 @@ li.path-ext-svg a img {
 .filter-validate {
   width: fit-content;
   margin-left: auto;
+}
+
+.filter-word .search-words {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.filter-album .search-words {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.filter-tag .search-words {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .filter-word-form .search-params {
