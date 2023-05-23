@@ -352,6 +352,16 @@ td .nbEntries{
 
 /* Multi criteria search */
 
+.ClosePopIn:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mcs-container .filter-manager-controller-container label {
+  cursor: pointer;
+}
+
 .mcs-no-result {
   margin: 30vh 0 0 0;
   display: flex;
