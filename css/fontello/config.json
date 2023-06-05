@@ -9,25 +9,25 @@
     {
       "uid": "f3dc2d6d8fe9cf9ebff84dc260888cdf",
       "css": "favorite-add",
-      "code": 9825,
+      "code": 59395,
       "src": "fontawesome"
     },
     {
       "uid": "9d3d9d6ce1ec63eaa26281e6162853c9",
       "css": "camera-info",
-      "code": 59151,
+      "code": 59396,
       "src": "fontawesome"
     },
     {
       "uid": "b1887b423d2fd15c345e090320c91ca0",
       "css": "category-view-flat",
-      "code": 9871,
+      "code": 59398,
       "src": "fontawesome"
     },
     {
       "uid": "5bb103cd29de77e0e06a52638527b575",
       "css": "category-edit",
-      "code": 128295,
+      "code": 59399,
       "src": "fontawesome"
     },
     {
@@ -39,25 +39,25 @@
     {
       "uid": "555ef8c86832e686fef85f7af2eb7cde",
       "css": "arrow-w",
-      "code": 8592,
+      "code": 59400,
       "src": "fontawesome"
     },
     {
       "uid": "ad6b3fbb5324abe71a9c0b6609cbb9f1",
       "css": "arrow-e",
-      "code": 8594,
+      "code": 59401,
       "src": "fontawesome"
     },
     {
       "uid": "95376bf082bfec6ce06ea1cda7bd7ead",
       "css": "arrow-n",
-      "code": 8593,
+      "code": 59402,
       "src": "fontawesome"
     },
     {
       "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
       "css": "play",
-      "code": 9654,
+      "code": 59403,
       "src": "fontawesome"
     },
     {
@@ -69,13 +69,13 @@
     {
       "uid": "ab656e280958018a7859eba9a1eabbc7",
       "css": "representative",
-      "code": 127945,
+      "code": 59404,
       "src": "fontawesome"
     },
     {
       "uid": "197375a3cea8cb90b02d06e4ddf1433d",
       "css": "map",
-      "code": 127758,
+      "code": 59405,
       "src": "fontawesome"
     },
     {
@@ -87,7 +87,7 @@
     {
       "uid": "f4445feb55521283572ee88bc304f928",
       "css": "save",
-      "code": 128190,
+      "code": 59406,
       "src": "fontawesome"
     },
     {
@@ -111,55 +111,55 @@
     {
       "uid": "3a230e539a4f3b904debd04c6c155034",
       "css": "help",
-      "code": 10067,
+      "code": 59407,
       "src": "entypo"
     },
     {
       "uid": "1e77a2yvsq3owssduo2lcgsiven57iv5",
       "css": "edit",
-      "code": 9998,
+      "code": 59408,
       "src": "typicons"
     },
     {
       "uid": "jh3jpcb1t1bcm80gidkadilh080aq79h",
       "css": "menu",
-      "code": 57598,
+      "code": 59409,
       "src": "typicons"
     },
     {
       "uid": "e0d15ef5945000f5f264acc35494002f",
       "css": "caddie-add",
-      "code": 57554,
+      "code": 59410,
       "src": "typicons"
     },
     {
       "uid": "cdfalpadi7huwv9ah4fef2gpfpb4c6qm",
       "css": "sizes",
-      "code": 57362,
+      "code": 59411,
       "src": "typicons"
     },
     {
       "uid": "63ec74ce71635a8fc128c2eef73b96ae",
       "css": "globe",
-      "code": 57465,
+      "code": 59412,
       "src": "typicons"
     },
     {
       "uid": "f9efb0f1944c550cf8d38cdf4aba07c4",
       "css": "cloud",
-      "code": 57631,
+      "code": 59413,
       "src": "typicons"
     },
     {
       "uid": "67f793f91864e379458a92ccc61d9ccf",
       "css": "letters",
-      "code": 57579,
+      "code": 59414,
       "src": "typicons"
     },
     {
       "uid": "d6944e1d9af302093d43b299bbecbbbe02",
       "css": "home",
-      "code": 8962,
+      "code": 59415,
       "src": "iconic"
     },
     {
@@ -219,7 +219,7 @@
     {
       "uid": "84eb39adbd7c26c320e686806a7c82bf",
       "css": "user-edit",
-      "code": 59395,
+      "code": 59416,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -233,7 +233,7 @@
     {
       "uid": "623548a51fdd638af8a4c5c14fc64030",
       "css": "album",
-      "code": 59396,
+      "code": 59417,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -253,7 +253,7 @@
     {
       "uid": "a8d385d56e91e901e70deacacdb540fc",
       "css": "calendar-plus",
-      "code": 59398,
+      "code": 59419,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -267,7 +267,7 @@
     {
       "uid": "fc2be7412ecc63e208f1bf56ce8f35b5",
       "css": "calendar",
-      "code": 59399,
+      "code": 59420,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -287,7 +287,7 @@
     {
       "uid": "cf57d3134fe58c03c86a3fec520331a4",
       "css": "height",
-      "code": 59400,
+      "code": 59421,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -301,7 +301,7 @@
     {
       "uid": "279e80be9d4ea4fb3a19216e08a00d30",
       "css": "width",
-      "code": 59401,
+      "code": 59422,
       "src": "custom_icons",
       "selected": true,
       "svg": {
@@ -341,6 +341,12 @@
       "css": "help-circled",
       "code": 59418,
       "src": "entypo"
+    },
+    {
+      "uid": "9bc2902722abb366a213a052ade360bc",
+      "css": "spin6",
+      "code": 59423,
+      "src": "fontelico"
     }
   ]
 }
