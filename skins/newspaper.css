@@ -389,10 +389,15 @@ td .nbEntries{
   color: #6e6e6e;
 }
 
+.filter-form .filter-form-title {
+  color: #ff7700;
+}
+
 .filter-tag-form .selectize-control,
 .filter-author-form .selectize-control,
 .filter-added_by-form .selectize-control {
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .filter-tag-form .selectize-input,
@@ -477,14 +482,18 @@ td .nbEntries{
   color: #ff7700;
 }
 
-.filter .mcs-icon.pwg-icon-cancel {
+.filter .mcs-icon.remove-filter {
   display: none;
 }
 
-.filter:hover .mcs-icon.pwg-icon-cancel {
+.filter:hover .mcs-icon.remove-filter {
   display: block;
 }
 
 .filter:hover .mcs-icon.filter-icon {
+  display: none;
+}
+
+.filter-validate .loading {
   display: none;
 }
