@@ -498,3 +498,7 @@ td .nbEntries{
 .filter-validate .loading {
   display: none;
 }
+
+.filter-album-form .add-album-button {
+  width: fit-content;
+}
