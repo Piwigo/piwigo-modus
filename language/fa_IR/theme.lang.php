@@ -33,3 +33,4 @@ $lang['Default sizes'] = 'اندازه‌های پیشفرض';
 $lang['Modus theme config'] = 'پیکربندی قالبِ Modus';
 $lang['Skin'] = 'پوسته';
 $lang['Display page banner'] = 'نمایش صفحه بنرها';
+$lang['Admin'] = 'مدیر';
