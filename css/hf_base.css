@@ -904,6 +904,7 @@ li.path-ext-svg a img {
   flex-direction: row;
   gap: 15px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .filter-manager-popin .filter-manager-controller-container .mcs-icon::before {
   display: inline-block;
