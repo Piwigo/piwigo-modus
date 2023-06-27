@@ -1059,6 +1059,11 @@ li.path-ext-svg a img {
   margin-left: auto;
 }
 
+.form-container .filter-validate {
+  width: fit-content;
+  margin-left: 20px;
+}
+
 .filter-word .search-words {
   max-width: 200px;
   overflow: hidden;
