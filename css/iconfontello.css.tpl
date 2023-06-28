@@ -34,7 +34,7 @@ A:hover .pwg-icon:before{
 {if $conf.index_posted_date_icon}
 {if $conf.index_created_date_icon}
 .pwg-icon-calendar:before { content: '\f133'; }
-.pwg-icon-camera-calendar:before { content: '\e70f'; }
+.pwg-icon-camera-calendar:before { content: '\e804'; }
 {else}
 .pwg-icon-calendar:before { content: '\f133'; }
 {/if}
