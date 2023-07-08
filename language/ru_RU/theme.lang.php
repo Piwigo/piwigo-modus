@@ -33,3 +33,4 @@ $lang['Modus theme config'] = 'Настройка темы Modus';
 $lang['Skin'] = 'Скины ';
 $lang['Use square thumbs'] = 'Использовать квадратные миниатюры';
 $lang['Display page banner'] = 'Отображать баннер на странице';
+$lang['Admin'] = 'Админ';
