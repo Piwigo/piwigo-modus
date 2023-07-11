@@ -891,6 +891,11 @@ li.path-ext-svg a img {
   cursor: pointer;
 }
 
+.filter-manager .mcs-icon::before {
+  margin: 0 5px 0 -2px;
+  transform: rotate(90deg);
+}
+
 .filter-manager-popin .mcs-popin-title {
   width: 100%;
   font-size: 19px;
@@ -1064,19 +1069,7 @@ li.path-ext-svg a img {
   margin-left: 20px;
 }
 
-.filter-word .search-words {
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.filter-album .search-words {
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.filter-tag .search-words {
+.filter .search-words {
   max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1098,6 +1091,56 @@ li.path-ext-svg a img {
   font-size: 16px;
   font-weight: 600;
   margin-top: 15px;
+}
+.filter-filetypes-form {
+  width: 200px;
+}
+.filetypes-option-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 20px 0;
+}
+.filetypes-option:nth-child(odd) {
+  background: #f3f3f3;
+}
+
+.filetypes-option input {
+  display: none;
+}
+.filetypes-option label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  position: relative;
+  padding: 5px;
+}
+.filetypes-option label .checked-icon{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  margin: 5px;
+  color: #ff7700;
+}
+
+.filetypes-option label .ext-name {
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.filetypes-option label .ext-badge {
+  margin-left: auto;
+  background: #ff7700;
+  border-radius: 10px;
+  padding: 0 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.filetypes-option input:checked + label .checked-icon{
+  display: flex;
+}
+.filetypes-option input:checked + label {
+  background: #fff5e8;
 }
 
 .filter-album-form {
