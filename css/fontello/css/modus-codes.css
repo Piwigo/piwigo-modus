@@ -33,6 +33,8 @@
 .pwg-icon-height:before { content: '\e81d'; } /* '' */
 .pwg-icon-width:before { content: '\e81e'; } /* '' */
 .pwg-icon-spin6:before { content: '\e81f'; } /* '' */
+.pwg-icon-checkmark:before { content: '\e820'; } /* '' */
+.pwg-icon-selecters:before { content: '\e821'; } /* '' */
 .pwg-icon-cancel:before { content: '\e822'; } /* '' */
 .pwg-icon-broom:before { content: '\e825'; } /* '' */
 .pwg-icon-star:before { content: '\e847'; } /* '' */
