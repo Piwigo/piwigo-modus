@@ -1044,6 +1044,7 @@ li.path-ext-svg a img {
 #word-search {
   margin: 0 0 10px 0;
   width: -moz-available;
+  width: -webkit-fill-available;
   background: #eee;
   color: #444;
   border-radius: 5px;
