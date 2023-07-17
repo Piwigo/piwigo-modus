@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'modus';
-  src: url('../font/modus.eot?10071848');
-  src: url('../font/modus.eot?10071848#iefix') format('embedded-opentype'),
-       url('../font/modus.woff2?10071848') format('woff2'),
-       url('../font/modus.woff?10071848') format('woff'),
-       url('../font/modus.ttf?10071848') format('truetype'),
-       url('../font/modus.svg?10071848#modus') format('svg');
+  src: url('../font/modus.eot?32794469');
+  src: url('../font/modus.eot?32794469#iefix') format('embedded-opentype'),
+       url('../font/modus.woff2?32794469') format('woff2'),
+       url('../font/modus.woff?32794469') format('woff'),
+       url('../font/modus.ttf?32794469') format('truetype'),
+       url('../font/modus.svg?32794469#modus') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'modus';
-    src: url('../font/modus.svg?10071848#modus') format('svg');
+    src: url('../font/modus.svg?32794469#modus') format('svg');
   }
 }
 */
@@ -91,6 +91,7 @@
 .pwg-icon-checkmark:before { content: '\e820'; } /* '' */
 .pwg-icon-selecters:before { content: '\e821'; } /* '' */
 .pwg-icon-cancel:before { content: '\e822'; } /* '' */
+.pwg-icon-trash:before { content: '\e823'; } /* '' */
 .pwg-icon-broom:before { content: '\e825'; } /* '' */
 .pwg-icon-star:before { content: '\e847'; } /* '' */
 .pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
