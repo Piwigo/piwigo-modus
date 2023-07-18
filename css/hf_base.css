@@ -1034,6 +1034,27 @@ li.path-ext-svg a img {
   cursor: pointer;
 }
 
+.filter-actions {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 20px;
+  right: 20px;
+  color: #aaa;
+  gap: 20px;
+}
+.filter-actions > *{
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-actions > *:hover{
+  color: #777;
+}
+
+.filter-filetypes-form .filter-actions {
+  gap: 5px;
+}
+
 .word-help {
   text-decoration: underline;
   color: #888;

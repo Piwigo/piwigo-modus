@@ -490,17 +490,17 @@ td .nbEntries{
   color: #ff7700;
 }
 
-.filter .mcs-icon.remove-filter {
+/* .filter .mcs-icon.remove-filter {
   display: none;
 }
 
 .filter:hover .mcs-icon.remove-filter {
   display: block;
-}
+} */
 
-.filter:hover .mcs-icon.filter-icon {
+/* .filter:hover .mcs-icon.filter-icon {
   display: none;
-}
+} */
 
 .filter-validate .loading {
   display: none;
