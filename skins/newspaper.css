@@ -374,7 +374,6 @@ td .nbEntries{
   flex-direction: column;
   width: fit-content;
   align-items: center;
-  max-width: 350px;
   text-align: center;
 }
 .mcs-no-result .text span:first-child{
@@ -382,11 +381,13 @@ td .nbEntries{
   font-weight: 700;
   color: #ff7700;
   margin: 0 0 15px 0;
+  max-width: 450px;
 }
 .mcs-no-result .text span:last-child{
   font-size: 15px;
   font-weight: 500;
   color: #6e6e6e;
+  max-width: 350px;
 }
 
 .filter-form .filter-form-title {
@@ -489,18 +490,6 @@ td .nbEntries{
 .breadcrumb-item .icon-cancel-circled:hover {
   color: #ff7700;
 }
-
-/* .filter .mcs-icon.remove-filter {
-  display: none;
-}
-
-.filter:hover .mcs-icon.remove-filter {
-  display: block;
-} */
-
-/* .filter:hover .mcs-icon.filter-icon {
-  display: none;
-} */
 
 .filter-validate .loading {
   display: none;
