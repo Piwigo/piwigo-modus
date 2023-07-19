@@ -1041,7 +1041,7 @@ li.path-ext-svg a img {
   top: 20px;
   right: 20px;
   color: #aaa;
-  gap: 20px;
+  gap: 5px;
 }
 .filter-actions > *{
   cursor: pointer;
@@ -1049,6 +1049,9 @@ li.path-ext-svg a img {
 }
 .filter-actions > *:hover{
   color: #777;
+}
+.filter-actions span{
+  margin: 0;
 }
 
 .filter-filetypes-form .filter-actions {
@@ -1120,7 +1123,7 @@ li.path-ext-svg a img {
 .filetypes-option-container {
   display: flex;
   flex-direction: column;
-  margin: 5px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 .filetypes-option:nth-child(odd) {
   background: #f3f3f3;

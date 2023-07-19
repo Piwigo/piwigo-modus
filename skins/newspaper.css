@@ -393,6 +393,7 @@ td .nbEntries{
 .filter-form .filter-form-title {
   color: #ff7700;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .filter-tag-form .selectize-control,
