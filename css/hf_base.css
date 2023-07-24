@@ -1370,3 +1370,14 @@ li.path-ext-svg a img {
 .linkedAlbumPopInContainer .searching {
   margin-top: 10px;
 }
+
+.clear-all {
+  color: #c4c4c4;
+  cursor: not-allowed;
+  font-weight: 600;
+}
+
+.clear-all.clickable {
+  color: #ff7700;
+  cursor: pointer;
+}
