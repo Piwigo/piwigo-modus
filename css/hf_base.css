@@ -859,7 +859,9 @@ li.path-ext-svg a img {
   color: #474747;
 }
 
-.filter-manager-popin {
+.filter-manager-popin,
+.tags-found-popin,
+.albums-found-popin {
   position: fixed;
   z-index: 100;
   left: 0;
@@ -871,7 +873,9 @@ li.path-ext-svg a img {
   display: none;
 }
 
-.filter-manager-popin-container {
+.filter-manager-popin-container,
+.tags-found-popin-container,
+.albums-found-popin-container {
   display:flex;
   position:absolute;
   left:50%;
@@ -886,7 +890,9 @@ li.path-ext-svg a img {
   background: white;
 }
 
-.filter-manager-close {
+.filter-manager-close,
+.tags-found-close,
+.albums-found-close {
   position: absolute;
   right: -40px;
   top: -40px;
@@ -900,7 +906,9 @@ li.path-ext-svg a img {
   transform: rotate(90deg);
 }
 
-.filter-manager-popin .mcs-popin-title {
+.filter-manager-popin .mcs-popin-title,
+.tags-found-popin .mcs-popin-title,
+.albums-found-popin .mcs-popin-title {
   width: 100%;
   font-size: 19px;
   color: #ff7700;
