@@ -1018,6 +1018,9 @@ li.path-ext-svg a img {
   border: 1px solid #ff7700 !important;
   color: #ff7700;
 }
+.filter-filled .filter-icon {
+  color: #ff7700;
+}
 
 .filter-form {
   display: none;
@@ -1059,7 +1062,7 @@ li.path-ext-svg a img {
 }
 
 .filter-filetypes-form .filter-actions,
-.filter-date_post-form .filter-actions {
+.filter-date_posted-form .filter-actions {
   gap: 5px;
 }
 
@@ -1123,41 +1126,41 @@ li.path-ext-svg a img {
   margin-top: 15px;
 }
 .filter-filetypes-form,
-.filter-date_post-form {
+.filter-date_posted-form {
   width: 200px;
 }
 .filetypes-option-container,
-.date_post-option-container {
+.date_posted-option-container {
   display: flex;
   flex-direction: column;
   margin: 20px 0 20px 0;
 }
-.date_post-option-container {
+.date_posted-option-container {
   margin: 10px 0 10px 0;
 }
 .filetypes-option:nth-child(odd),
-.date_post-option:nth-child(odd) label {
+.date_posted-option:nth-child(odd) label {
   background: #f3f3f3;
 }
 
 .filetypes-option input,
-.date_post-option input {
+.date_posted-option input {
   display: none;
 }
 .filetypes-option label,
-.date_post-option label {
+.date_posted-option label {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   position: relative;
   padding: 5px;
 }
-.date_post-option label {
+.date_posted-option label {
   width: 230px;
   transform: translateX(-20px);
 }
 .filetypes-option label .checked-icon,
-.date_post-option label .checked-icon{
+.date_posted-option label .checked-icon{
   display: none;
   position: absolute;
   left: 0;
@@ -1170,7 +1173,7 @@ li.path-ext-svg a img {
   margin-left: 30px;
   text-transform: uppercase;
 }
-.date_post-option label .date-period{
+.date_posted-option label .date-period{
   margin-left: 30px;
 }
 
@@ -1184,13 +1187,13 @@ li.path-ext-svg a img {
 }
 
 .filetypes-option input:checked + label .checked-icon,
-.date_post-option input:checked + label .checked-icon{
+.date_posted-option input:checked + label .checked-icon{
   display: flex;
 }
 .filetypes-option input:checked + label {
   background: #fff5e8;
 }
-.date_post-option input:checked + label {
+.date_posted-option input:checked + label {
   background: rgba(244, 171, 79, 0.17);
 }
 
