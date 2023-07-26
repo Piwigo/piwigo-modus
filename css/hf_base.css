@@ -1133,9 +1133,11 @@ li.path-ext-svg a img {
   font-weight: 600;
   margin-top: 15px;
 }
-.filter-filetypes-form,
-.filter-date_posted-form {
+.filter-filetypes-form {
   width: 200px;
+}
+.filter-date_posted-form {
+  width: 250px;
 }
 .filetypes-option-container,
 .date_posted-option-container {
@@ -1163,10 +1165,10 @@ li.path-ext-svg a img {
   position: relative;
   padding: 5px;
 }
-.date_posted-option label {
+/* .date_posted-option label {
   width: 230px;
   transform: translateX(-20px);
-}
+} */
 .filetypes-option label .checked-icon,
 .date_posted-option label .checked-icon{
   display: none;
@@ -1185,7 +1187,8 @@ li.path-ext-svg a img {
   margin-left: 30px;
 }
 
-.filetypes-option label .ext-badge {
+.filetypes-option label .ext-badge,
+.date_posted-option label .date_posted-badge {
   margin-left: auto;
   background: #ff7700;
   border-radius: 10px;
