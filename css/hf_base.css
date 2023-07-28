@@ -855,6 +855,13 @@ li.path-ext-svg a img {
 
 /* Multi criteria search */
 
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .filter .filter-icon {
   color: #474747;
 }
@@ -998,7 +1005,7 @@ li.path-ext-svg a img {
   display: flex;
   flex-direction: row;
   gap: 0 15px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .filter-manager,
@@ -1011,6 +1018,7 @@ li.path-ext-svg a img {
   font-size: 15px;
   font-weight: 600;
   padding: 4px 10px;
+  white-space: nowrap;
 }
 .filter-manager:hover,
 .filter-validate:hover {
@@ -1452,6 +1460,7 @@ li.path-ext-svg a img {
   color: #c4c4c4;
   cursor: not-allowed;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .clear-all.clickable {
