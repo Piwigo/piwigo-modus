@@ -1004,8 +1004,10 @@ li.path-ext-svg a img {
 .mcs-container {
   display: flex;
   flex-direction: row;
-  gap: 0 15px;
+  gap: 10px 15px;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0 15px;
 }
 
 .filter-manager,
@@ -1037,9 +1039,6 @@ li.path-ext-svg a img {
 }
 .filter-cancel:hover {
   background: #dadada;
-}
-.filter-manager {
-  margin-left: 15px;
 }
 
 .mcs-icon.pwg-icon-cog {
