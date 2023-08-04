@@ -1585,8 +1585,8 @@ li.path-ext-svg a img {
 .filter-tag-form .selectize-input input,
 .filter-author-form .selectize-input input,
 .filter-added_by-form .selectize-input input {
-  background: transparent;
-  color: #444;
+  background: transparent !important;
+  color: #444 !important;
   height: 16px;
   padding: 0;
   height: 26px;
