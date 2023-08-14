@@ -1470,6 +1470,26 @@ li.path-ext-svg a img {
   cursor: pointer;
 }
 
+.mcs-side-results.search-in-set-button {
+  margin-top:-15px;
+  margin-bottom: 30px;
+}
+.mcs-side-results.search-in-set-button p {
+  margin:0;
+}
+.mcs-side-results.search-in-set-button a {
+  color:#777;
+  font-weight:600;
+}
+.mcs-side-results.search-in-set-button a::before {
+  margin-right:10px;
+}
+.mcs-side-results.search-in-set-button a:hover {
+  color:#777;
+  font-weight:600;
+  text-decoration: none;
+}
+
 .mcs-side-results {
   display: flex;
   flex-direction: row;
