@@ -926,6 +926,11 @@ li.path-ext-svg a img {
   margin: 0 0 20px 0;
 }
 
+.mcs-popin-desc {
+  margin: 0 0 20px 0;
+  color:#777;
+}
+
 .tags-found-container,
 .albums-found-container {
   display: flex;
