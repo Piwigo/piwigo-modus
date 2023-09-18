@@ -1191,25 +1191,30 @@ li.path-ext-svg a img {
 .filter-date_posted-form {
   width: 250px;
 }
+
 .filetypes-option-container,
+.added_by-option-container,
 .date_posted-option-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 .date_posted-option-container {
   margin: 10px 0 10px 0;
 }
 .filetypes-option:nth-child(odd),
+.added_by-option:nth-child(odd),
 .date_posted-option:nth-child(odd) label {
   background: #f3f3f3;
 }
 
 .filetypes-option input,
+.added_by-option input,
 .date_posted-option input {
   display: none;
 }
 .filetypes-option label,
+.added_by-option label,
 .date_posted-option label {
   display: flex;
   flex-direction: row;
@@ -1222,6 +1227,7 @@ li.path-ext-svg a img {
   transform: translateX(-20px);
 } */
 .filetypes-option label .checked-icon,
+.added_by-option label .checked-icon,
 .date_posted-option label .checked-icon{
   display: none;
   position: absolute;
@@ -1231,15 +1237,27 @@ li.path-ext-svg a img {
   color: #ff7700;
 }
 
-.filetypes-option label .ext-name {
-  margin-left: 30px;
-  text-transform: uppercase;
-}
-.date_posted-option label .date-period{
+
+
+.filetypes-option label .ext-name,
+.added_by-option label .added_by-name,
+.date_posted-option label .date-period
+{
   margin-left: 30px;
 }
 
+.added_by-option label .added_by-name
+{
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.filetypes-option label .ext-name {
+  text-transform: uppercase;
+}
+
 .filetypes-option label .ext-badge,
+.added_by-option label .added_by-badge,
 .date_posted-option label .date_posted-badge {
   margin-left: auto;
   background: #ff7700;
@@ -1250,6 +1268,7 @@ li.path-ext-svg a img {
 }
 
 .filetypes-option input:checked + label .checked-icon,
+.added_by-option input:checked + label .checked-icon,
 .date_posted-option input:checked + label .checked-icon{
   display: flex;
 }
