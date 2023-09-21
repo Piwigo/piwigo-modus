@@ -1709,3 +1709,15 @@ li.path-ext-svg a img {
 .filter-album-form .add-album-button {
   width: fit-content;
 }
+
+.filetypes-option,
+.added_by-option{
+  min-width:150px!important;
+}
+
+.filter-filetypes-form .form-container,
+.filter-added_by-form .form-container,
+.filter-date_posted .form-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
