@@ -20,7 +20,7 @@
 {if count($block->data)==1}
 <dt><a href="{$block->data[0].URL}">{$block->data[0].LABEL}</a></dt>
 {else}
-<dt>{'Links'|@translate}</dt>
+<dt><a>{'Links'|@translate}</a></dt>
 <dd>
 	<ul>{strip}
 		{foreach from=$block->data item=link}
