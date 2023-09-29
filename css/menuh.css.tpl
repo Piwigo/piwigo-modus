@@ -20,8 +20,12 @@
 	font-size: 90%;
 	border-radius: 20px;
 	font-weight: bold;
+{if !empty($skin.menubar.badgeBackgroundColor)}
 	background-color: {$skin.menubar.badgeBackgroundColor};
+{/if}
+{if !empty($skin.menubar.badgeColor)}
 	color: {$skin.menubar.badgeColor};
+{/if}
 }
 
 #menubar .menuInfoCat::before {
