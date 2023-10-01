@@ -25,6 +25,7 @@
 
 {/html_style}{/strip}
 {/if}
+{if isset($comments)}
 <ul class="commentsList">
 {foreach from=$comments item=comment name=comment_loop}
 <li class="commentElement {if $smarty.foreach.comment_loop.index is odd}odd{else}even{/if}">
@@ -89,3 +90,4 @@
 </li>
 {/foreach}
 </ul>
+{/if}
