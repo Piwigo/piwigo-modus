@@ -131,8 +131,8 @@ INPUT:focus,TEXTAREA:focus{
   font-weight:normal;
 }
 
-.selectize-control.multi .selectize-input [data-value].active,
-.selectize-control.multi .selectize-input > div{
+#theSearchPage .selectize-control.multi .selectize-input [data-value].active,
+#theSearchPage .selectize-control.multi .selectize-input > div{
   background-image:none ;
   border:0;
   box-shadow:none;
@@ -446,12 +446,12 @@ hr{
   width:49%;
 }
 
-.filter input,
-.filter input:focus,
-.selectize-input > input,
+#theSearchPage .filter input,
+#theSearchPage .filter input:focus,
+#theSearchPage .selectize-input > input,
 INPUT[type="text"],
 INPUT[type="password"],
-SELECT,
+SELECT,s
 TEXTAREA{
   border-radius:0 ;
   border:0;
@@ -459,10 +459,10 @@ TEXTAREA{
   cursor:pointer
 }
 
-.selectize-input,
-.selectize-input.focus,
-.selectize-dropdown,
-.selectize-input input{
+#theSearchPage .selectize-input,
+#theSearchPage .selectize-input.focus,
+#theSearchPage .selectize-dropdown,
+#theSearchPage .selectize-input input{
   border-radius:0;
   box-shadow:none;
   border:0;
@@ -851,5 +851,4 @@ li.path-ext-svg a img {
       width: auto !important;
       height: auto !important;
    }
-}
 }
