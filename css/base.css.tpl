@@ -518,3 +518,76 @@ ul.token-input-list{
 #TagsGroupRemoveTag span{
   display:inline-block;
 }
+
+{* Css for search in set button *}
+.mcs-side-results {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 15px 0 0 15px;
+}
+
+.mcs-side-results > div {
+  background: #fafafa;
+  box-shadow: 0px 2px #00000024;
+  position: relative;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #777;
+  width: fit-content;
+}
+
+.mcs-side-results > div:hover {
+  background: #eee;
+  color: #777;
+}
+
+.mcs-side-results > div:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.mcs-side-results > div p{
+  margin: 0 0 0 10px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.mcs-side-results .mcs-side-badge {
+  border-radius: 25px;
+  font-weight: 700;
+  color: #fafafa;
+  margin-left: 5px;
+  padding: 2px 5px!important;
+  font-size: 10px;
+  background: #777;
+}
+
+.mcs-side-results.search-in-set-button {
+  margin-top:-15px;
+  margin-bottom: 30px;
+}
+
+.mcs-side-results.search-in-set-button p {
+  margin:0;
+}
+
+.mcs-side-results.search-in-set-button a {
+  color:#777;
+  font-weight:600;
+}
+
+.mcs-side-results.search-in-set-button a::before {
+  margin-right:10px;
+}
+
+.mcs-side-results.search-in-set-button a:hover {
+  color:#777;
+  font-weight:600;
+  text-decoration: none;
+}
