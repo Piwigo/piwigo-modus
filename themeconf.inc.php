@@ -84,6 +84,33 @@ function rv_cdn_prefilter($source, &$smarty)
 	$source = str_replace('url({$'.'ROOT_URL}', 'url('.RVCDN_ROOT_URL, $source);
 	return $source;
 }
+
+// Add prefilter to remove fontello loaded by piwigo 14 search, 
+// this avoids conflicts of loading 2 fontellos
+add_event_handler('loc_begin_index', 'modus_loc_begin_index', 60);
+function modus_loc_begin_index()
+{
+	global $template;
+	$template->set_prefilter('index', 'modus_index_prefilter_1');
+	$template->set_prefilter('index', 'modus_index_prefilter_2');
+}
+
+function modus_index_prefilter_1($content)
+{
+  $search = '{combine_css path="themes/default/vendor/fontello/css/fontello.css" order=-10}';
+  $replacement = '';
+  return str_replace($search, $replacement, $content);
+}
+// Add pwg-icon class to search in this set icon
+
+function modus_index_prefilter_2($content)
+{
+  $search = '<span class="pwg-icon-search-folder"></span>';
+  $replacement = '<span class="pwg-icon pwg-icon-search-folder"></span>';
+  return str_replace($search, $replacement, $content);
+}
+
+
 function rv_cdn_combined_script($url, $script)
 {
 	if (!$script->is_remote())
