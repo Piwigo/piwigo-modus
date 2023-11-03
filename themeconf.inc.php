@@ -187,12 +187,12 @@ function modus_thumbs($x, $smarty)
 	$default_params = $smarty->getTemplateVars('derivative_params');
 	$row_height = $default_params->max_height();
 	$device = get_device();
-	$container_margin = 5;
+	$container_margin = 4;
 
 	if ('mobile'==$device)
 	{
 		$horizontal_margin = floor(0.01*$row_height);
-		$container_margin = 0;
+		$container_margin = -1;
 	}
 	elseif ('tablet'==$device)
 		$horizontal_margin = floor(0.015*$row_height);
