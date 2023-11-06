@@ -484,7 +484,7 @@ td .nbEntries{
 .filter-manager-popin-container,
 .tags-found-popin-container,
 .albums-found-popin-container {
-  background: white;
+  background: #e7ffe7;
 }
 
 .filter-manager-close,
@@ -496,7 +496,7 @@ td .nbEntries{
 .filter-manager-popin .mcs-popin-title,
 .tags-found-popin .mcs-popin-title,
 .albums-found-popin .mcs-popin-title {
-  color: #65A603;
+  color: #93c2d6;
 }
 
 .mcs-popin-desc {
@@ -505,7 +505,7 @@ td .nbEntries{
 
 .tags-found-container .tag-item,
 .albums-found-container .album-item {
-  background: #F4AB4F;
+  background: #98D90D;
   color: #525252;
 }
 
@@ -519,10 +519,6 @@ td .nbEntries{
 }
 
 .filter-manager-popin :checked + span {
-  /* border: 1px solid #777;
-  background: #777;
-  color: white; */
-
   background: #98D90D;
   border: 1px solid #034001 !important;
   color: #034001 !important;
@@ -549,7 +545,7 @@ td .nbEntries{
 }
 
 .mcs-container .filter {
-  border: 1px solid #888;
+  border: 1px solid #034001;
 }
 
 .filter-form {
@@ -639,10 +635,6 @@ td .nbEntries{
 
 .breadcrumb-item a:hover {
   color: #3A3A3A;
-}
-
-.breadcrumb-item .icon-cancel-circled:hover {
-  color: #ff7700;
 }
 
 .linkedAlbumPopIn { 
