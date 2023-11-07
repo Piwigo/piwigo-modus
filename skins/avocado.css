@@ -712,7 +712,8 @@ td .nbEntries{
 
 .filter-tag-form .selectize-dropdown,
 .filter-author-form .selectize-dropdown,
-.filter-added_by-form .selectize-dropdown {
+.filter-added_by-form .selectize-dropdown,
+.filter-tag-form .selectize-dropdown .selectize-dropdown-content {
   background: #eee;
   border-radius:5px;
 }
