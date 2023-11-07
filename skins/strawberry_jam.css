@@ -496,3 +496,59 @@ td .nbEntries{
 .thumbnailCategory {
   background-color:#e8e8ea;
 }
+
+/*Search*/
+
+.filter-manager-popin .mcs-popin-title,
+.tags-found-popin .mcs-popin-title,
+.albums-found-popin .mcs-popin-title,
+.mcs-container .filter-filled .filter-icon,
+.filetypes-option label .checked-icon,
+.added_by-option label .checked-icon,
+.date_posted-option label .checked-icon,
+.mcs-container .filter-filled,
+.breadcrumb-item .icon-cancel-circled:hover,
+.clear-all.clickable,
+.mcs-no-result .text span:first-child,
+.filter-form .filter-form-title
+{
+  color: #BF0D08!important;
+}
+
+.tags-found-container .tag-item,
+.albums-found-container .album-item,
+.breadcrumb-item,
+.filter-tag-form .selectize-control.multi .selectize-input > div,
+.filter-tag-form .selectize-control.multi .selectize-input [data-value].active,
+.filter-author-form .selectize-control.multi .selectize-input > div,
+.filter-author-form .selectize-control.multi .selectize-input [data-value].active,
+.filter-added_by-form .selectize-control.multi .selectize-input > div,
+.filter-added_by-form .selectize-control.multi .selectize-input [data-value].active,
+.mcs-container .filter-filled,
+.date_posted-option input:checked + label,
+.filetypes-option  input:checked + label,
+.added_by-option  input:checked + label {
+  background: #f8e6e6!important;
+}
+
+.filter-manager,
+.filter-validate,
+.filter-manager:hover,
+.filter-validate:hover,
+.filetypes-option label .ext-badge,
+.added_by-option label .added_by-badge,
+.date_posted-option label .date_posted-badge {
+  background: #BF0D08!important;
+}
+
+.mcs-container .filter-filled {
+  border: 1px solid #7F0906 !important;
+}
+
+.mcs-container .selectize-input,
+.mcs-container .selectize-input.focus,
+.mcs-container .selectize-dropdown,
+.mcs-container .selectize-input input{
+  background-color:#eee;
+  border-radius:0;
+}
