@@ -674,15 +674,14 @@ form.properties a{
 
 .filter-manager,
 .filter-validate {
-  background: #DCD0C0;
-  color: #666;
+  background-color:#dcd0c0;
+  color:#16262e;
 }
 
 .filter-manager:hover,
 .filter-validate:hover {
-  color: white;
-  background: #DCD0C0;
-  text-shadow: 0px 0px 10px #373737;
+  background-color:#C0B283;
+  color:#16262e;
 }
 
 .filter-cancel {
@@ -887,18 +886,18 @@ form.properties a{
 }
 
 .mcs-side-results > div{
-  background-color:#93c2d6;
+  background-color:#dcd0c0;
   color:#16262e;
 }
 
 .mcs-side-results > div:hover{
-  background-color:white;
+  background-color:#C0B283;
   color:#16262e;
 }
 
 .mcs-side-results .mcs-side-badge{
-  color: #16262e;
-  background-color: #0391aa;
+  color: #C0B283;
+  background-color: #373737;
 }
 
 .filter-tag-form .selectize-dropdown .selectize-dropdown-content {
