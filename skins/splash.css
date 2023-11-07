@@ -566,3 +566,57 @@ form.properties a{
 .thumbnailCategory {
   background-color:#e8e8ea;
 }
+
+/* Search colors */
+.mcs-container .filter,
+.filter .filter-icon{
+  color:#888;
+}
+
+.filter-manager-popin .mcs-popin-title,
+.tags-found-popin .mcs-popin-title,
+.albums-found-popin .mcs-popin-title,
+.filetypes-option label .checked-icon,
+.added_by-option label .checked-icon,
+.date_posted-option label .checked-icon,
+.breadcrumb-item .icon-cancel-circled:hover,
+.clear-all.clickable,
+.mcs-no-result .text span:first-child,
+.filter-form .filter-form-title
+{
+  color: #0b6aff!important;
+}
+
+.tags-found-container .tag-item,
+.albums-found-container .album-item,
+.breadcrumb-item,
+.filter-tag-form .selectize-control.multi .selectize-input > div,
+.filter-tag-form .selectize-control.multi .selectize-input [data-value].active,
+.filter-author-form .selectize-control.multi .selectize-input > div,
+.filter-author-form .selectize-control.multi .selectize-input [data-value].active,
+.filter-added_by-form .selectize-control.multi .selectize-input > div,
+.filter-added_by-form .selectize-control.multi .selectize-input [data-value].active,
+.mcs-container .filter-filled {
+  background: #f2f2f2!important;
+}
+
+.filter-manager,
+.filter-validate,
+.filter-manager:hover,
+.filter-validate:hover,
+.filetypes-option label .ext-badge,
+.added_by-option label .added_by-badge,
+.date_posted-option label .date_posted-badge,
+.mcs-side-results .mcs-side-badge {
+  background: #0b6aff!important;
+}
+
+.mcs-container .filter-filled {
+  border: 1px solid #888 !important;
+}
+
+
+.mcs-container .filter-filled span,
+.mcs-container .filter-filled .filter-icon{
+  color:black!important;
+}
