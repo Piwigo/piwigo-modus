@@ -664,9 +664,9 @@ form.properties a{
   background: #2e4756;
 }
 
-.filter-manager-close,
-.tags-found-close,
-.albums-found-close {
+.filter-manager-close.pwg-icon-cancel:before,
+.tags-found-close.pwg-icon-cancel:before,
+.albums-found-close.pwg-icon-cancel:before {
   color: white;
 }
 

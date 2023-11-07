@@ -611,7 +611,10 @@ ul.token-input-list li input{
 .filter-author-form .selectize-control.multi .selectize-input [data-value].active,
 .filter-added_by-form .selectize-control.multi .selectize-input > div,
 .filter-added_by-form .selectize-control.multi .selectize-input [data-value].active,
-.mcs-container .filter-filled {
+.mcs-container .filter-filled,
+.date_posted-option input:checked + label,
+.filetypes-option  input:checked + label,
+.added_by-option  input:checked + label {
   background: #FFD5DF!important;
 }
 

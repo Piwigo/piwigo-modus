@@ -596,7 +596,10 @@ form.properties a{
 .filter-author-form .selectize-control.multi .selectize-input [data-value].active,
 .filter-added_by-form .selectize-control.multi .selectize-input > div,
 .filter-added_by-form .selectize-control.multi .selectize-input [data-value].active,
-.mcs-container .filter-filled {
+.mcs-container .filter-filled,
+.date_posted-option input:checked + label,
+.filetypes-option  input:checked + label,
+.added_by-option  input:checked + label {
   background: #f2f2f2!important;
 }
 
@@ -619,4 +622,10 @@ form.properties a{
 .mcs-container .filter-filled span,
 .mcs-container .filter-filled .filter-icon{
   color:black!important;
+}
+
+.filetypes-option:nth-child(odd),
+.added_by-option:nth-child(odd),
+.date_posted-option:nth-child(odd) label {
+  background: #e8e8ea!important;
 }
