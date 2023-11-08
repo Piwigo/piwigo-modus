@@ -853,6 +853,7 @@ li.path-ext-svg a img {
    }
 }
 
-.mcs-container{
+.mcs-container,
+.mcs-side-results.search-in-set-button{
 	margin-top:0;
 }

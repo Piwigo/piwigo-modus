@@ -569,7 +569,6 @@ ul.token-input-list{
 }
 
 .mcs-side-results.search-in-set-button {
-  margin-top:-15px;
   margin-bottom: 30px;
 }
 
