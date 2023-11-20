@@ -507,11 +507,6 @@ TEXTAREA{
   color:#93c2d6;
 }
 
-.navigationBar a{
-  color:#93c2d6;
-  text-shadow:none;
-}
-
 .content .navigationBar,
 SPAN.calItem,
 TD.calDayCellFull,
@@ -523,9 +518,27 @@ TD.calDayCellEmpty:hover{
   border:none;
 }
 
+.navigationBar span{
+  color:#93c2d6;
+  text-shadow:none;
+}
+
+.navigationBar a{
+  color:#326c84;
+}
+
+.navigationBar a:hover{
+  color:#2e4756;
+  text-decoration:underline; 
+ }
+ 
 .content .pageNumberSelected{
  color:#2e4756;
 }
+
+.content .pageNumberSelected{
+  color:#2e4756;
+ }
 
 DIV.thumbHover{
   color:#93c2d6;
