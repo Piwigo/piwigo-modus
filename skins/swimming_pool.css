@@ -925,3 +925,7 @@ form.properties a{
   background-color:#fff;
   color:#7ca2bc;
 }
+
+.arrow-fill {
+  fill: #5889ad !important;
+}

@@ -931,3 +931,7 @@ form.properties a{
 .filter-tag-form .selectize-dropdown .selectize-dropdown-content {
   background-color:#93c2d6;
 }
+
+.arrow-fill {
+  fill: #16262e !important;
+}

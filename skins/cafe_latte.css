@@ -903,3 +903,7 @@ form.properties a{
 .filter-tag-form .selectize-dropdown .selectize-dropdown-content {
   background-color:#dcd0c0;
 }
+
+.arrow-fill {
+  fill: #f4f0ec !important;
+}

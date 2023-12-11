@@ -709,3 +709,7 @@ ul.token-input-list li input{
   background-color:#fff;
   color:#27498C;
 }
+
+.arrow-fill {
+  fill: #EBEBF2 !important;
+}
