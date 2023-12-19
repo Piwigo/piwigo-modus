@@ -32,7 +32,7 @@ body {
 }
 
 .infos{
-  background:#096a09 url(/themes/default/icon/infos.png) no-repeat center right;
+  background:#096a09 url(../../default/icon/infos.png) no-repeat center right;
   color:white;
  }
 

@@ -51,7 +51,7 @@ html, body {
 
 .errors{
   border:none;
-  background:#ffc4bf url(/themes/default/icon/errors.png) no-repeat center right;
+  background:#ffc4bf url(../../default/icon/errors.png) no-repeat center right;
   font-family: 'Open Sans', sans-serif;
   margin:0;
   font-weight:bold;
