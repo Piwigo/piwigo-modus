@@ -100,8 +100,9 @@ DIV.thumbHover { /* first & last holders only*/
 }
 
 .imageInfo {
-	display: table-row;
+	display: block;
 	line-height: 20px;
+  word-wrap: break-word;
 }
 
 .imageInfo DT {
