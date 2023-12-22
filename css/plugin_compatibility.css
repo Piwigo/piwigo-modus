@@ -70,3 +70,11 @@
 .pwg-button.addCollection i {
     font-size: 17px !important;
 }
+
+@media (max-width: 576px) {
+  .thumbnailCategories LI {
+    width: 75% !important;
+    margin:0 auto!important;
+    float:unset;
+  }
+}
