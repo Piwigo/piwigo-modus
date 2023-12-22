@@ -592,6 +592,10 @@ form.properties a{
   background-color:#2F3032;
 }
 
+.contact input[type="text"], .contact textarea, .contact select{
+  color:black;
+}
+
 /* Search colors */
 .filter .filter-icon {
   color: #848588;
