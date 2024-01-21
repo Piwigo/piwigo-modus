@@ -33,3 +33,4 @@ $lang['Modus theme config'] = 'Madus teema seadistus';
 $lang['Skin'] = 'Nahk';
 $lang['Use square thumbs'] = 'Kasuta ruudukujulisi pisipilte';
 $lang['Display page banner'] = 'Kuva lehe reklaamriba';
+$lang['Admin'] = 'Admin';
