@@ -33,3 +33,4 @@ $lang['Default sizes'] = 'Розмір за замовчуванням';
 $lang['Skin'] = 'Шкірка';
 $lang['Use square thumbs'] = 'Використовуйте квадратні ескізи';
 $lang['Display page banner'] = 'Показати банер сторінки';
+$lang['Admin'] = 'Адмін';
