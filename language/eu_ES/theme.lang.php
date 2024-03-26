@@ -18,3 +18,4 @@ $lang['Modus theme config'] = 'Modus gaiaren konfigurazioa';
 $lang['Skin'] = 'Azala';
 $lang['Use square thumbs'] = 'Erabili miniatura karratuak';
 $lang['modus_theme'] = 'modus_gaia';
+$lang['Admin'] = 'Admin';
