@@ -857,3 +857,9 @@ li.path-ext-svg a img {
 .mcs-side-results.search-in-set-button{
 	margin-top:0;
 }
+
+@media screen {
+.wide #theImage {
+	width: 75%; /*min default picture derivative width*/
+}
+}

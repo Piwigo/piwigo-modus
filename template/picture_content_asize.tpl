@@ -13,7 +13,21 @@ cp: '{$COOKIE_PATH|@escape:'javascript'}'
 {else}
 {footer_script}rvas_choose(1);{/footer_script}
 {/if}
-<img class="file-ext-{if isset($current.file_ext)}{$current.file_ext}{/if} path-ext-{if isset($current.path_ext)}{$current.path_ext}{/if}" {if (isset($current.path_ext) and $current.path_ext == 'svg')} src="{$current.selected_derivative->get_url()}" {/if} {if !$RVAS_PENDING} src="{$current.selected_derivative->get_url()}" {if isset($rvas_display_size)}width={$rvas_display_size[0]} height={$rvas_display_size[1]} data-natural-w={$rvas_natural_size[0]}{else}{$current.selected_derivative->get_size_htm()}{/if} itemprop=contentURL{/if} alt="{$ALT_IMG}" id="theMainImage"{if !isset($rvas_display_size)} usemap="#map{$current.selected_derivative->get_type()}"{/if} title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
+
+{if isset($current.path_ext) and $current.path_ext == 'pdf' and isset($PDF_VIEWER_FILESIZE_THRESHOLD) and $current.filesize < $PDF_VIEWER_FILESIZE_THRESHOLD}
+  <div>
+      <embed src="{$ROOT_URL}{$current.path}" type="application/pdf" style='width: 95%; height:calc(100vh - 200px); min-height:600px;'/>
+  </div>
+{else}
+  <img class="file-ext-{if isset($current.file_ext)}{$current.file_ext}{/if} path-ext-{if isset($current.path_ext)}{$current.path_ext}{/if}" {if (isset($current.path_ext) and $current.path_ext == 'svg')} src="{$current.path}" {elseif $current.selected_derivative->is_cached()}src="{$current.selected_derivative->get_url()}"{$current.selected_derivative->get_size_htm()}{else}src="{$ROOT_URL}{$themeconf.img_dir}/ajax_loader.gif" data-src="{$current.selected_derivative->get_url()}"{/if} alt="{$ALT_IMG}" id="theMainImage" usemap="#map{$current.selected_derivative->get_type()}" title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
+  
+    {if isset($current.path_ext) and $current.path_ext == 'pdf' and isset($PDF_VIEWER_FILESIZE_THRESHOLD) and $current.filesize > $PDF_VIEWER_FILESIZE_THRESHOLD}
+      <div class="pdf-too-heavy">
+          {'The PDF you requested is too large to display on this page.'|translate}</br>
+          <a href="{$ROOT_URL}{$current.path}" target="_blank">{'Click here to display it'|translate}</a>
+      </div>
+    {/if}
+{/if}
 
 {foreach from=$current.unique_derivatives item=derivative key=derivative_type}{strip}
 <map name="map{$derivative->get_type()}">
