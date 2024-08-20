@@ -334,11 +334,11 @@ td .nbEntries{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:white;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text
-   #imageToolBar .actionButtons .pwg-button-text,
+  #albumActionsSwitcher + .categoryActions .pwg-button-text,
+  #imageToolBar .actionButtons .pwg-button-text,
    .actionButtons A .pwg-icon,
    .actionButtons A .pwg-icon:hover {
-    color:white ;
+    color:white;
   }
   .categoryActions a .pwg-icon{
     color:white ;

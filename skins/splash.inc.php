@@ -29,7 +29,7 @@ $skin = array(
 
 	'dropdowns' => array(
 			// REQUIRED - cannot be transparent
-			'backgroundColor' 	=> '#0f0',
+			'backgroundColor' 	=> '#f2f2f2',
 		),
 
 	'pageTitle' => array(
