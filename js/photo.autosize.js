@@ -86,6 +86,14 @@ function rvas_choose(relaxed){
 			$('#derivativeChecked'+best.type).css('visibility','visible');
 		}
 	}
+	$img.off('load').on('load', function() {
+		const attrW = $(this).attr('width');
+		const attrH = $(this).attr('height');
+		$(this).css({
+			'width': attrW ? attrW : 'auto',
+			'height': attrH ? attrH : 'auto',
+		});
+	});
 }
 
 $(document).ready( function() {
