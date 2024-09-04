@@ -1,4 +1,4 @@
-{combine_script id='photo.autosize' path="themes/`$themeconf.id`/js/photo.autosize.min.js" load='footer' require='jquery'}
+{combine_script id='photo.autosize' path="themes/`$themeconf.id`/js/photo.autosize.js" load='footer' require='jquery'}
 
 {footer_script}RVAS = {
 derivatives: [
