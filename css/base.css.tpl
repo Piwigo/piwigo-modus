@@ -590,3 +590,16 @@ ul.token-input-list{
   font-weight:600;
   text-decoration: none;
 }
+
+{if !empty($skin.searchResultItem)}
+.search-result-item {
+  background-color: {$skin.searchResultItem.backgroundColor};
+  color: {$skin.searchResultItem.color};
+}
+{/if}
+
+{if !empty($skin.formAlbumSelector.backgroundColor)}
+.linkedAlbumPopInContainer {
+  background-color: {$skin.formAlbumSelector.backgroundColor};
+}
+{/if}

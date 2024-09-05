@@ -54,6 +54,10 @@ $skin = array(
 			'backgroundColor' 	=> '#ccc',
 		),
 
+	'formAlbumSelector' => array(
+			'backgroundColor'	=> '#fff',
+		),
+
 	// should be white or around white
 	'albumLegend' => array(
 			'color' 	=> '#fff',

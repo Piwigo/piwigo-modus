@@ -79,6 +79,11 @@ $skin = array(
 			'backgroundColor' 	=> '#3F3F3F',
 		),
 
+	'searchResultItem' => array(
+			'backgroundColor' 	=> '#333333',
+			'color'		=> '#bbbbbb',
+		),
+
 	// should be white or around white
 	/*'albumLegend' => array(
 			'color' 	=> '#fff',
