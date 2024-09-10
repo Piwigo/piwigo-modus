@@ -5,24 +5,24 @@ $skin = array(
 			// REQUIRED
 			'backgroundColor' 	=> '#fff',
 			// REQUIRED
-			'color' 						=> '#000',
+			'color' 		=> '#000',
 		),
 		
 	'A' => array(
 			// REQUIRED
-			'color' 						=> '#00f',
+			'color' 		=> '#00f',
 		),
 
 	'A:hover' => array(
-			'color' 						=> '#000',
+			'color' 		=> '#000',
 		),
 
 	'menubar' => array(
 			'backgroundColor' 	=> '#C33219', 
-			'gradient' 					=> array('#E64522','#C33219'),
-			'color' 						=> '#bbb',
-			'link'							=> array( 'color' => '#ddd' ),
-			'linkHover'					=> array( 'color' => '#fff' ),
+			'gradient' 		=> array('#E64522','#C33219'),
+			'color' 		=> '#bbb',
+			'link'			=> array( 'color' => '#ddd' ),
+			'linkHover'		=> array( 'color' => '#fff' ),
 		),
 
 	'dropdowns' => array(
@@ -32,10 +32,10 @@ $skin = array(
 
 	'pageTitle' => array(
 			'backgroundColor' 	=> '#2B4170', 
-			'gradient' 					=> array('#3B5998','#2B4170'),
-			'color' 						=> '#bbb',
-			'link'							=> array( 'color' => '#ddd' ),
-			'linkHover'					=> array( 'color' => '#fff' ),
+			'gradient' 		=> array('#3B5998','#2B4170'),
+			'color' 		=> '#bbb',
+			'link'			=> array( 'color' => '#ddd' ),
+			'linkHover'		=> array( 'color' => '#fff' ),
 		),
 
 	'pictureBar' => array(
@@ -47,7 +47,7 @@ $skin = array(
 		),
 
 	'pictureWideInfoTable' => array(
-			'backgroundColor' 	=> '#ccc',
+			'backgroundColor' 	=> 'darkgrey',
 		),
 
 	'comment' => array(
