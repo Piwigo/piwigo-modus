@@ -41,7 +41,7 @@ $skin = array(
 
 	'dropdowns' => array(
 			// REQUIRED - cannot be transparent
-			'backgroundColor' 	=> '#618f61',
+			'backgroundColor' 	=> '#5889ad',
 		),
 
 	'pageTitle' => array(
