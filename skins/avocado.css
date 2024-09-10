@@ -453,7 +453,6 @@ td .nbEntries{
   }
   #albumActionsSwitcher + .categoryActions .pwg-button-text,
   #imageToolBar .actionButtons .pwg-button-text,
-  #imageToolBar .actionButtons .pwg-button-text,
   .actionButtons A .pwg-icon,  .actionButtons A
   .pwg-icon:hover {
     color:#84BF04 !important;
@@ -464,6 +463,11 @@ td .nbEntries{
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:#84BF04!important;
   }
+}
+
+.gallery-icon-search-folder:before {
+  color:#84BF04;
+  font-size: 20px;
 }
 
 .thumbnailCategory{
