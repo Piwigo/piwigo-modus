@@ -349,3 +349,8 @@ td .nbEntries{
     color:black ;
   }
 }
+
+.gallery-icon-search-folder:before {
+  font-size: 20px;
+  color:white;
+}
