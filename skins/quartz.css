@@ -572,7 +572,7 @@ form.properties a{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#eaeae9;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text {
     color:#eaeae9;
     box-shadow:none;
   }
@@ -588,6 +588,10 @@ form.properties a{
   }
 }
 
+.gallery-icon-search-folder:before {
+  color:#848588;
+  font-size: 17px;
+}
 .thumbnailCategory {
   background-color:#2F3032;
 }
