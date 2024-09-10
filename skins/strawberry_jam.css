@@ -475,9 +475,9 @@ td .nbEntries{
   }
   
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
-    color:white;
+    color:#7f0906;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text {
     color:black;
   }
   #albumActionsSwitcher + .categoryActions{
@@ -486,11 +486,16 @@ td .nbEntries{
     box-shadow: 5px 5px 10px black;
   }
   .categoryActions a .pwg-icon{
-    color:white;
+    color:#7F0906;
   }
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:black ;
   }
+}
+
+
+.gallery-icon-search-folder:before·{
+  font-size:·20px; 
 }
 
 .thumbnailCategory {
