@@ -28,7 +28,7 @@ body{
   
 h2{
   color:black;
-  background_color:white;
+  background-color:white;
 }
 
 .albLegend {
@@ -565,7 +565,7 @@ ul.token-input-list li input{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:black;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text {
     color:black !important;
   }
   #albumActionsSwitcher + .categoryActions{
@@ -578,6 +578,10 @@ ul.token-input-list li input{
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:#FF2F63;
   }
+}
+
+.gallery-icon-search-folder:before {
+  font-size: 20px;
 }
 
 .thumbnailCategory {
