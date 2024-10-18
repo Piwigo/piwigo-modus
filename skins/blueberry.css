@@ -1,7 +1,15 @@
+:root{
+  --primary:#0391aa;
+  --secondary:#2e4756;
+  --dark:#16262e;
+  --light:#93c2d6;
+  --alt-primary:#326471;
+}
+
 body{  
   background-color:#2e4756;
   color:#93c2d6;
- }
+}
 
 #theHeader div.banner, #theHeader div.banner:hover{
   color:black;
@@ -760,29 +768,65 @@ form.properties a{
   border-radius: 0px !important;
 }
 
+.ratings-option:nth-child(odd),
+.ratios-option:nth-child(odd),
+.preset_posted_date .date_posted-option:nth-child(odd) label,
+.preset_posted_date .date_posted-option:nth-child(odd) i,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input label,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input i,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input label,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input i,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) label,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) i,
+.preset_created_date .date_created-option:nth-child(odd) label,
+.preset_created_date .date_created-option:nth-child(odd) i,
+.custom_created_date .date_created-option:nth-child(odd) .year_input label,
+.custom_created_date .date_created-option:nth-child(odd) .year_input i,
+.custom_created_date .date_created-option:nth-child(even) .month_input label,
+.custom_created_date .date_created-option:nth-child(even) .month_input i,
+.custom_created_date .days_container .date_created-option:nth-child(odd) label,
+.custom_created_date .days_container .date_created-option:nth-child(odd) i,
 .filetypes-option:nth-child(odd),
-.added_by-option:nth-child(odd),
-.date_posted-option:nth-child(odd) label {
-  background: #2e4756;
+.added_by-option:nth-child(odd){
+  background: var(--secondary);
 }
 
+.ratings-option label .checked-icon,
+.ratios-option input:checked + label .checked-icon,
 .filetypes-option label .checked-icon,
 .added_by-option label .checked-icon,
-.date_posted-option label .checked-icon{
-  color: #2e4756;
+.date_posted-option label .checked-icon,
+.date_created-option label .checked-icon,
+.ratios-option label .checked-icon{
+  color: var(--secondary);
 }
 
+.ratings-option label .ratings-badge,
+.ratios-option label .ratio-badge,
 .filetypes-option label .ext-badge,
 .added_by-option label .added_by-badge,
-.date_posted-option label .date_posted-badge {
+.date_posted-option label .date_posted-badge,
+.date_created-option label .date_created-badge  {
   background-color: #16262e;
   color: #0391aa;
 }
 
-.filetypes-option input:checked + label,
 .added_by-option input:checked + label,
-.date_posted-option input:checked + label{
+.filetypes-option input:checked + label,
+.date_posted-option .selected label, 
+.date_posted-option .selected .accordion-toggle,
+.date_created-option .selected label,
+.date_created-option .selected .accordion-toggle,
+.preset_posted_date .date_posted-option input:checked + label,
+.preset_created_date .date_created-option input:checked + label,
+.ratios-option input:checked + label,
+.ratings-option input:checked + label{
   background: #326471;
+}
+
+.date_posted-option .accordion-toggle:hover,
+.date_created-option .accordion-toggle:hover{
+  color:var(--primary);
 }
 
 .head-button-2 {
@@ -935,3 +979,39 @@ form.properties a{
 .arrow-fill {
   fill: #16262e !important;
 }
+
+.mcs-container div .slider_input p,
+.slider-info{
+  color:var(--light);
+}
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-slider-range.ui-widget-header.ui-corner-all{
+  border: 1px solid var(--alt-primary);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+  background-color:var(--alt-primary);
+}
+
+.ui-slider .ui-slider-range{
+  background: var(--alt-primary);
+}
+
+.no_filtered_photos{
+  color:var(--dark);
+}
+
+.mcs-container input[type="number"],
+.mcs-container input[type="number"]:focus{
+  background-color: var(--light) !important;
+  color: var(--dark) !important;
+  border-radius: 0px !important;
+}
+
+.no_filtered_photos{
+  color:var(--primary);
+}
+

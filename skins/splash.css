@@ -1,7 +1,15 @@
+:root{
+  --primary:#fff;
+  --secondary:#0b6aff;
+  --dark:#000;
+  --light:#c7d3e1;
+  --alt-primary:#f2f2f2;
+}
+
 body{  
   background-color:white;
   color:black;
- }
+}
 
 #theHeader div.banner,
 #theHeader div.banner:hover{
@@ -579,11 +587,13 @@ form.properties a{
 .filetypes-option label .checked-icon,
 .added_by-option label .checked-icon,
 .date_posted-option label .checked-icon,
+.date_created-option label .checked-icon,
 .breadcrumb-item .icon-cancel-circled:hover,
 .clear-all.clickable,
 .mcs-no-result .text span:first-child,
-.filter-form .filter-form-title
-{
+.filter-form .filter-form-title,
+.ratios-option label .checked-icon,
+.ratings-option label .checked-icon{
   color: #0b6aff!important;
 }
 
@@ -596,11 +606,33 @@ form.properties a{
 .filter-author-form .selectize-control.multi .selectize-input [data-value].active,
 .filter-added_by-form .selectize-control.multi .selectize-input > div,
 .filter-added_by-form .selectize-control.multi .selectize-input [data-value].active,
-.mcs-container .filter-filled,
-.date_posted-option input:checked + label,
-.filetypes-option  input:checked + label,
-.added_by-option  input:checked + label {
+.mcs-container .filter-filled{
   background: #f2f2f2!important;
+}
+
+.filetypes-option label,
+.added_by-option label,
+.preset_posted_date .date_posted-option label,
+.preset_created_date .date_created-option label,
+.custom_posted_date .date_posted-option label,
+.custom_created_date .date_created-option label,
+.ratios-option label, .ratings-option label{
+  color:var(--dark); 
+}
+
+.added_by-option input:checked + label,
+.filetypes-option input:checked + label,
+.date_posted-option .selected label, 
+.date_posted-option .selected .accordion-toggle,
+.date_created-option .selected label,
+.date_created-option .selected .accordion-toggle,
+.preset_posted_date .date_posted-option input:checked + label,
+.preset_created_date .date_created-option input:checked + label,
+.custom_posted_date .date_posted-option input:checked + label,
+.custom_created_date .date_created-option input:checked + label,
+.ratios-option input:checked + label,
+.ratings-option input:checked + label{
+  background: var(--light)!important;
 }
 
 .filter-manager,
@@ -610,8 +642,12 @@ form.properties a{
 .filetypes-option label .ext-badge,
 .added_by-option label .added_by-badge,
 .date_posted-option label .date_posted-badge,
-.mcs-side-results .mcs-side-badge {
-  background: #0b6aff!important;
+.date_created-option label .date_created-badge,
+.mcs-side-results .mcs-side-badge,
+.ratios-option label .ratio-badge, 
+.ratings-option label .ratings-badge{
+  background: var(--secondary)!important;
+  color:var(--primary)!important;
 }
 
 .mcs-container .filter-filled {
@@ -619,13 +655,68 @@ form.properties a{
 }
 
 
-.mcs-container .filter-filled span,
-.mcs-container .filter-filled .filter-icon{
-  color:black!important;
+.mcs-container .filter-filled .filter-icon,
+.mcs-container .filter-filled .search-words,
+.mcs-container .filter-filled .filter-arrow 
+{
+  color:var(--dark)!important;
 }
 
+
+.ratings-option:nth-child(odd),
+.ratios-option:nth-child(odd),
+.preset_posted_date .date_posted-option:nth-child(odd) label,
+.preset_posted_date .date_posted-option:nth-child(odd) i,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input label,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input i,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input label,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input i,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) label,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) i,
+.preset_created_date .date_created-option:nth-child(odd) label,
+.preset_created_date .date_created-option:nth-child(odd) i,
+.custom_created_date .date_created-option:nth-child(odd) .year_input label,
+.custom_created_date .date_created-option:nth-child(odd) .year_input i,
+.custom_created_date .date_created-option:nth-child(even) .month_input label,
+.custom_created_date .date_created-option:nth-child(even) .month_input i,
+.custom_created_date .days_container .date_created-option:nth-child(odd) label,
+.custom_created_date .days_container .date_created-option:nth-child(odd) i,
 .filetypes-option:nth-child(odd),
-.added_by-option:nth-child(odd),
-.date_posted-option:nth-child(odd) label {
+.added_by-option:nth-child(odd){
   background: #e8e8ea!important;
+}
+
+
+.date_posted-option .accordion-toggle:hover,
+.date_created-option .accordion-toggle:hover {
+  color: var(--dark);
+}
+
+.mcs-container div .slider_input p,
+.slider-info,
+.no_filtered_photos{
+  color:var(--dark);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-slider-range.ui-widget-header.ui-corner-all{
+  border: 1px solid var(--light);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+  background-color:var(--light);
+}
+
+.ui-slider .ui-slider-range{
+  background: var(--light);
+}
+
+.mcs-container input[type="number"],
+.mcs-container input[type="number"]:focus{
+  background-color: var(--alt-primary) !important;
+  color: var(--light) !important;
+  border-radius: 0px !important;
 }

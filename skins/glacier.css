@@ -1,3 +1,11 @@
+:root{
+  --primary:#27498C;
+  --secondary:#223D73;
+  --dark:#1E3259;
+  --light:#C1C7D9;
+  --alt-primary:#1E3259;
+}
+
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -545,28 +553,71 @@ ul.token-input-list li input{
   border-radius:0;
 }
 
-.filetypes-option:nth-child(odd),
-.added_by-option:nth-child(odd),
-.date_posted-option:nth-child(odd) label {
-  background: #fff;
+
+.date_posted-option label,
+.date_posted-option i{
+  background-color:transparent;
+  border:none;
 }
 
+.ratings-option:nth-child(odd),
+.ratios-option:nth-child(odd),
+.preset_posted_date .date_posted-option:nth-child(odd) label,
+.preset_posted_date .date_posted-option:nth-child(odd) i,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input label,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input i,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input label,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input i,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) label,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) i,
+.preset_created_date .date_created-option:nth-child(odd) label,
+.preset_created_date .date_created-option:nth-child(odd) i,
+.custom_created_date .date_created-option:nth-child(odd) .year_input label,
+.custom_created_date .date_created-option:nth-child(odd) .year_input i,
+.custom_created_date .date_created-option:nth-child(even) .month_input label,
+.custom_created_date .date_created-option:nth-child(even) .month_input i,
+.custom_created_date .days_container .date_created-option:nth-child(odd) label,
+.custom_created_date .days_container .date_created-option:nth-child(odd) i,
+.filetypes-option:nth-child(odd),
+.added_by-option:nth-child(odd){
+  background: var(--light)!important;
+}
+
+.ratings-option label .checked-icon,
+.ratios-option input:checked + label .checked-icon,
+.date_posted-option .accordion-toggle:hover,
+.date_created-option .accordion-toggle:hover,
 .filetypes-option label .checked-icon,
 .added_by-option label .checked-icon,
-.date_posted-option label .checked-icon{
+.date_posted-option label .checked-icon,
+.date_created-option label .checked-icon,
+.ratios-option label .checked-icon{
   color: #fff;
 }
 
+.ratings-option label .ratings-badge,
+.ratios-option label .ratio-badge,
 .filetypes-option label .ext-badge,
 .added_by-option label .added_by-badge,
-.date_posted-option label .date_posted-badge {
+.date_posted-option label .date_posted-badge,
+.date_created-option label .date_created-badge{
   background-color: #C1C7D9;
-    color: black;
+  color: black;
 }
 
-.filetypes-option input:checked + label,
+.ratings-option input:checked + label,
 .added_by-option input:checked + label,
-.date_posted-option input:checked + label{
+.filetypes-option input:checked + label,
+.date_posted-option .selected label, 
+.date_posted-option .selected .accordion-toggle,
+.date_created-option .selected label,
+.date_created-option .selected .accordion-toggle,
+.preset_posted_date .date_posted-option input:checked + label,
+.preset_created_date .date_created-option input:checked + label,
+.custom_posted_date .date_posted-option input:checked + label,
+.custom_created_date .date_created-option input:checked + label,
+.ratios-option input:checked + label,
+.ratings-option input:checked + label{
   background: #27498C;
   color:white;
 }
@@ -712,4 +763,32 @@ ul.token-input-list li input{
 
 .arrow-fill {
   fill: #EBEBF2 !important;
+}
+
+.mcs-container div .slider_input p,
+.slider-info,
+.no_filtered_photos{
+  color:var(--dark);
+}
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-slider-range.ui-widget-header.ui-corner-all{
+  border: 1px solid var(--primary);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+  background-color:var(--primary);
+}
+
+.ui-slider .ui-slider-range{
+  background: var(--primary);
+}
+
+.mcs-container input[type="number"],
+.mcs-container input[type="number"]:focus{
+  background-color: var(--primary) !important;
+  color: var(--light) !important;
+  border-radius: 0px !important;
 }

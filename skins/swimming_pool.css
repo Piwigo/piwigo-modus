@@ -1,3 +1,11 @@
+:root{
+  --primary:#93c2d6;
+  --secondary:#7ca2bc;
+  --dark:#2e4756;
+  --light:#f1f5f8;
+  --alt-primary:#5889ad;
+}
+
 body{  
   background-color:#f1f5f8;
   color:#2e4756;
@@ -762,29 +770,82 @@ form.properties a{
   border-radius:0;
 }
 
+
+.date_posted-option label,
+.date_posted-option i{
+  background-color:transparent;
+  border:none;
+}
+
+
+.ratings-option:nth-child(odd),
+.ratios-option:nth-child(odd),
+.preset_posted_date .date_posted-option:nth-child(odd) label,
+.preset_posted_date .date_posted-option:nth-child(odd) i,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input label,
+.custom_posted_date .date_posted-option:nth-child(odd) .year_input i,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input label,
+.custom_posted_date .date_posted-option:nth-child(even) .month_input i,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) label,
+.custom_posted_date .days_container .date_posted-option:nth-child(odd) i,
+.preset_created_date .date_created-option:nth-child(odd) label,
+.preset_created_date .date_created-option:nth-child(odd) i,
+.custom_created_date .date_created-option:nth-child(odd) .year_input label,
+.custom_created_date .date_created-option:nth-child(odd) .year_input i,
+.custom_created_date .date_created-option:nth-child(even) .month_input label,
+.custom_created_date .date_created-option:nth-child(even) .month_input i,
+.custom_created_date .days_container .date_created-option:nth-child(odd) label,
+.custom_created_date .days_container .date_created-option:nth-child(odd) i,
 .filetypes-option:nth-child(odd),
-.added_by-option:nth-child(odd),
-.date_posted-option:nth-child(odd) label {
-  background: #3f6379;
+.added_by-option:nth-child(odd){
+  background: var(--secondary)!important;
+  color:var(--light);
 }
 
 .filetypes-option label .checked-icon,
 .added_by-option label .checked-icon,
-.date_posted-option label .checked-icon{
+.date_posted-option label .checked-icon,
+.date_created-option label .checked-icon,
+.filter-form .filter-form-title,
+.ratios-option label .checked-icon,
+.ratings-option label .checked-icon{
   color: #fff;
 }
 
 .filetypes-option label .ext-badge,
 .added_by-option label .added_by-badge,
-.date_posted-option label .date_posted-badge {
-  background-color: #C1C7D9;
-    color: black;
+.date_posted-option label .date_posted-badge,
+.date_created-option label .date_created-badge,
+.mcs-side-results .mcs-side-badge,
+.ratios-option label .ratio-badge, 
+.ratings-option label .ratings-badge{
+  color: var(--dark);
+  background-color: var(--light);
 }
 
-.filetypes-option input:checked + label,
+.filetypes-option label,
+.added_by-option label,
+.preset_posted_date .date_posted-option label,
+.preset_created_date .date_created-option label,
+.custom_posted_date .date_posted-option label,
+.custom_created_date .date_created-option label,
+.ratios-option label, .ratings-option label{
+  color:var(--light); 
+}
+
 .added_by-option input:checked + label,
-.date_posted-option input:checked + label{
-  background: #2c465a;
+.filetypes-option input:checked + label,
+.date_posted-option .selected label, 
+.date_posted-option .selected .accordion-toggle,
+.date_created-option .selected label,
+.date_created-option .selected .accordion-toggle,
+.preset_posted_date .date_posted-option input:checked + label,
+.preset_created_date .date_created-option input:checked + label,
+.custom_posted_date .date_posted-option input:checked + label,
+.custom_created_date .date_created-option input:checked + label,
+.ratios-option input:checked + label,
+.ratings-option input:checked + label{
+  background: var(--dark)!important;
   color:white;
 }
 
@@ -928,4 +989,46 @@ form.properties a{
 
 .arrow-fill {
   fill: #5889ad !important;
+}
+
+.date_posted-option .accordion-toggle:hover,
+.date_created-option .accordion-toggle:hover {
+  color: var(--dark);
+}
+
+.mcs-container div .slider_input p,
+.slider-info,
+.no_filtered_photos{
+  color:var(--dark);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-slider-range.ui-widget-header.ui-corner-all{
+  border: 1px solid var(--light);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+  background-color:var(--light);
+}
+
+.ui-slider .ui-slider-range{
+  background: var(--light);
+}
+
+.mcs-container input[type="number"],
+.mcs-container input[type="number"]:focus{
+  border-radius:0px;
+}
+
+.ratios-option.disabled label .ratio-name,
+.filetypes-option.disabled label .ext-name,
+.date_posted-option.disabled label .date-period,
+.date_created-option.disabled label .date-period,
+.ratings-option.disabled label .ratings-name,
+.date_posted-option label .checked-icon.grey-icon,
+.date_created-option label .checked-icon.grey-icon{
+  color:#ccc;
 }
