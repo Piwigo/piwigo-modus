@@ -17,7 +17,7 @@
 	<dl id={$id}>
 		{if $id=="mbLinks"}
 {* ============ mbLinks ========== *}
-{if count($block->data)==1}
+{if isset($block->data) and count($block->data)==1}
 <dt><a href="{$block->data[0].URL}">{$block->data[0].LABEL}</a></dt>
 {else}
 <dt><a>{'Links'|@translate}</a></dt>
