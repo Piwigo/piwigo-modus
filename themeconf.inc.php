@@ -373,6 +373,7 @@ function modus_picture_content($content, $element_info)
 	if ( !empty($content) ) // someone hooked us - so we skip;
 		return $content;
 
+	$deriv_type = pwg_get_session_var('picture_deriv', $conf['derivative_default_size']);
 	$unique_derivatives = array();
 	$show_original = isset($element_info['element_url']);
 	$added = array();
@@ -387,7 +388,10 @@ function modus_picture_content($content, $element_info)
 			continue;
 		$added[$url] = 1;
 		$show_original &= !($derivative->same_as_source());
-		$unique_derivatives[$type]= $derivative;
+
+		// in case we do not display the sizes icon, we only add the selected size to unique_derivatives
+		if ($conf['picture_sizes_icon'] or $type == $deriv_type)
+			$unique_derivatives[$type]= $derivative;
 	}
 
 	if (isset($_COOKIE['picture_deriv'])) // ignore persistence
