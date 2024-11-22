@@ -485,7 +485,7 @@ td .nbEntries{
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
     color:white;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, {
     color:black;
   }
   #albumActionsSwitcher + .categoryActions{
@@ -493,9 +493,7 @@ td .nbEntries{
     color: #7F0906;
     box-shadow: 5px 5px 10px black;
   }
-  .categoryActions a .pwg-icon{
-    color:white;
-  }
+  
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:black ;
   }
