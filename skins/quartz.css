@@ -580,7 +580,7 @@ form.properties a{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#eaeae9;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
     color:#eaeae9;
     box-shadow:none;
   }
