@@ -1023,6 +1023,11 @@ form.properties a{
   border-radius:0px;
 }
 
+ .gallery-icon-search-folder:before {
+    font-size: 18px;
+   color: #326c84; 
+}
+
 .ratios-option.disabled label .ratio-name,
 .filetypes-option.disabled label .ext-name,
 .date_posted-option.disabled label .date-period,
