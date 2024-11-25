@@ -632,17 +632,18 @@ form.properties a{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#2e4756;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
-    color:#c0d2df !important;
-    background-color:#5889ad !important
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, 
+    .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+    color:#326c84 !important;
+  /*  background-color:#5889ad !important */
   }
   #albumActionsSwitcher + .categoryActions{
     border-radius:0px;
     box-shadow:0px 0px transparent;
-    background-color:#5889ad;
+    /* background-color:#5889ad; */
   }
   .categoryActions a .pwg-icon{
-    color:#c0d2df;
+    color:#326c84;
   }
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:#2e4756;
@@ -1021,6 +1022,11 @@ form.properties a{
 .mcs-container input[type="number"],
 .mcs-container input[type="number"]:focus{
   border-radius:0px;
+}
+
+ .gallery-icon-search-folder:before {
+    font-size: 18px;
+   color: #326c84; 
 }
 
 .ratios-option.disabled label .ratio-name,
