@@ -640,7 +640,7 @@ form.properties a{
   #albumActionsSwitcher + .categoryActions{
     border-radius:0px;
     box-shadow:0px 0px transparent;
-    background-color:#5889ad;
+    /* background-color:#5889ad; */
   }
   .categoryActions a .pwg-icon{
     color:#c0d2df;
