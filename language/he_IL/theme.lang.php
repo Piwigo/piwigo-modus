@@ -18,3 +18,4 @@ $lang['Skin'] = 'סקין';
 $lang['Use square thumbs'] = 'השתמש בצלמיות מרובעות';
 $lang['modus_theme'] = 'modus_theme';
 $lang['%d album'] = 'אלבום %d';
+$lang['Admin'] = 'מנהל';
