@@ -606,7 +606,7 @@ form.properties a{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#373737;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
     color:#373737 !important;
   }
   #albumActionsSwitcher + .categoryActions{

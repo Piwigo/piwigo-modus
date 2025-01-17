@@ -580,7 +580,7 @@ form.properties a{
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#eaeae9;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text {
     color:#eaeae9;
     box-shadow:none;
   }
@@ -588,9 +588,7 @@ form.properties a{
     border-radius:5px;
     box-shadow:0px 0px transparent;
   }
-  .categoryActions a .pwg-icon{
-    color:#6BA1FF;
-  }
+  
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
     color:#6BA1FF;
   }
@@ -943,4 +941,8 @@ form.properties a{
   background-color: var(--alt-primary) !important;
   color: var(--light) !important;
   border-radius: 0px !important;
+}
+
+.gallery-icon-search-folder{
+  color:#848588;
 }

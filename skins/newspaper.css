@@ -194,7 +194,7 @@ fieldset legend{
 #profile fieldset h3,
 #profile fieldset label,
 .properties fieldset span label {
-  color:black;
+  color:white;
 }
 
 #thePicturePage .titrePage{
@@ -349,3 +349,8 @@ td .nbEntries{
     color:black ;
   }
 }
+
+.gallery-icon-search-folder:before {
+  font-size: 19px;
+  color:white;
+  }

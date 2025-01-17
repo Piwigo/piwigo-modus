@@ -413,7 +413,7 @@ ul.token-input-list li input{
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
     color:white;
   }
-   #albumActionsSwitcher + .categoryActions .pwg-button-text,#imageToolBar .actionButtons .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
+   #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, .actionButtons A .pwg-icon,  .actionButtons A .pwg-icon:hover {
     color:white;
     background-color:transparent;
   }
@@ -791,4 +791,8 @@ ul.token-input-list li input{
   background-color: var(--primary) !important;
   color: var(--light) !important;
   border-radius: 0px !important;
+}
+
+.gallery-icon-search-folder{
+  color:white;
 }
