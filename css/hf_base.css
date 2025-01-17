@@ -864,3 +864,7 @@ li.path-ext-svg a img {
 	width: 75%; /*min default picture derivative width*/
 }
 }
+
+.gallery-icon-search-folder:before{
+  font-size:17px;
+}

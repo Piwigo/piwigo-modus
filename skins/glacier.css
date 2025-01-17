@@ -792,3 +792,7 @@ ul.token-input-list li input{
   color: var(--light) !important;
   border-radius: 0px !important;
 }
+
+.gallery-icon-search-folder{
+  color:white;
+}

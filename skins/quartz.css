@@ -942,3 +942,7 @@ form.properties a{
   color: var(--light) !important;
   border-radius: 0px !important;
 }
+
+.gallery-icon-search-folder{
+  color:#848588;
+}

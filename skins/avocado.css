@@ -169,10 +169,12 @@ A{
   color:#022601;
 }
 
-A .pwg-icon {
+A .pwg-icon,
+.gallery-icon-search-folder {
   color:#65A603;
 }
-A .pwg-icon:hover {
+A .pwg-icon:hover,
+.gallery-icon-search-folder:hover {
   color:#558C03;
 }
 
@@ -461,14 +463,12 @@ td .nbEntries{
   }
   #albumActionsSwitcher + .categoryActions .pwg-button-text,
   #imageToolBar .actionButtons .pwg-button-text, 
-  .actionButtons A .pwg-icon,  .actionButtons A
-  .pwg-icon:hover {
-    color:#84BF04 !important;
-  }
-  .categoryActions a .pwg-icon{
-    color:#84BF04 !important;
-  }
-  #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
+  .actionButtons A .pwg-icon, 
+  .actionButtons A,
+  .pwg-icon:hover,
+  .categoryActions a .pwg-icon,
+  #theTagsPage A .pwg-icon,
+  #theTagsPage A:hover .pwg-icon{
     color:#84BF04!important;
   }
 }
@@ -811,4 +811,3 @@ td .nbEntries{
 .ui-slider .ui-slider-range{
   background: var(--alt-primary);
 }
-
