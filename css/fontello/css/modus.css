@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'modus';
-  src: url('../font/modus.eot?66556310');
-  src: url('../font/modus.eot?66556310#iefix') format('embedded-opentype'),
-       url('../font/modus.woff2?66556310') format('woff2'),
-       url('../font/modus.woff?66556310') format('woff'),
-       url('../font/modus.ttf?66556310') format('truetype'),
-       url('../font/modus.svg?66556310#modus') format('svg');
+  src: url('../font/modus.eot?35104528');
+  src: url('../font/modus.eot?35104528#iefix') format('embedded-opentype'),
+       url('../font/modus.woff2?35104528') format('woff2'),
+       url('../font/modus.woff?35104528') format('woff'),
+       url('../font/modus.ttf?35104528') format('truetype'),
+       url('../font/modus.svg?35104528#modus') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'modus';
-    src: url('../font/modus.svg?66556310#modus') format('svg');
+    src: url('../font/modus.svg?35104528#modus') format('svg');
   }
 }
 */
@@ -60,15 +60,14 @@
 .pwg-icon-minus:before { content: '\e801'; } /* '' */
 .pwg-icon-close:before { content: '\e802'; } /* '' */
 .pwg-icon-favorite-add:before { content: '\e803'; } /* '' */
-.pwg-icon-camera-info:before { content: '\e804'; } /* '' */
+.pwg-icon-camera-calendar:before { content: '\e804'; } /* '' */
 .pwg-icon-user:before { content: '\e805'; } /* '' */
 .pwg-icon-category-view-flat:before { content: '\e806'; } /* '' */
 .pwg-icon-category-edit:before { content: '\e807'; } /* '' */
 .pwg-icon-arrow-w:before { content: '\e808'; } /* '' */
 .pwg-icon-arrow-e:before { content: '\e809'; } /* '' */
 .pwg-icon-arrow-n:before { content: '\e80a'; } /* '' */
-.pwg-icon-play:before { content: '\e80b'; } /* '' */
-.pwg-icon-representative:before { content: '\e80c'; } /* '' */
+.pwg-icon-representative:before { content: '\e80b'; } /* '' */
 .pwg-icon-map:before { content: '\e80d'; } /* '' */
 .pwg-icon-save:before { content: '\e80e'; } /* '' */
 .pwg-icon-help:before { content: '\e80f'; } /* '' */
@@ -99,6 +98,10 @@
 .pwg-icon-left-open:before { content: '\e828'; } /* '' */
 .pwg-icon-right-open:before { content: '\e829'; } /* '' */
 .pwg-icon-up-open:before { content: '\e830'; } /* '' */
+.pwg-icon-favorite-del:before { content: '\e831'; } /* '' */
+.pwg-icon-slideshow:before { content: '\e832'; } /* '' */
+.pwg-icon-camera-info:before { content: '\e833'; } /* '' */
+.pwg-icon-cloud-download:before { content: '\e834'; } /* '' */
 .pwg-icon-star:before { content: '\e847'; } /* '' */
 .pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
 .pwg-icon-pencil:before { content: '\e84f'; } /* '' */
@@ -106,6 +109,6 @@
 .pwg-icon-search:before { content: '\e900'; } /* '' */
 .pwg-icon-hdd:before { content: '\f0a0'; } /* '' */
 .pwg-icon-category-view-normal:before { content: '\f0e8'; } /* '' */
-.pwg-icon-camera-calendar:before { content: '\f133'; } /* '' */
+.pwg-icon-camera-calendar-1:before { content: '\f133'; } /* '' */
 .pwg-icon-sort:before { content: '\f15d'; } /* '' */
 .pwg-icon-file-image:before { content: '\f1c5'; } /* '' */

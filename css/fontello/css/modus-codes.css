@@ -5,15 +5,14 @@
 .pwg-icon-minus:before { content: '\e801'; } /* '' */
 .pwg-icon-close:before { content: '\e802'; } /* '' */
 .pwg-icon-favorite-add:before { content: '\e803'; } /* '' */
-.pwg-icon-camera-info:before { content: '\e804'; } /* '' */
+.pwg-icon-camera-calendar:before { content: '\e804'; } /* '' */
 .pwg-icon-user:before { content: '\e805'; } /* '' */
 .pwg-icon-category-view-flat:before { content: '\e806'; } /* '' */
 .pwg-icon-category-edit:before { content: '\e807'; } /* '' */
 .pwg-icon-arrow-w:before { content: '\e808'; } /* '' */
 .pwg-icon-arrow-e:before { content: '\e809'; } /* '' */
 .pwg-icon-arrow-n:before { content: '\e80a'; } /* '' */
-.pwg-icon-play:before { content: '\e80b'; } /* '' */
-.pwg-icon-representative:before { content: '\e80c'; } /* '' */
+.pwg-icon-representative:before { content: '\e80b'; } /* '' */
 .pwg-icon-map:before { content: '\e80d'; } /* '' */
 .pwg-icon-save:before { content: '\e80e'; } /* '' */
 .pwg-icon-help:before { content: '\e80f'; } /* '' */
@@ -44,6 +43,10 @@
 .pwg-icon-left-open:before { content: '\e828'; } /* '' */
 .pwg-icon-right-open:before { content: '\e829'; } /* '' */
 .pwg-icon-up-open:before { content: '\e830'; } /* '' */
+.pwg-icon-favorite-del:before { content: '\e831'; } /* '' */
+.pwg-icon-slideshow:before { content: '\e832'; } /* '' */
+.pwg-icon-camera-info:before { content: '\e833'; } /* '' */
+.pwg-icon-cloud-download:before { content: '\e834'; } /* '' */
 .pwg-icon-star:before { content: '\e847'; } /* '' */
 .pwg-icon-plus-circled:before { content: '\e84a'; } /* '' */
 .pwg-icon-pencil:before { content: '\e84f'; } /* '' */
@@ -51,6 +54,6 @@
 .pwg-icon-search:before { content: '\e900'; } /* '' */
 .pwg-icon-hdd:before { content: '\f0a0'; } /* '' */
 .pwg-icon-category-view-normal:before { content: '\f0e8'; } /* '' */
-.pwg-icon-camera-calendar:before { content: '\f133'; } /* '' */
+.pwg-icon-camera-calendar-1:before { content: '\f133'; } /* '' */
 .pwg-icon-sort:before { content: '\f15d'; } /* '' */
 .pwg-icon-file-image:before { content: '\f1c5'; } /* '' */
