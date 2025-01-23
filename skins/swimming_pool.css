@@ -1037,3 +1037,12 @@ form.properties a{
 .date_created-option label .checked-icon.grey-icon{
   color:#ccc;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#326c84!important;
+}
+

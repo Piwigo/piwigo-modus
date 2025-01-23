@@ -255,10 +255,6 @@ INPUT[type="submit"]{
   padding-bottom:15px;
 }
 
-.pwg-icon{
-  font-size:17px;
-}
-
 #commentAdd{
   padding:0px;
 }
@@ -867,4 +863,16 @@ li.path-ext-svg a img {
 
 .gallery-icon-search-folder:before{
   font-size:17px;
+}
+
+.categoryActions LI{
+  margin-left:5px;
+}
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:var(--primary)!important;
 }

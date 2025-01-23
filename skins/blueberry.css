@@ -1012,6 +1012,14 @@ form.properties a{
 }
 
 .no_filtered_photos{
-  color:var(--primary);
+  color:var(--alt-primary);
 }
 
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:var(--light)!important;
+}

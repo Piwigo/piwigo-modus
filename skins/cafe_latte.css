@@ -981,3 +981,7 @@ form.properties a{
   color: var(--dark) !important;
   border-radius: 0px !important;
 }
+ 
+#cmdSearchInSet a{
+  color:#998e68;
+}

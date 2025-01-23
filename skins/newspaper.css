@@ -1,3 +1,11 @@
+:root{
+  --primary:#000;
+  --secondary:#777;
+  --dark:#000;
+  --light:#c7d3e1;
+  --alt-primary:#f2f2f2;
+}
+
 body {
   background-color:white;
   color:black;
@@ -352,5 +360,4 @@ td .nbEntries{
 
 .gallery-icon-search-folder:before {
   font-size: 19px;
-  color:white;
-  }
+}

@@ -485,7 +485,7 @@ td .nbEntries{
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
     color:white;
   }
-  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text, {
+  #albumActionsSwitcher + .categoryActions .pwg-button-text, #imageToolBar .actionButtons .pwg-button-text {
     color:black;
   }
   #albumActionsSwitcher + .categoryActions{
@@ -606,4 +606,12 @@ td .nbEntries{
 .ui-widget-header .ui-state-default,
 .ui-slider .ui-slider-range{
   background: var(--primary);
+}
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:var(--alt-primary)!important;
 }

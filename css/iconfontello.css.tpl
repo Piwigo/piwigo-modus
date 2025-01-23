@@ -28,22 +28,46 @@ A:hover .pwg-icon:before{
 	cursor:pointer;
 }
 
-.pwg-icon-slideshow:before { content: '\25b6';}
-.pwg-icon-favorite-del:before { content: '\2661\2d'; letter-spacing: -2px}
+.pwg-icon-slideshow:before { content: '\e832';}
+.pwg-icon-favorite-del:before { content: '\e831';}
+.pwg-icon-category-edit:before { content: '\E84F';}
+.pwg-icon-edit:before { content: '\E84F';}
+.pwg-icon-caddie-add:before { content: '\E812';}
+.pwg-icon-representative { content: '\E80B'; }
 
 {if $conf.index_posted_date_icon}
-{if $conf.index_created_date_icon}
-.pwg-icon-calendar:before { content: '\f133'; }
-.pwg-icon-camera-calendar:before { content: '\e804'; }
-{else}
-.pwg-icon-calendar:before { content: '\f133'; }
-{/if}
+  {if $conf.index_created_date_icon}
+.pwg-icon-calendar:before { content: '\E81B'; }
+.pwg-icon-camera-calendar:before { content: '\E81C'; }
+  {else}
+.pwg-icon-calendar:before { content: '\E81B'; }
+  {/if}
 {/if}
 
 {if  isset($loaded_plugins['BatchDownloader'])}
-.batch-downloader-icon {
-	width: 26px
-}
+  .batch-downloader-icon {
+    background:none!important
+    {* width: 26px *}
+  }
+  
+  .batch-downloader-icon:before { 
+    font-family: "modus";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    content:'\E834'; 
+  }
+
 {/if}
 
 {if  isset($loaded_plugins['UserCollections'])}

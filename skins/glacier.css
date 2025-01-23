@@ -796,3 +796,11 @@ ul.token-input-list li input{
 .gallery-icon-search-folder{
   color:white;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:var(--light)!important;
+}

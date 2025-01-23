@@ -40,6 +40,10 @@ h2{
   background-color:white;
 }
 
+.browsePath h2{
+  background-color:transparent;
+}
+
 .albLegend,
 .albLegend:hover{
   color:white;
@@ -719,4 +723,12 @@ form.properties a{
   background-color: var(--alt-primary) !important;
   color: var(--light) !important;
   border-radius: 0px !important;
+}
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:var(--secondary)!important;
 }

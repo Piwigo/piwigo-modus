@@ -16,7 +16,7 @@ function fotoramaTogglePause() {
 	else {
 		$(".fotorama").data("fotorama").startAutoplay();
 	}
-	$("#togglePause").toggleClass("pwg-icon-play pwg-icon-pause");
+	$("#togglePause").toggleClass("pwg-icon-slideshow pwg-icon-pause");
 	return false;
 }
 {/footer_script}

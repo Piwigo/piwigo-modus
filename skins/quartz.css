@@ -943,6 +943,8 @@ form.properties a{
   border-radius: 0px !important;
 }
 
-.gallery-icon-search-folder{
-  color:#848588;
+.gallery-icon-search-folder,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#848588!important;
 }
