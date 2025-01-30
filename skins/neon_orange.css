@@ -1,12 +1,3 @@
-:root{
-  --primary:#ff7700;
-  --secondary:#f9d499;
-  --dark:#000;
-  --light:#FFD5DF;
-  --alt-primary:#8e8e93;
-}
-
-
 body{  
   background-color:white;
   color:black;
@@ -22,7 +13,7 @@ body{
 }
 
 #copyright A:hover{
-  color:var(--primary);
+  color:#ff7700;
   font-weight:normal;
 }
 
@@ -50,7 +41,7 @@ h2{
 }
 
 #mbCategories .albSymbol{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .albLegendRight .albSymbol{
@@ -62,18 +53,18 @@ H3, label{
 }
 
 A{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 a:hover{
   text-decoration:none;
   font-weight:normal;
-  color:var(--primary);
+  color:#ff7700;
 }
 
 #menubar{
-  background-color:var(--primary);
-  /*background: linear-gradient(to bottom right, var(--primary) 20%, #ffad66 80%);*/
+  background-color:#ff7700;
+  /*background: linear-gradient(to bottom right, #ff7700 20%, #ffad66 80%);*/
 }
 
 #menubar UL{
@@ -107,7 +98,7 @@ a:hover{
 }
 
 .search_results a, .search_results a:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .selectize-control.multi .selectize-input [data-value].active,
@@ -134,7 +125,7 @@ a:hover{
 }
 
 #menubar DD A:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 #menubar DD A{
@@ -157,7 +148,7 @@ INPUT[type="submit"]:hover,
 INPUT[type="reset"]:hover{
   border-radius:5px;
   color: white;
-  background-color:var(--primary);
+  background-color:#ff7700;
  }
   
 .wide #imageToolBar{
@@ -180,7 +171,7 @@ INPUT[type="reset"]:hover{
 }
 
 .switchCheck {
-  color:var(--primary);
+  color:#ff7700;
 }
 
 li, #mbCategories UL{
@@ -189,14 +180,14 @@ li, #mbCategories UL{
 }
 
 .badge{
-  background-color: var(--primary);
+  background-color: #ff7700;
   border-radius: 20px;
   color: #fff;
   color:#e8e8ea;
 }
 
 #menubar LI.selected>A{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .wide .imageInfoTable, .wide #imageInfos{
@@ -209,7 +200,7 @@ li, #mbCategories UL{
 }
 
 .imageInfoTable a, .imageInfoTable a:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .wide .imageInfoTable, .wide #imageInfos h3{
@@ -217,7 +208,7 @@ li, #mbCategories UL{
 }
 
 .wide #imageInfos a, .wide #imageInfos a:hover {
-  color:var(--primary);
+  color:#ff7700;
   font-weight:normal;
 }
 
@@ -235,7 +226,7 @@ li, #mbCategories UL{
 }
 
 A .pwg-icon,A .pwg-icon:hover {
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .pwg-icon{
@@ -284,7 +275,7 @@ dt, dd{
 }
 
 .titrePage H2 A:hover {
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .titrePage H2 A {
@@ -292,18 +283,18 @@ dt, dd{
 }
 
 .titrePage H2 span.badge {
-  background-color: var(--primary);
+  background-color: #ff7700;
   color: #fff;
 
 }
 
 .titrePage A, .titrePage A:hover{
-  color:var(--primary);
+  color:#ff7700;
   font-weight:normal;
 }
 
 .titrePage .switchBox{
-  color:var(--primary);
+  color:#ff7700;
   padding:10px;
 }
 
@@ -312,7 +303,7 @@ dt, dd{
 }
 
 .titrePage .switchBox A:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .browsePath{
@@ -332,7 +323,7 @@ dt, dd{
 }
 
 #thePicturePage .titrePage A:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .overDesc{
@@ -350,7 +341,7 @@ dt, dd{
 }
 
 .switchCheck{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .derivativeSizeDetails{
@@ -397,7 +388,7 @@ dt, dd{
 }
 
 .commentsList a{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .commentElement{
@@ -410,7 +401,7 @@ hr{
 }
   
 #menuTagCloud a{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 #theSearchPage fieldset legend{
@@ -445,7 +436,7 @@ SELECT, TEXTAREA{
 
 .date_today:hover{
   font-weight:normal;
-  color:var(--primary);
+  color:#ff7700;
 }
   
 #start_day
@@ -476,11 +467,11 @@ SELECT, TEXTAREA{
 }
 
 .calItem{
-  border:1px solid var(--primary);
+  border:1px solid #ff7700;
 }
 
 .calItem a, .calItem:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .content .navigationBar,
@@ -509,7 +500,7 @@ DIV.thumbHover:hover{
 
 #fullTagCloud span a:hover{
   text-decoration:none;
-  color:var(--primary);
+  color:#ff7700;
 }
 
 LEGEND.tagLetterLegend, FIELDSET.tagLetter{
@@ -522,11 +513,11 @@ LEGEND.tagLetterLegend, FIELDSET.tagLetter{
 }
 
 .tagLine td a:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 .tagLevel5{
-  color:var(--primary) !important;
+  color:#ff7700 !important;
 }
 
 td .nbEntries{
@@ -554,7 +545,7 @@ td .nbEntries{
 }
 
 .notification a:hover{
-  color:var(--primary);
+  color:#ff7700;
 }
 
 form.properties a{
@@ -590,10 +581,10 @@ ul.token-input-list li input{
     box-shadow:0px 0px transparent;
   }
   .categoryActions a .pwg-icon{
-    color:var(--primary);
+    color:#ff7700;
   }
   #theTagsPage A .pwg-icon, #theTagsPage A:hover .pwg-icon{
-    color:var(--primary);
+    color:#ff7700;
   }
 }
 

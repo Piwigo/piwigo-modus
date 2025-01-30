@@ -1,11 +1,3 @@
-:root{
-  --primary:#27498C;
-  --secondary:#223D73;
-  --dark:#1E3259;
-  --light:#C1C7D9;
-  --alt-primary:#1E3259;
-}
-
 body {
   margin: 0;
   background-repeat: no-repeat;
@@ -580,7 +572,7 @@ ul.token-input-list li input{
 .custom_created_date .days_container .date_created-option:nth-child(odd) i,
 .filetypes-option:nth-child(odd),
 .added_by-option:nth-child(odd){
-  background: var(--light)!important;
+  background: #C1C7D9!important;
 }
 
 .ratings-option label .checked-icon,
@@ -768,28 +760,28 @@ ul.token-input-list li input{
 .mcs-container div .slider_input p,
 .slider-info,
 .no_filtered_photos{
-  color:var(--dark);
+  color:#1E3259;
 }
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--primary);
+  border: 1px solid #27498C;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default{
-  background-color:var(--primary);
+  background-color:#27498C;
 }
 
 .ui-slider .ui-slider-range{
-  background: var(--primary);
+  background: #27498C;
 }
 
 .mcs-container input[type="number"],
 .mcs-container input[type="number"]:focus{
-  background-color: var(--primary) !important;
-  color: var(--light) !important;
+  background-color: #27498C !important;
+  color: #C1C7D9 !important;
   border-radius: 0px !important;
 }
 
@@ -802,5 +794,5 @@ ul.token-input-list li input{
 #sortOrderLink,
 .uc-icon-star-filled,
 .uc-icon-star{
-  color:var(--light)!important;
+  color:#C1C7D9!important;
 }

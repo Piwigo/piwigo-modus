@@ -1,11 +1,3 @@
-:root{
-  --primary:#000;
-  --secondary:#777;
-  --dark:#000;
-  --light:#c7d3e1;
-  --alt-primary:#f2f2f2;
-}
-
 body {
   background-color:white;
   color:black;

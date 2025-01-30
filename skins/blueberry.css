@@ -1,11 +1,3 @@
-:root{
-  --primary:#0391aa;
-  --secondary:#2e4756;
-  --dark:#16262e;
-  --light:#93c2d6;
-  --alt-primary:#326471;
-}
-
 body{  
   background-color:#2e4756;
   color:#93c2d6;
@@ -788,7 +780,7 @@ form.properties a{
 .custom_created_date .days_container .date_created-option:nth-child(odd) i,
 .filetypes-option:nth-child(odd),
 .added_by-option:nth-child(odd){
-  background: var(--secondary);
+  background: #2e4756;
 }
 
 .ratings-option label .checked-icon,
@@ -798,7 +790,7 @@ form.properties a{
 .date_posted-option label .checked-icon,
 .date_created-option label .checked-icon,
 .ratios-option label .checked-icon{
-  color: var(--secondary);
+  color: #2e4756;
 }
 
 .ratings-option label .ratings-badge,
@@ -826,7 +818,7 @@ form.properties a{
 
 .date_posted-option .accordion-toggle:hover,
 .date_created-option .accordion-toggle:hover{
-  color:var(--primary);
+  color:#0391aa;
 }
 
 .head-button-2 {
@@ -982,37 +974,37 @@ form.properties a{
 
 .mcs-container div .slider_input p,
 .slider-info{
-  color:var(--light);
+  color:#93c2d6;
 }
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--alt-primary);
+  border: 1px solid #326471;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default{
-  background-color:var(--alt-primary);
+  background-color:#326471;
 }
 
 .ui-slider .ui-slider-range{
-  background: var(--alt-primary);
+  background: #326471;
 }
 
 .no_filtered_photos{
-  color:var(--dark);
+  color:#16262e;
 }
 
 .mcs-container input[type="number"],
 .mcs-container input[type="number"]:focus{
-  background-color: var(--light) !important;
-  color: var(--dark) !important;
+  background-color: #93c2d6 !important;
+  color: #16262e !important;
   border-radius: 0px !important;
 }
 
 .no_filtered_photos{
-  color:var(--alt-primary);
+  color:#326471;
 }
 
 
@@ -1021,5 +1013,5 @@ form.properties a{
 #sortOrderLink,
 .uc-icon-star-filled,
 .uc-icon-star{
-  color:var(--light)!important;
+  color:#93c2d6!important;
 }

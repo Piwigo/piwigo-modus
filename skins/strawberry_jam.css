@@ -1,11 +1,3 @@
-:root{
-  --primary:#BF0D08;
-  --secondary:#666;
-  --dark:#000;
-  --light:#f8e6e6;
-  --alt-primary:#7F0906;
-}
-
 body {
   background-color:white;
   color:black;
@@ -542,7 +534,7 @@ td .nbEntries{
 .preset_posted_date .date_posted-option label,
 .preset_created_date .date_created-option label,
 .ratios-option label, .ratings-option label{
-  color:var(--dark); 
+  color:#000; 
 }
 
 .added_by-option input:checked + label,
@@ -555,7 +547,7 @@ td .nbEntries{
 .preset_created_date .date_created-option input:checked + label,
 .ratios-option input:checked + label,
 .ratings-option input:checked + label{
-  background: var(--light)!important;
+  background: #f8e6e6!important;
 }
 
 .filter-manager,
@@ -586,26 +578,26 @@ td .nbEntries{
 
 .date_posted-option .accordion-toggle:hover,
 .date_created-option .accordion-toggle:hover {
-  color: var(--dark);
+  color: #000;
 }
 
 .mcs-container div .slider_input p,
 .slider-info,
 .no_filtered_photos{
-  color:var(--dark);
+  color:#000;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--primary);
+  border: 1px solid #BF0D08;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider .ui-slider-range{
-  background: var(--primary);
+  background: #BF0D08;
 }
 
 #downloadSwitchLink,
@@ -613,5 +605,5 @@ td .nbEntries{
 #sortOrderLink,
 .uc-icon-star-filled,
 .uc-icon-star{
-  color:var(--alt-primary)!important;
+  color:#7F0906!important;
 }

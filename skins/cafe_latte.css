@@ -1,11 +1,3 @@
-:root{
-  --primary:#C0B283;
-  --secondary:#373737;
-  --dark:#16262e;
-  --light:#f2f2f2;
-  --alt-primary:#DCD0c0;
-}
-
 body{  
   background-color:#f4f4f4;
   color:#373737;
@@ -957,28 +949,28 @@ form.properties a{
 .mcs-container div .slider_input p,
 .slider-info,
 .no_filtered_photos{
-  color:var(--dark);
+  color:#16262e;
 }
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--primary);
+  border: 1px solid #C0B283;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default{
-  background-color:var(--primary);
+  background-color:#C0B283;
 }
 
 .ui-slider .ui-slider-range{
-  background: var(--primary);
+  background: #C0B283;
 }
 
 .mcs-container input[type="number"],
 .mcs-container input[type="number"]:focus{
-  background-color: var(--alt-primary) !important;
-  color: var(--dark) !important;
+  background-color: #DCD0c0 !important;
+  color: #16262e !important;
   border-radius: 0px !important;
 }
  

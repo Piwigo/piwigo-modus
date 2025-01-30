@@ -1,11 +1,3 @@
-:root{
-  --primary:#74bf04;
-  --secondary:#096a09;
-  --dark:#022601;
-  --light:#ceffce;
-  --alt-primary:#65A603;
-}
-
 body {
   background-color:#e7ffe7;
   color:#022601;
@@ -617,12 +609,12 @@ td .nbEntries{
 .date_posted-option label .checked-icon,
 .date_created-option label .checked-icon,
 .ratios-option label .checked-icon{
-  color:var(--dark);
+  color:#022601;
 }
 
 .date_posted-option .accordion-toggle:hover,
 .date_created-option .accordion-toggle:hover{
-  color:var(--primary);
+  color:#74bf04;
 }
 
 .filter-manager,
@@ -794,20 +786,20 @@ td .nbEntries{
 
 .slider-info,
 .no_filtered_photos{
-  color:var(--dark);
+  color:#022601;
 }
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--alt-primary);
+  border: 1px solid #65A603;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default{
-  background-color:var(--alt-primary);
+  background-color:#65A603;
 }
 
 .ui-slider .ui-slider-range{
-  background: var(--alt-primary);
+  background: #65A603;
 }

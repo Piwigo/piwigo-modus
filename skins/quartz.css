@@ -1,11 +1,3 @@
-:root{
-  --primary:#1E1F23;
-  --secondary:#6BA1FF;
-  --dark:#000;
-  --light:#c7d3e1;
-  --alt-primary:#2F3032;
-}
-
 body{  
   background-color:#1E1F23;
   color:#eaeae9;
@@ -911,35 +903,35 @@ form.properties a{
 
 .date_posted-option .accordion-toggle:hover,
 .date_created-option .accordion-toggle:hover {
-  color: var(--light);
+  color: #c7d3e1;
 }
 
 .mcs-container div .slider_input p,
 .slider-info,
 .no_filtered_photos{
-  color:var(--light);
+  color:#c7d3e1;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-slider-range.ui-widget-header.ui-corner-all{
-  border: 1px solid var(--secondary);
+  border: 1px solid #6BA1FF;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default{
-  background-color:var(--secondary);
+  background-color:#6BA1FF;
 }
 
 .ui-slider .ui-slider-range{
-  background: var(--secondary);
+  background: #6BA1FF;
 }
 
 .mcs-container input[type="number"],
 .mcs-container input[type="number"]:focus{
-  background-color: var(--alt-primary) !important;
-  color: var(--light) !important;
+  background-color: #2F3032 !important;
+  color: #c7d3e1 !important;
   border-radius: 0px !important;
 }
 
