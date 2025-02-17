@@ -606,7 +606,9 @@ ul.token-input-list{
 }
 {/if}
 
+{if !empty($current.formats)}
 #downloadSwitchLink::after,
+{/if}
 #derivativeSwitchLink::after,
 #sortOrderLink::after{
   display: inline-block;
