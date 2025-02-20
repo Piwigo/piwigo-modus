@@ -935,6 +935,9 @@ form.properties a{
   border-radius: 0px !important;
 }
 
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
 .gallery-icon-search-folder,
 .uc-icon-star-filled,
 .uc-icon-star{

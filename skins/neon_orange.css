@@ -595,3 +595,11 @@ ul.token-input-list li input{
 .gallery-icon-search-folder:before {
     font-size: 18px;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#ff7700!important;
+}

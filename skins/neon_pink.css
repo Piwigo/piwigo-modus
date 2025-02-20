@@ -675,3 +675,11 @@ ul.token-input-list li input{
 .ui-slider .ui-slider-range{
   background: #FF2F63;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#FF2F63!important;
+}

@@ -977,3 +977,11 @@ form.properties a{
 #cmdSearchInSet a{
   color:#998e68;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#998e68!important;
+}

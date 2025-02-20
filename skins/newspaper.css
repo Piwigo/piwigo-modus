@@ -356,3 +356,11 @@ td .nbEntries{
 .gallery-icon-search-folder:before {
   font-size: 19px;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:black!important;
+}

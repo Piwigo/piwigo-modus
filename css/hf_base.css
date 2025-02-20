@@ -868,11 +868,3 @@ li.path-ext-svg a img {
 .categoryActions LI{
   margin-left:5px;
 }
-
-#downloadSwitchLink,
-#derivativeSwitchLink,
-#sortOrderLink,
-.uc-icon-star-filled,
-.uc-icon-star{
-  color:var(--primary)!important;
-}
