@@ -187,14 +187,17 @@ fieldset legend{
   color: #fff;
 }
 
-.titrePage A,
+.titrePage A{
+  color:white;
+}
+
 #calendarViewSwitchLink,
 .browsePath,
 #profile,
 #profile fieldset h3,
 #profile fieldset label,
 .properties fieldset span label {
-  color:white;
+  color:black;
 }
 
 #thePicturePage .titrePage{
