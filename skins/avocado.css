@@ -803,3 +803,11 @@ td .nbEntries{
 .ui-slider .ui-slider-range{
   background: #65A603;
 }
+
+#downloadSwitchLink,
+#derivativeSwitchLink,
+#sortOrderLink,
+.uc-icon-star-filled,
+.uc-icon-star{
+  color:#65A603!important;
+}
