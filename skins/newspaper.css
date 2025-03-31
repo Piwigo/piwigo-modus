@@ -333,6 +333,10 @@ td .nbEntries{
   text-decoration:underline;
 }
 
+.categoryActions .pwg-button{
+  color:#363636;
+}
+
 @media screen and (max-width: 640px){
   #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:white;

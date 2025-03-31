@@ -565,6 +565,10 @@ form.properties a{
   color:black!important;
 }
 
+.categoryActions .pwg-button{
+  color:#848588;
+}
+
 @media screen and (max-width: 640px){
   #copyright a{
     color:#8d8b8b;

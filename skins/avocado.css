@@ -449,6 +449,10 @@ td .nbEntries{
   background-color:#363636;
 }
 
+.categoryActions .pwg-button{
+  color:#84BF04;
+}
+
 @media screen and (max-width: 640px){
     #derivativeSwitchLink .pwg-icon pwg-icon-sizes{
     color:#ceffce;

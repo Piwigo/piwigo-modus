@@ -401,6 +401,10 @@ ul.token-input-list li input{
   color:white;
 }
 
+.categoryActions .pwg-button{
+  color:white;
+}
+
 @media screen and (max-width: 640px){
   #derivativeSwitchLink .pwg-icon .pwg-icon-sizes{
     color:white;

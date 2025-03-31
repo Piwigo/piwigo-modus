@@ -587,6 +587,10 @@ form.properties a{
   color:#373737;
 }
 
+.categoryActions .pwg-button{
+  color:#998e68;
+}
+
 @media screen and (max-width: 640px){
   #menubar{
     border-radius:0px;
