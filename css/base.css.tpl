@@ -380,10 +380,45 @@ A.wiki { cursor:help; }
 	padding: 0 0.5em 0 0;
 }
 
+.properties .fields,
+.plugins.fields {
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.properties div.property,
+.plugins.fields > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	align-items: center;
+}
+
+.properties div.property.radio {
+	margin: 5px 0;
+}
+
+.properties div.property :first-child,
+.plugins.fields > div > :first-child {
+  text-align: right;
+	font-weight: bold;
+}
+
+.properties div.property :last-child,
+.plugins.fields > div > :last-child {
+	width: fit-content;
+}
+
 .properties P {
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
+}
+
+.bottomButtons {
+	margin-top: 50px !important;
 }
 
 
