@@ -396,6 +396,10 @@ A.wiki { cursor:help; }
 	align-items: center;
 }
 
+.plugins.fields > div {
+	margin-left: 5px;
+}
+
 .properties div.property.radio {
 	margin: 5px 0;
 }
