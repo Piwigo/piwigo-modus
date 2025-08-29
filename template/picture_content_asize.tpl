@@ -20,7 +20,7 @@ cp: '{$COOKIE_PATH|@escape:'javascript'}'
   </div>
 {else}
   <img class="file-ext-{if isset($current.file_ext)}{$current.file_ext}{/if} path-ext-{if isset($current.path_ext)}{$current.path_ext}{/if}" {if (isset($current.path_ext) and $current.path_ext == 'svg')} src="{$current.path}" {elseif $current.selected_derivative->is_cached()}src="{$current.selected_derivative->get_url()}"{$current.selected_derivative->get_size_htm()}{else}src="{$ROOT_URL}{$themeconf.img_dir}/ajax_loader.gif" style="width:auto;height:auto;" data-src="{$current.selected_derivative->get_url()}"{/if} alt="{$ALT_IMG}" id="theMainImage" usemap="#map{$current.selected_derivative->get_type()}" title="{if isset($COMMENT_IMG)}{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{else}{$current.TITLE_ESC} - {$ALT_IMG}{/if}">
-  
+  <img class="img-loader-derivatives" src="{$ROOT_URL}{$themeconf.img_dir}/ajax_loader.gif" style="width:auto;height:auto;" />
     {if isset($current.path_ext) and $current.path_ext == 'pdf' and isset($PDF_VIEWER_FILESIZE_THRESHOLD) and $current.filesize > $PDF_VIEWER_FILESIZE_THRESHOLD}
       <div class="pdf-too-heavy">
           {'The PDF you requested is too large to display on this page.'|translate}</br>

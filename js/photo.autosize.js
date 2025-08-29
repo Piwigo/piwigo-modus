@@ -93,16 +93,39 @@ function rvas_choose(relaxed){
 			'width': attrW ? attrW : 'auto',
 			'height': attrH ? attrH : 'auto',
 		});
+
+		$('.img-loader-derivatives').hide();
+		$('#theMainImage').show();
 	});
 }
 
 $(document).ready( function() {
-
 	if (window.changeImgSrc) {
 		RVAS.changeImgSrcOrig = changeImgSrc;
 		changeImgSrc = function() {
 			RVAS.disable = 1;
+
+			$('#theMainImage').hide();
+			$('.img-loader-derivatives').show();
+
 			RVAS.changeImgSrcOrig.apply(undefined, arguments);
+
+			const dpr = window.devicePixelRatio || 1;
+			if (dpr == 1) {
+				$('.img-loader-derivatives').hide();
+				$('#theMainImage').show();	
+				return;
+			}
+			const currentDerivatives = RVAS.derivatives.filter((d) => d.type == arguments[1]);
+			if (!currentDerivatives[0]) return;
+			
+			const w = Math.floor(currentDerivatives[0].w / dpr);
+			const h = Math.floor(currentDerivatives[0].h / dpr);
+
+			$('#theMainImage').attr({
+				width: w,
+				height: h
+			});
 		}
 	}
 
