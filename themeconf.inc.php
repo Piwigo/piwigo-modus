@@ -134,6 +134,7 @@ function modus_combinable_preparse($template)
 	include_once(dirname(__FILE__).'/functions.inc.php');
 
 	try {
+		$template->smarty->unregisterPlugin('modifier', 'cssGradient');
 		$template->smarty->registerPlugin('modifier', 'cssGradient', 'modus_css_gradient');
 	} catch(SmartyException $exc) {}
 
