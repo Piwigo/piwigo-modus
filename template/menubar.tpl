@@ -36,7 +36,7 @@
 
 		{elseif $id=="mbTags"}
 {* ============ mbTags ========== *}
-<dt><a>{'Related tags'|@translate}</a></dt>
+<dt><a>{'Tags'|@translate}</a></dt>
 <dd>
 	<div id=menuTagCloud>
 		{foreach from=$block->data item=tag}{strip}

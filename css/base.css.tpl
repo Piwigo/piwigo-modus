@@ -552,14 +552,6 @@ ul.token-input-list{
 	}
 }
 
-#TagsGroupRemoveTag img{
-  display:none;
-}
-
-#TagsGroupRemoveTag span{
-  display:inline-block;
-}
-
 {* Css for search in set button *}
 .mcs-side-results {
   display: flex;
@@ -609,10 +601,6 @@ ul.token-input-list{
   background: #777;
 }
 
-.mcs-side-results.search-in-set-button {
-  margin-bottom: 30px;
-}
-
 .mcs-side-results.search-in-set-button p {
   margin:0;
 }
@@ -649,7 +637,8 @@ ul.token-input-list{
 #downloadSwitchLink::after,
 {/if}
 #derivativeSwitchLink::after,
-#sortOrderLink::after{
+#sortOrderLink::after,
+#cmdRelatedTags::after{
   display: inline-block;
   margin-left: .255em;
   vertical-align: .255em;
@@ -658,4 +647,92 @@ ul.token-input-list{
   border-right: .3em solid transparent;
   border-bottom: 0;
   border-left: .3em solid transparent;
+}
+
+{* Css for action buttons (search in this set and related tags) *}
+
+.action-buttons{
+  display:flex;
+  align-items:start;
+  margin-bottom: 30px;
+}
+
+#related-tags-toggle i{
+  margin-left:5px;
+}
+
+#related-tags-toggle i::before {
+  transition: transform 0.3s ease;
+}
+
+#related-tags-toggle i.rotated::before {
+  transform: rotate(90deg);
+} 
+
+#related-tags{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#related-tags span{
+  padding:3px 5px;
+  border:1px solid black;
+  margin:3px;
+  border-radius:15px;
+}
+
+#related-tags a{
+  font-weight:700;
+}
+
+#related-tags .tag-counter{
+  display:inline-block;
+  font-style: italic;
+  margin:0 3px;
+}
+
+#relatedTagsBox.switchBox A {
+  padding:unset;
+  display:block;
+}
+
+#selected-tags-container{
+  margin:0 15px;
+}
+
+#selected-tags-container .selected-related-tag {
+  background-color: #FCEAD2;
+  border:1px solid #FF7700;
+  color:#ff7700;
+  border-radius:15px;
+  padding:2px 10px;
+  padding-right:5px;
+}
+
+#selected-tags-container .selected-related-tag a{
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  color:#ff7700;
+  }
+
+#selected-tags-container .selected-related-tag a.selected-related-tag-remove:hover{
+  text-decoration:none;
+  color:#000;
+}
+
+.related-tag-condition{
+  background-color:#FAFAFA;
+  border-bottom: 1px solid #D0D2D5;
+  border-radius:5px;
+  margin:0 10px;
+  font-weight:900;
+  font-size:20px;
+  padding:0 5px;
+    color:#777777;
+}
+
+#breadcrumb{
+  display:flex;
+  align-items: baseline;
 }
