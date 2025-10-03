@@ -557,7 +557,7 @@ ul.token-input-list{
   display: flex;
   flex-direction: row;
   gap: 5px;
-  margin: 15px 0 0 15px;
+  {* margin: 15px 0 0 15px; *}
 }
 
 .mcs-side-results > div {
@@ -654,7 +654,9 @@ ul.token-input-list{
 .action-buttons{
   display:flex;
   align-items:start;
-  margin-bottom: 30px;
+  flex-wrap:wrap;
+  margin-bottom: 20px;
+  padding:0 15px;
 }
 
 #related-tags-toggle i{
@@ -669,26 +671,26 @@ ul.token-input-list{
   transform: rotate(90deg);
 } 
 
-#related-tags{
-  display:flex;
-  flex-wrap:wrap;
+.related-tags.hide{
+  display:none;
 }
 
-#related-tags span{
+span.related-tags{
   padding:3px 5px;
-  border:1px solid black;
+  border:1px solid #D6D6D6;
   margin:3px;
   border-radius:15px;
 }
 
-#related-tags a{
+span.related-tags a{
   font-weight:700;
+  color:#787878;
 }
 
-#related-tags .tag-counter{
-  display:inline-block;
-  font-style: italic;
-  margin:0 3px;
+span.related-tags .tag-counter{
+  display: inline-block;
+  margin-left: 7px;
+  color:#D6D6D6;
 }
 
 #relatedTagsBox.switchBox A {
@@ -698,6 +700,8 @@ ul.token-input-list{
 
 #selected-tags-container{
   margin:0 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #selected-tags-container .selected-related-tag {
