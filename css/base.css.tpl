@@ -707,6 +707,11 @@ span.related-tags .tag-counter{
   border-radius:15px;
   padding:2px 10px;
   padding-right:5px;
+  margin-right:15px;
+}
+
+#selected-tags-container .selected-related-tag.unique-tag{
+  padding:2px 10px;
 }
 
 #selected-tags-container .selected-related-tag a{
@@ -722,10 +727,8 @@ span.related-tags .tag-counter{
 }
 
 .related-tag-condition{
-  background-color:#FAFAFA;
-  border-bottom: 1px solid #D0D2D5;
   border-radius:5px;
-  margin:0 5px 0 15px;
+  margin:2px 5px 0 15px;
   font-weight:900;
   font-size:20px;
   padding:0 5px;
@@ -735,4 +738,10 @@ span.related-tags .tag-counter{
 #breadcrumb{
   display:flex;
   align-items: baseline;
+}
+
+@media (max-width: 600px) {
+  #breadcrumb{
+    flex-direction:column;
+  }
 }
