@@ -33,3 +33,4 @@ $lang['Default sizes'] = 'Размер по подразбиране';
 $lang['Modus theme config'] = 'Настройки на темата';
 $lang['Skin'] = 'Изглед';
 $lang['Display page banner'] = 'Показване на банер';
+$lang['Admin'] = 'Администратор';
