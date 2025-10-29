@@ -118,21 +118,24 @@ DIV.thumbHover { /* first & last holders only*/
 	font-weight:normal;
 }
 
-
-
-
+.wide #theImageAndInfos{
+  display:flex;
+  justify-content:space-between;
+  max-width:100vw;
+  overflow:hidden;
+}
 
 @media screen {
 /*picture page wide screen*/
-.wide #theImage {
-	display: inline;
-	float: left;
-	width: 76.1%; /*min default picture derivative width*/
+
+.wide #theImage{
+  width:75%;
+  margin:0 12px;
 }
 
 .wide #imageInfos {
-	margin-left: 76.5%; /*default picture derivative width + ~ 5px; must have enough space for thumbs*/
 	border-radius: 8px 0 0 8px;
+  width:25%;
 {if !empty($skin.pictureWideInfoTable.backgroundColor)}
 	background-color: {$skin.pictureWideInfoTable.backgroundColor};
 {/if}
