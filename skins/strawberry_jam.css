@@ -607,3 +607,14 @@ td .nbEntries{
 .uc-icon-star{
   color:#7F0906!important;
 }
+
+#selected-tags-container .selected-related-tag{
+  background: #f8e6e6;
+  border-color: #7F0906;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #BF0D08;
+}
+

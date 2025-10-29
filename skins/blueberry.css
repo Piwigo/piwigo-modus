@@ -955,7 +955,7 @@ form.properties a{
 }
 
 .mcs-side-results > div:hover{
-  background-color:white;
+  background-color:#0391aa;
   color:#16262e;
 }
 
@@ -1014,4 +1014,30 @@ form.properties a{
 .uc-icon-star-filled,
 .uc-icon-star{
   color:#93c2d6!important;
+}
+
+#selected-tags-container .selected-related-tag{
+  background: #0391aa;
+  border-color: #16262e;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #16262e;
+}
+
+span.related-tags{
+  background-color:#16262e;
+}
+
+span.related-tags a{
+  color:#93c2d6;
+}
+
+span.related-tags .tag-counter {
+  color: #0391aa;
+}
+
+span.related-tags:hover{
+  background-color:#326471;
 }

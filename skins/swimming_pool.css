@@ -1042,3 +1042,45 @@ form.properties a{
   color:#326c84!important;
 }
 
+h3.related-tags-title{
+  color:#2c465a;
+}
+
+#selected-tags-container .selected-related-tag{
+  background: #3f6379;
+  border-color: #2c465a;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #fff;
+}
+
+span.related-tags{
+  background-color:#EBEBF2;
+}
+
+span.related-tags a{
+  color:#2c465a;
+}
+
+span.related-tags .tag-counter {
+  color: #326c84;
+}
+
+span.related-tags:hover{
+  background-color:#5889ad;
+  color:white;
+}
+
+span.related-tags:hover a{
+  color:white;
+}
+
+span.related-tags:hover .tag-counter{
+  color:#f3f6f9;
+}
+
+#selected-tags-container .selected-related-tag a.selected-related-tag-remove:hover{
+  color:#afc6d6;
+}

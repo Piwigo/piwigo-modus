@@ -683,3 +683,13 @@ ul.token-input-list li input{
 .uc-icon-star{
   color:#FF2F63!important;
 }
+
+#selected-tags-container .selected-related-tag{
+  background: #FFD5DF;
+  border-color: #FF2F63;;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #FF2F63;
+}

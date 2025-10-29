@@ -544,7 +544,8 @@ ul.token-input-list li input{
   color: #888;
 }
 
-#word-search {
+#word-search,
+#expert-search {
   color: white;
   border-radius:0;
 }
@@ -801,3 +802,32 @@ ul.token-input-list li input{
   color:white!important;
 }
 
+#selected-tags-container .selected-related-tag{
+  background: #223D73;
+  border-color: #1E3259;;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #fff;
+}
+
+span.related-tags{
+  background-color:#EBEBF2;
+}
+
+span.related-tags a{
+  color:#1E3259;
+}
+
+span.related-tags .tag-counter {
+  color: #27498C;
+}
+
+span.related-tags:hover{
+  background-color:#C1C7D9;
+}
+
+#selected-tags-container .selected-related-tag a.selected-related-tag-remove:hover{
+  color:#C1C7D9;
+}

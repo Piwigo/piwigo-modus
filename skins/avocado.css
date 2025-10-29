@@ -815,3 +815,33 @@ td .nbEntries{
 .uc-icon-star{
   color:#65A603!important;
 }
+
+#selected-tags-container .selected-related-tag{
+  background: #98D90D;
+  border-color: #034001;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #034001;
+}
+
+span.related-tags{
+  background-color:#ceffce;
+}
+
+span.related-tags a{
+  color:#65A603;
+}
+
+span.related-tags .tag-counter {
+  color: #84BF04;
+}
+
+span.related-tags:hover{
+  background-color:#98D90D;
+}
+
+#selected-tags-container .selected-related-tag a.selected-related-tag-remove:hover{
+  color:#558C03;
+}

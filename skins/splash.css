@@ -723,3 +723,14 @@ form.properties a{
 .uc-icon-star{
   color:#0b6aff!important;
 }
+
+#selected-tags-container .selected-related-tag{
+  background: #e8e8ea;
+  border-color: #0b6aff;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #0b6aff;
+}
+

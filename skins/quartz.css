@@ -947,3 +947,37 @@ form.properties a{
 .uc-icon-star{
   color:#848588!important;
 }
+
+h3.related-tags-title{
+  color:#c7d3e1;
+}
+
+#selected-tags-container .selected-related-tag{
+  background: #2B313D;
+  border-color: #616364;
+}
+
+#selected-tags-container .selected-related-tag,
+#selected-tags-container .selected-related-tag a{
+  color: #6BA1FF;
+}
+
+span.related-tags{
+  background-color:#393A3D;
+}
+
+span.related-tags a{
+  color:#c7d3e1;
+}
+
+span.related-tags .tag-counter {
+  color: #616364;
+}
+
+span.related-tags:hover{
+  background-color:#1E3259;
+}
+
+#selected-tags-container .selected-related-tag a.selected-related-tag-remove:hover{
+  color:#c7d3e1;
+}
