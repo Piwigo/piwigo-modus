@@ -139,7 +139,7 @@
 	{if isset($USERNAME)}{'Hello'|@translate} {if isset($U_PROFILE)}<a href="{$U_PROFILE}">{/if}{$USERNAME}{if isset($U_PROFILE)}</a>{/if} ! &nbsp;{/if}
 	<a href="{$U_LOGOUT}">{'Logout'|@translate}</a>
 	{if isset($U_PROFILE)}
-	<a id="mbProfile" href="{$U_PROFILE}" title="{'customize the appareance of the gallery'|@translate}">{'Customize'|@translate}</a>
+	<a id="mbProfile" href="{$U_PROFILE}" title="{'edit user preferences'|@translate}">{'Profile'|@translate}</a>
 	{/if}
 	{if isset($U_ADMIN)}
 	<a href="{$U_ADMIN}" title="{'available for administrators only'|@translate}">{'Admin'|@translate}</a>
