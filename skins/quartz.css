@@ -20,21 +20,8 @@ body{
   color:#6BA1FF;
 }
 
-.infos{
-  background:none;
-  background-color: #096a09;
-  color:#eaeae9;
-  font-weight: bold;
-}
-
 #theImageAndInfos{
   padding-top:20px;
-}
-
-.errors{
-  color: #ffc4bf;
-  background-color: #d31100;
-  border-left: 3px solid #ffc4bf;
 }
   
 h2{

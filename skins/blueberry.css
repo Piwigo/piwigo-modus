@@ -20,17 +20,6 @@ body{
 }
 
 #copyright A{color:#93c2d6;}
-
-.infos{
-  background:#096a09 url(../../default/icon/infos.png) no-repeat center right;
-  color:black;
-}
-
-.errors{
-  color: #ffc4bf;
-  background-color: #d31100;
-  border-left: 3px solid #ffc4bf;
-}
   
 h2{
   color:#93c2d6;
