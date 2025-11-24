@@ -507,7 +507,8 @@ td .nbEntries{
 .filter-form .filter-form-title,
 .filter-form .filter-form-title,
 .ratios-option label .checked-icon,
-.ratings-option label .checked-icon{
+.ratings-option label .checked-icon,
+.quick-search-headers .mcs-popin-title{
   color: #BF0D08!important;
 }
 

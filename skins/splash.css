@@ -584,7 +584,8 @@ form.properties a{
 .mcs-no-result .text span:first-child,
 .filter-form .filter-form-title,
 .ratios-option label .checked-icon,
-.ratings-option label .checked-icon{
+.ratings-option label .checked-icon,
+.quick-search-headers .mcs-popin-title{
   color: #0b6aff!important;
 }
 

@@ -601,7 +601,8 @@ ul.token-input-list li input{
 .filter-form .filter-form-title,
 .no_filtered_photos,
 .date_posted-option .accordion-toggle:hover,
-.date_created-option .accordion-toggle:hover{
+.date_created-option .accordion-toggle:hover,
+.quick-search-headers .mcs-popin-title{
   color: #FF2F63!important;
 }
 

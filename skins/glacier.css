@@ -456,7 +456,8 @@ ul.token-input-list li input{
 
 .filter-manager-popin .mcs-popin-title,
 .tags-found-popin .mcs-popin-title,
-.albums-found-popin .mcs-popin-title {
+.albums-found-popin .mcs-popin-title,
+.quick-search-headers .mcs-popin-title {
   color: #1E3259;
 }
 
