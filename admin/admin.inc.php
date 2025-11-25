@@ -40,8 +40,11 @@ if (isset($_POST[$text_values[0]]))
   $my_conf = array_intersect_key($my_conf, $default_conf);
   conf_update_param('modus_theme', addslashes(serialize($my_conf)) );
 
-	global $page;
-  $page['infos'][] = l10n('Information data registered in database');
+  $template->assign(
+    array(
+      'save_success' =>l10n('Information data registered in database'),
+    )
+  );
 }
 
 // *************** tabs ********************
