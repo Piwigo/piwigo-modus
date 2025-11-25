@@ -198,7 +198,7 @@ Automatically applied for selected derivatives if max_width > max_height*1.5
 {/if}
 
     <div class="savebar-footer-block">
-      <button class="buttonLike" type="submit"><i class="icon-mail"></i> {'Save Settings'|@translate}</button>
+      <button class="buttonLike" type="submit"><i class="icon-floppy"></i> {'Save Settings'|@translate}</button>
     </div>
   </div>
 </div>
