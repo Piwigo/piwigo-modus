@@ -75,6 +75,10 @@
   padding: 0 10px;
 }
 
+#modus-config{
+  margin-bottom:60px;
+}
+
 {/html_style}
 
 
