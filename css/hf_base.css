@@ -265,6 +265,7 @@ INPUT[type="submit"]{
 
 #imageInfos{
   padding-bottom:15px;
+    height:fit-content;
 }
 
 #commentAdd{
