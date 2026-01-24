@@ -33,3 +33,4 @@ $lang['Default size for thumbnails on high density display (retina)'] = '썸네�
 $lang['Default sizes'] = '기본 크기';
 $lang['Skin'] = '스킨';
 $lang['Use square thumbs'] = '직사각형 썸네일 사용하기';
+$lang['Admin'] = '관리자';
