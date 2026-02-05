@@ -32,5 +32,5 @@ $lang['Default sizes'] = '默认尺寸';
 $lang['Modus theme config'] = 'Modus 主题设置';
 $lang['Skin'] = '皮肤';
 $lang['Use square thumbs'] = '使用正方形缩略图';
-$lang['Display page banner'] = '显示页面banner横幅';
+$lang['Display page banner'] = '显示页面横幅';
 $lang['Admin'] = '后台管理';
