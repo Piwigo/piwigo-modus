@@ -251,6 +251,7 @@ INPUT[type="submit"]{
 .wide .imageInfo DT{
   font-weight:bold;
   display:table-cell;
+  white-space:nowrap;
 }
 
 .wide #imageInfos{
