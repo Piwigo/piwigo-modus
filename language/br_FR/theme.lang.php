@@ -20,16 +20,17 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['%d album'] = '%d rummad';
-$lang['%d albums'] = '%d rummad';
-$lang['Explore'] = 'Furchal';
+$lang['%d album'] = '%d albom';
+$lang['%d albums'] = '%d albom';
+$lang['Explore'] = 'Ergerzhout';
 $lang['modus_theme'] = 'tem_modus';
-$lang['Skin'] = 'Tem';
+$lang['Skin'] = 'Neuz';
 $lang['%d pixels'] = '%d piksel';
-$lang['Album thumbnails'] = 'Skeudennoùigoù ar rummad';
-$lang['Default size for thumbnails'] = 'Ment dre ziouer evit ar skeudennoùigoù';
-$lang['Default size for thumbnails on high density display (retina)'] = 'Ment dre ziouer evit ar skeudennoùigoù gant skrammoù uhel o diarunusted (retina)';
+$lang['Album thumbnails'] = 'Skeudennigoù an albom';
+$lang['Default size for thumbnails'] = 'Ment dre ziouer evit ar skeudennigoù';
+$lang['Default size for thumbnails on high density display (retina)'] = 'Ment dre ziouer evit ar skeudennigoù gant skrammoù uhel o spister (retina)';
 $lang['Default sizes'] = 'Mentoù dre ziouer';
 $lang['Modus theme config'] = 'Kefluniadur tem modus';
 $lang['Use square thumbs'] = 'Ober gant skeudennigoù karrez';
-$lang['Display page banner'] = 'Diskouez giton ar bajenn';
+$lang['Display page banner'] = 'Diskouez banniel ar bajenn';
+$lang['Admin'] = 'Merour';
