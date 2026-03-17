@@ -35,6 +35,8 @@ A:hover .pwg-icon:before{
 .pwg-icon-caddie-add:before { content: '\E812';}
 .pwg-icon-representative { content: '\E80B'; }
 
+.pwg-icon-tag-remove:before { content: '\2700'; } /* ✂ */
+
 {if $conf.index_posted_date_icon}
   {if $conf.index_created_date_icon}
 .pwg-icon-calendar:before { content: '\E81B'; }
