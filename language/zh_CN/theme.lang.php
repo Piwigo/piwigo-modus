@@ -20,11 +20,11 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['%d album'] = '%d 相册';
-$lang['%d albums'] = '%d 相册';
+$lang['%d album'] = '%d个相册';
+$lang['%d albums'] = '%d个相册';
 $lang['Explore'] = '浏览';
 $lang['modus_theme'] = 'modus_theme';
-$lang['%d pixels'] = '%d 像素';
+$lang['%d pixels'] = '%d像素';
 $lang['Album thumbnails'] = '相册缩略图';
 $lang['Default size for thumbnails'] = '默认缩略图尺寸';
 $lang['Default size for thumbnails on high density display (retina)'] = '在高清显示下的默认缩略图尺寸';
