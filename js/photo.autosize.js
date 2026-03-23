@@ -59,7 +59,7 @@ function rvas_choose(relaxed){
 			}
 			if (!$img.data("natural-w") || $img.data("natural-w") < best.w) {
 				$img.attr("width", rescaled.w).attr("height", rescaled.h)
-					.attr("src", best.url)
+					.attr("src", best.url.replace(/&amp;/g, '&'))
 					.removeAttr("usemap")
 					.data("natural-w", best.w);
 			}
@@ -78,7 +78,7 @@ function rvas_choose(relaxed){
 			}
 			$img
 				.attr("width", best.w).attr("height", best.h)
-				.attr("src", best.url)
+				.attr("src", best.url.replace(/&amp;/g, '&'))
 				.attr("usemap", "#map"+best.type);
 		}
 		if (changed) {
